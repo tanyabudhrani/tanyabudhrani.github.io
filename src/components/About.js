@@ -1,8 +1,9 @@
+
 import React from 'react';
 
 function About() {
   return (
-    <section id="about" className="py-20 bg-gray-900 text-white">
+    <section id="about" className="py-20 bg-primary text-light">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-4">About Me</h2>
         <p className="text-lg">
