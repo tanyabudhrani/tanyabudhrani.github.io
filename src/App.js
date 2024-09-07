@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -22,7 +23,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/extracurriculars" element={<Extracurriculars />} />
         <Route path="/writing" element={<Writing />} />
-        <Route path="/" element={<Navbar />} />
       </Routes>
     </Router>
   );
