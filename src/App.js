@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Extracurriculars from './components/Extracurriculars';
 import Writing from './components/Writing';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 function App() {
