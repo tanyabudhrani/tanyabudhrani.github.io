@@ -50,7 +50,7 @@ function Extracurriculars() {
         duration: "2024 - Present",
         description: "",
         link: "",
-    },
+    }
   ];
 
   return (

@@ -31,8 +31,7 @@ function Writing() {
         title: "The Devil's Advocate",
         organisation: "PolyU - Writing",
         link: "https://drive.google.com/drive/folders/1UweUc8euIhfRU6ncMwU9IwPHjllBB3vN?usp=sharing",
-    },
-
+    }
   ];
 
   return (
