@@ -19,4 +19,10 @@ module.exports = {
     },
   },
   plugins: [],
+  variants: {
+    extend: {
+      // smooth scrolling
+      scrollBehavior: ['motion-safe', 'motion-reduce'],
+    },
+  }
 }
