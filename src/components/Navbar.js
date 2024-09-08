@@ -4,9 +4,9 @@ function Navbar() {
   return (
     <nav className="bg-gray-800 p-4 fixed w-full top-0 z-10 transition-all ease-in-out duration-500">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-lg font-bold">Tanya Budhrani</h1>
+        <h1 className="text-lg font-bold text-white">Tanya Budhrani</h1>
         <div className="space-x-6">
-          <a href="#home" className="hover:text-blue-400">Home</a>
+          <a href="#home" className="text-white hover:text-blue-400">Home</a>
           <a href="#about" className="hover:text-blue-400">About</a>
           <a href="#skills" className="hover:text-blue-400">Skills</a>
           <a href="#experience" className="hover:text-blue-400">Experience</a>

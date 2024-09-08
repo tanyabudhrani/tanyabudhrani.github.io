@@ -38,7 +38,7 @@ function Writing() {
     <section className="py-20 bg-gray-800 text-white">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-6">My Writings</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-gradient-radial p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
           {writings.map((writing, index) => (
             <div key={index} className="bg-gray-900 p-4 rounded-lg">
               <h3 className="text-2xl font-bold">{writing.title}</h3>
