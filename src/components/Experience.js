@@ -8,7 +8,7 @@ const Content = ({ text, link }) => {
       <p className="font-poppins font-normal text-[14px] text-dimWhite mt-4">
         {text}{" "}
         {link && (
-          <a href={link} target="_blank" className="hover:text-teal-200">
+          <a href="https://tanyabudhrani.netlify.app/" target="_blank" rel="noreferrer" className="hover:text-teal-200">
             <span className="inline hover:text-teal-200">🔗</span>
           </a>
         )}
