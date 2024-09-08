@@ -10,7 +10,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div>
+    <div className ="bg-gradient-to-b from-gray-900 via-teal-900 to-black">"
       <Navbar />
       <Home />
       <About />
