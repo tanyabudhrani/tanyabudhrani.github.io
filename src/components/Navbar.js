@@ -7,13 +7,13 @@ function Navbar() {
         <h1 className="text-lg font-bold text-white">Tanya Budhrani</h1>
         <div className="space-x-6">
           <a href="#home" className="text-white hover:text-blue-400">Home</a>
-          <a href="#about" className="hover:text-blue-400">About</a>
-          <a href="#skills" className="hover:text-blue-400">Skills</a>
-          <a href="#experience" className="hover:text-blue-400">Experience</a>
-          <a href="#projects" className="hover:text-blue-400">Projects</a>
-          <a href="#extracurriculars" className="hover:text-blue-400">Extracurriculars</a>
-          <a href="#writing" className="hover:text-blue-400">Writing</a>
-          <a href="#contact" className="hover:text-blue-400">Contact</a>
+          <a href="#about" className="text-white hover:text-blue-400">About</a>
+          <a href="#skills" className="text-white hover:text-blue-400">Skills</a>
+          <a href="#experience" className="text-white hover:text-blue-400">Experience</a>
+          <a href="#projects" className="text-white hover:text-blue-400">Projects</a>
+          <a href="#extracurriculars" className="text-white hover:text-blue-400">Extracurriculars</a>
+          <a href="#writing" className="text-white hover:text-blue-400">Writing</a>
+          <a href="#contact" className="text-white hover:text-blue-400">Contact</a>
         </div>
       </div>
     </nav>
