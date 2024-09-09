@@ -2,16 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global body styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: #1A1A1D; /* Dark background color */
+  color: #FFFFFF; /* White text color */
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Specific code block styling */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background-color: #333; /* Dark background for code blocks */
+  color: #fff; /* White text for code */
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Links and hover state */
+a {
+  color: #C3073F; /* Accent color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff4d6d; /* Lighter shade for hover */
+  transition: color 0.3s ease;
+}
+
+/* Smooth hover transitions for interactive elements */
+button, .hover\:text-teal-200:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Smooth background transitions */
+.bg-primary {
+  background-color: #1A1A1D;
+  transition: background-color 0.3s ease;
+}
+
+/* Apply gradient background for sections */
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, #1A1A1D, #4E4E50);
+}
+
+/* Text gradients */
+.text-gradient {
+  background: linear-gradient(to right, #C3073F, #ff4d6d);
+  background-clip: text;
+-webkit-background-clip: text;
+  color: transparent;
 }
