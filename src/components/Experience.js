@@ -1,5 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  FaPython,
+  FaJava,
+  FaHtml5,
+  FaJs,
+  FaGitAlt,
+  FaGithub,
+  FaNodeJs,
+  FaAngular,
+  FaDocker,
+  FaReact,
+  FaTerminal,
+  FaVuejs
+} from "react-icons/fa";
+import { SiCplusplus, SiR, SiLatex, SiMysql, SiAssemblyscript, SiPytorch, SiTensorflow, SiC, SiCss3} from "react-icons/si";
+import { TbBrandThreejs } from "react-icons/tb";
 
 // Content component handles each bullet point or description within a position
 const Content = ({ text, link }) => {
@@ -59,13 +75,12 @@ const ExperienceCard = (props) => {
   );
 };
 
-// Main Experience component that contains all experiences
+// Main Experience component that contains all experiences and skills
 const Experience = () => {
-  // Experience data defined directly inside the component
   const experiences = [
     {
       organisation: "Mitacs Globalink Intern",
-      logo: "/Users/tanyabudhrani/Desktop/code/tanyabudhrani.github.io/src/assets/ubc.png", // Path to company logo
+      logo: "/Users/tanyabudhrani/Desktop/code/tanyabudhrani.github.io/src/assets/ubc.png",
       positions: [
         {
           title: "Intern",
@@ -83,7 +98,7 @@ const Experience = () => {
     },
     {
       organisation: "Generative AI Researcher",
-      logo: "/Users/tanyabudhrani/Desktop/code/tanyabudhrani.github.io/src/assets/polyu.png", // Path to company logo
+      logo: "/Users/tanyabudhrani/Desktop/code/tanyabudhrani.github.io/src/assets/polyu.png",
       positions: [
         {
           title: "Researcher",
@@ -118,16 +133,121 @@ const Experience = () => {
 
   return (
     <section id="experience" className="py-20 bg-gray-900 text-white">
-      <div className="container mx-auto">
-        <h2 className="text-5xl font-extrabold text-secondary tracking-wide mb-6">
-          Experience
-        </h2>
+      <div className="container mx-auto flex flex-col md:flex-row">
+        {/* Left: Experience Section */}
+        <div className="flex-1 md:mr-8">
+          <h2 className="text-5xl font-extrabold text-secondary tracking-wide mb-6">
+            Experience
+          </h2>
+          <motion.div className="flex flex-1 items-center justify-start flex-col">
+            {experiences.map((exp, index) => (
+              <ExperienceCard key={index} {...exp} />
+            ))}
+          </motion.div>
+        </div>
 
-        <motion.div className="flex flex-1 items-center justify-start flex-col">
-          {experiences.map((exp, index) => (
-            <ExperienceCard key={index} {...exp} />
-          ))}
-        </motion.div>
+        {/* Right: Skills Section */}
+        <div className="flex-1 flex flex-col items-center justify-center mt-10 md:mt-0 text-white">
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold">Programming Languages</h3>
+            <div className="grid grid-cols-4 gap-6 mt-4">
+              <div className="flex flex-col items-center">
+                <FaPython className="text-4xl" />
+                <p>Python</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <SiR className="text-4xl" />
+                <p>R</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <SiCplusplus className="text-4xl" />
+                <p>C++</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaJs className="text-4xl" />
+                <p>JavaScript+</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <SiC className="text-4xl" />
+                <p>C</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaJava className="text-4xl" />
+                <p>Java</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaHtml5 className="text-4xl" />
+                <p>HTML5</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <SiCss3 className="text-4xl" />
+                <p>CSS</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <SiLatex className="text-4xl" />
+                <p>Latex</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <SiMysql className="text-4xl" />
+                <p>SQL</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <SiAssemblyscript className="text-4xl" />
+                <p>Assembly</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaTerminal className="text-4xl" />
+                <p>Bash</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold">Tools & Frameworks</h3>
+            <div className="grid grid-cols-4 gap-6 mt-4">
+              <div className="flex flex-col items-center">
+                <FaNodeJs className="text-4xl" />
+                <p>Node.js</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaAngular className="text-4xl" />
+                <p>Angular</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaDocker className="text-4xl" />
+                <p>Docker</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaGitAlt className="text-4xl" />
+                <p>Git</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaGithub className="text-4xl" />
+                <p>GitHub</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaReact className="text-4xl" />
+                <p>React</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <SiPytorch className="text-4xl" />
+                <p>PyTorch</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <SiTensorflow className="text-4xl" />
+                <p>Tensorflow</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <TbBrandThreejs className="text-4xl" />
+                <p>Three.js</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <FaVuejs className="text-4xl" />
+                <p>Vue.js</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
