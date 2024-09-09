@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 // Import your components
+import About from "./components/About";
 import Hero from "./components/Hero";
 import Experience from './components/Experience';
 import Projects from './components/Projects';
@@ -40,8 +41,9 @@ const App = () => {
           {/* Navbar and Home Section */}
           <div className="bg-primary flex justify-center items-center">
             <div className="w-full max-w-screen-xl">
-              <Hero />
               <Navbar />
+              <Hero />
+              <About />
             </div>
           </div>
 
