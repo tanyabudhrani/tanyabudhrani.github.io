@@ -32,32 +32,32 @@ const Writing = () => {
   const writings = [
     {
       title: "Cracking the Code: Developer Trust and Usage Patterns in AI-Based Code Generators",
-      organisation: "UBC - Publication",
+      organisation: "Publication",
       link: "https://drive.google.com/file/d/1oDX_l60n4EGd8x16vLN_ZwMTbYGDdQQb/view?usp=sharing",
     },
     {
       title: "Data Analytics",
-      organisation: "PolyU - Notes",
+      organisation: "Notes",
       link: "https://github.com/tanyabudhrani/Data-Analytics.git",
     },
     {
       title: "Operating Systems",
-      organisation: "PolyU - Notes",
+      organisation: "Notes",
       link: "https://github.com/tanyabudhrani/Operating-Systems.git",
     },
     {
       title: "Computer Networking",
-      organisation: "PolyU - Notes",
+      organisation: "Notes",
       link: "https://github.com/tanyabudhrani/Computer-Networking.git",
     },
     {
       title: "Data Structures",
-      organisation: "PolyU - Notes",
+      organisation: "Notes",
       link: "https://github.com/tanyabudhrani/Data-Structures.git",
     },
     {
       title: "The Devil's Advocate",
-      organisation: "PolyU - Writing",
+      organisation: "Writing",
       link: "https://drive.google.com/drive/folders/1UweUc8euIhfRU6ncMwU9IwPHjllBB3vN?usp=sharing",
     },
   ];
@@ -66,7 +66,7 @@ const Writing = () => {
 
   const filteredWritings = selectedCategory === "All" ? writings : writings.filter(writing => writing.organisation.includes(selectedCategory));
 
-  const categories = ["All", "UBC - Publication", "PolyU - Notes", "PolyU - Writing"];
+  const categories = ["All", "Publication", "Notes", "Writing"];
 
   return (
     <section className="py-20 bg-primary text-white">
@@ -77,13 +77,13 @@ const Writing = () => {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 m-1 rounded ${selectedCategory === category ? 'bg-teal-500 text-white' : 'bg-white text-primary'}`}
+              className={`px-4 py-2 m-1 rounded ${selectedCategory === category ? 'bg-teal-500 text-white' : 'bg-primary text-white'}`}
             >
               {category}
             </button>
           ))}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {filteredWritings.map((writing, index) => (
             <WritingItem key={index} {...writing} />
           ))}
