@@ -42,7 +42,7 @@ import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
 import { FaReact, FaNodeJs, FaJava } from "react-icons/fa"; // Import tech icons
-import { SiC, SiMongodb } from "react-icons/si"; // Example of MongoDB icon
+import { SiC } from "react-icons/si"; // Example of MongoDB icon
 import { motion } from "framer-motion";
 
 // Project component

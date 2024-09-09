@@ -13,7 +13,7 @@ import {
   FaTerminal,
   FaVuejs
 } from "react-icons/fa";
-import { SiCplusplus, SiR, SiLatex, SiMysql, SiAssemblyscript, SiPytorch, SiTensorflow, SiVueDotJs, SiC, SiCss3} from "react-icons/si";
+import { SiCplusplus, SiR, SiLatex, SiMysql, SiAssemblyscript, SiPytorch, SiTensorflow, SiC, SiCss3} from "react-icons/si";
 import { TbBrandThreejs } from "react-icons/tb";
 
 const Hero = () => {
