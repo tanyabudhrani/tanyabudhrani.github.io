@@ -10,9 +10,11 @@ import {
   FaAngular,
   FaDocker,
   FaReact,
-  FaTerminal
+  FaTerminal,
+  FaVuejs
 } from "react-icons/fa";
-import { SiCplusplus, SiR, SiLatex, SiMysql, SiAssemblyscript, SiPytorch, SiTensorflow, SiThreeDotJs, SiVueDotJs, SiC, SiCss3} from "react-icons/si";
+import { SiCplusplus, SiR, SiLatex, SiMysql, SiAssemblyscript, SiPytorch, SiTensorflow, SiVueDotJs, SiC, SiCss3} from "react-icons/si";
+import { TbBrandThreejs } from "react-icons/tb";
 
 const Hero = () => {
   return (
@@ -154,11 +156,11 @@ const Hero = () => {
               <p>Tensorflow</p>
             </div>
             <div className="flex flex-col items-center">
-              <SiThreeDotJs className="text-4xl" />
+              <TbBrandThreejs className="text-4xl" />
               <p>Three.js</p>
             </div>
             <div className="flex flex-col items-center">
-              <SiVueDotJs className="text-4xl" />
+              <FaVuejs className="text-4xl" />
               <p>Vue.js</p>
             </div>
           </div>
