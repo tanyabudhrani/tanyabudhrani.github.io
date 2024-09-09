@@ -6,9 +6,9 @@ import { BsLink45Deg } from "react-icons/bs";
 import { FaReact, FaNodeJs, FaJava } from "react-icons/fa"; // Import tech icons
 import { SiC } from "react-icons/si"; // Example of MongoDB icon
 import { motion } from "framer-motion";
-import lineImage from './assets/line.jpg';
-import threadImage from './assets/Threads.png';
-import taskImage from './assets/task.jpg';
+import lineImage from 'tanyabudhrani.github.io/src/assets/line.jpg';
+import threadImage from 'tanyabudhrani.github.io/src/assets/Threads.png';
+import taskImage from 'tanyabudhrani.github.io/src/assets/task.jpg';
 
 // Project component
 const Project = (props) => {

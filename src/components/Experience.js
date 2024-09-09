@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ubcImage from './assets/ubc.png';
-import polyuImage from './assets/polyu.png';
-import polkImage from './assets/polk.png';
+import ubcImage from 'tanyabudhrani.github.io/src/assets/ubc.png';
+import polyuImage from 'tanyabudhrani.github.io/src/assets/polyu.png';
+import polkImage from 'tanyabudhrani.github.io/src/assets/polk.png';
 import {
   FaPython,
   FaJava,
