@@ -6,8 +6,6 @@ import { motion } from "framer-motion";
 // Import your components
 import Home from './components/Home';
 import Hero from "./components/Hero";
-import About from './components/About';
-import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -29,7 +27,7 @@ const App = () => {
     return (
       <div className="bg-primary w-full overflow-hidden">
         {/* You can replace Loading with an actual loading component */}
-        <div className="text-white flex items-center justify-center h-screen">Loading...</div>
+        <div className="text-white flex items-center justify-center h-screen">Tanya Budhrani</div>
       </div>
     );
   } else {
@@ -44,19 +42,11 @@ const App = () => {
           {/* Navbar and Home Section */}
           <div className="flex justify-center items-center">
             <div className="w-full max-w-screen-xl">
-              <Hero />
               <Navbar />
-              <Home />
+              <Hero />
             </div>
           </div>
 
-          {/* About and Skills Section */}
-          <div className="bg-primary flex justify-start">
-            <div className="w-full max-w-screen-xl">
-              <About />
-              <Skills />
-            </div>
-          </div>
 
           {/* Experience and Education Section */}
           <div className="bg-primary flex justify-center px-6">
