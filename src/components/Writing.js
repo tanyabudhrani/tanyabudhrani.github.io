@@ -1,4 +1,6 @@
-import React from "react";
+
+
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const WritingItem = (props) => {
@@ -61,12 +63,29 @@ const Writing = () => {
     },
   ];
 
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const filteredWritings = selectedCategory === "All" ? writings : writings.filter(writing => writing.organisation.includes(selectedCategory));
+
+  const categories = ["All", "UBC - Publication", "PolyU - Notes", "PolyU - Writing"];
+
   return (
     <section className="py-20 bg-primary text-white">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-6">My Writings</h2>
+        <div className="mb-4 flex justify-center">
+          {categories.map(category => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`px-4 py-2 m-1 rounded ${selectedCategory === category ? 'bg-teal-500 text-white' : 'bg-white text-primary'}`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {writings.map((writing, index) => (
+          {filteredWritings.map((writing, index) => (
             <WritingItem key={index} {...writing} />
           ))}
         </div>
