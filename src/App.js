@@ -26,7 +26,7 @@ const App = () => {
     return (
       <div className="bg-dark w-full overflow-hidden">
         {/* You can replace Loading with an actual loading component */}
-        <div className="text-white flex items-center justify-center h-screen">Tanya Budhrani...</div>
+        <div className="text-white flex items-center justify-center h-screen">Tanya Budhrani</div>
       </div>
     );
   } else {
@@ -36,10 +36,10 @@ const App = () => {
         <motion.section
           initial={{ x: -100, opacity: 0.25 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.5 }}
         >
           {/* Navbar and Home Section */}
-          <div className="flex justify-center items-center">
+          <div className="bg-dark flex justify-center items-center">
             <div className="w-full max-w-screen-xl">
               <Hero />
               <Navbar />
@@ -47,7 +47,7 @@ const App = () => {
           </div>
 
           {/* Experience and Education Section */}
-          <div className="bg-primary flex justify-center px-6">
+          <div className="bg-dark flex justify-center px-6">
             <div className="w-full max-w-screen-xl">
               <Experience />
               {/*<Education /> */}
@@ -55,7 +55,7 @@ const App = () => {
           </div>
 
           {/* Projects, Writing, and Extracurriculars Section */}
-          <div className="bg-primary flex justify-center px-6">
+          <div className="bg-dark flex justify-center px-6">
             <div className="w-full max-w-screen-xl">
               <Projects />
               <Writing />
@@ -64,7 +64,7 @@ const App = () => {
           </div>
 
           {/* Contact Section */}
-          <div className="w-full max-w-screen-xl">
+          <div className="bg-dark w-full max-w-screen-xl">
             <Contact />
           </div>
         </motion.section>
