@@ -3,10 +3,10 @@ import React from "react";
 const About = () => {
   return (
     <section id="about" className="py-20 bg-primary text-white">
-      <div className="container mx-auto text-center">
+      <div className="container mx-auto text-right">
         <h1 className="text-6xl font-bold mb-6">About Me</h1>
 
-        <div className="flex flex-col md:flex-row items-center justify-center">
+        <div className="flex flex-col md:flex-row items-center right-center">
           <img
             src="/assets/profile.jpeg"
             alt="Tanya Budhrani"
