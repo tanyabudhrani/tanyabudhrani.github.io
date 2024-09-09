@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from "../assets/tanya-profile.png"; // Ensure you have a similar stylized profile picture.
+import profilePic from "./assets/profile.jpeg"; // Ensure you have a similar stylized profile picture.
 
 const About = () => {
   return (

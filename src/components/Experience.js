@@ -1,5 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import ubcImage from './assets/ubc.png';
+import polyuImage from './assets/polyu.png';
+import polkImage from './assets/polk.png';
 import {
   FaPython,
   FaJava,
@@ -80,7 +83,7 @@ const Experience = () => {
   const experiences = [
     {
       organisation: "Mitacs Globalink Intern",
-      logo: "/Users/tanyabudhrani/Desktop/code/tanyabudhrani.github.io/src/assets/ubc.png",
+      logo: ubcImage,
       positions: [
         {
           title: "Intern",
@@ -98,7 +101,7 @@ const Experience = () => {
     },
     {
       organisation: "Generative AI Researcher",
-      logo: "/Users/tanyabudhrani/Desktop/code/tanyabudhrani.github.io/src/assets/polyu.png",
+      logo: polyuImage,
       positions: [
         {
           title: "Researcher",
@@ -113,7 +116,7 @@ const Experience = () => {
     },
     {
       organisation: "Polk Audio",
-      logo: "/Users/tanyabudhrani/Desktop/code/tanyabudhrani.github.io/src/assets/polk.png",
+      logo: polkImage,
       positions: [
         {
           title: "Researcher and Web Developer",
