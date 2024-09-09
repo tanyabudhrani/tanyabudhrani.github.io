@@ -40,7 +40,7 @@ const ExperienceCard = (props) => {
       whileInView={{ y: [-20, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-row items-center mb-6">
+      <div className="flex flex-row items-center mb-6 text-white">
         <img
           src={props.logo}
           alt={props.organisation}
