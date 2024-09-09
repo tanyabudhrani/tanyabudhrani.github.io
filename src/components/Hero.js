@@ -1,6 +1,4 @@
 import React from "react";
-import Lottie from "react-lottie-player";
-import animationData from "assets/Thread.png";
 
 const Hero = () => {
   return (
@@ -23,7 +21,6 @@ const Hero = () => {
 
         {/* Call to Action Buttons (LetsConnect) */}
         <div className="flex space-x-4 mt-6">
-          {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/tanya-budhrani/"
             target="_blank"
@@ -33,7 +30,6 @@ const Hero = () => {
             LinkedIn
           </a>
 
-          {/* Email */}
           <a
             href="mailto:tanyabudhrani04@gmail.com"
             className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-all"
@@ -41,7 +37,6 @@ const Hero = () => {
             Email Me
           </a>
 
-          {/* GitHub */}
           <a
             href="https://github.com/tanyabudhrani"
             target="_blank"
@@ -53,10 +48,25 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Right: Lottie Animation */}
+      {/* Right: Giphy Embed */}
       <div className="flex-1 flex justify-center items-center mt-10 md:mt-0">
-        <div className="w-80 h-80">
-          <Lottie loop play animationData={animationData} />
+        <div
+          style={{
+            width: "100%",
+            height: 0,
+            paddingBottom: "67%",
+            position: "relative",
+          }}
+        >
+          <iframe
+            src="https://giphy.com/embed/u2wg2uXJbHzkXkPphr/video"
+            width="100%"
+            height="100%"
+            style={{ position: "absolute" }}
+            frameBorder="0"
+            className="giphy-embed"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
     </section>
