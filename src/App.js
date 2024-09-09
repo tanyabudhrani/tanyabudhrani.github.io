@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 // Import your components
 import Home from './components/Home';
+import Hero from "./components/Hero";
 import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
@@ -43,6 +44,7 @@ const App = () => {
           {/* Navbar and Home Section */}
           <div className="flex justify-center items-center">
             <div className="w-full max-w-screen-xl">
+              <Hero />
               <Navbar />
               <Home />
             </div>
