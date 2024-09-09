@@ -11,7 +11,7 @@ import {
   FaDocker,
   FaReact,
 } from "react-icons/fa";
-import { SiCplusplus, SiR, SiLatex, SiMysql, SiAssemblyscript, SiBash, SiPytorch, SiTensorflow, SiThreeDotJs, SiVueDotJs, SiC, SiCss3, SiBash} from "react-icons/si";
+import { SiCplusplus, SiR, SiLatex, SiMysql, SiAssemblyscript, SiBash, SiPytorch, SiTensorflow, SiThreeDotJs, SiVueDotJs, SiC, SiCss3} from "react-icons/si";
 
 const Hero = () => {
   return (
