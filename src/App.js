@@ -24,15 +24,15 @@ const App = () => {
 
   if (isLoading) {
     return (
-      <div className="bg-primary w-full overflow-hidden">
+      <div className="bg-dark w-full overflow-hidden">
         {/* You can replace Loading with an actual loading component */}
-        <div className="text-white flex items-center justify-center h-screen">Loading...</div>
+        <div className="text-white flex items-center justify-center h-screen">Tanya Budhrani...</div>
       </div>
     );
   } else {
     return (
       // A div to wrap the entire application with a gradient background
-      <div className="bg-gradient-to-b from-gray-900 via-teal-900 to-black w-full overflow-hidden">
+      <div className="bg-gradient-to-b w-full overflow-hidden">
         <motion.section
           initial={{ x: -100, opacity: 0.25 }}
           animate={{ x: 0, opacity: 1 }}
