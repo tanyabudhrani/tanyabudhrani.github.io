@@ -73,9 +73,8 @@
 // }
 
 // export default Extracurriculars;
-
+import { BsLink45Deg } from "react-icons/bs";
 import React from "react";
-// import { BsLink45Deg } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 const Content = ({ text, link }) => {
