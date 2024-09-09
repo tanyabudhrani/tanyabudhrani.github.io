@@ -21,7 +21,7 @@ import { TbBrandThreejs } from "react-icons/tb";
 const Content = ({ text, link }) => {
   return (
     <div>
-      <p className="font-poppins font-normal text-[14px] text-dimWhite mt-4">
+      <p className="bg-dark font-poppins font-normal text-[14px] text-dimWhite mt-4">
         {text}{" "}
         {link && (
           <a href="https://tanyabudhrani.netlify.app/" target="_blank" rel="noreferrer" className="hover:text-teal-200">

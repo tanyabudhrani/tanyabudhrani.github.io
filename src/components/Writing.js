@@ -35,7 +35,7 @@ function Writing() {
   ];
 
   return (
-    <section className="py-20 bg-gray-800 text-white">
+    <section className="py-20 bg-dark text-white">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-6">My Writings</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
