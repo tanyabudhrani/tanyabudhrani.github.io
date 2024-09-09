@@ -75,7 +75,7 @@
 // export default Extracurriculars;
 
 import React from "react";
-import { BsLink45Deg } from "react-icons/bs";
+// import { BsLink45Deg } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 const Content = ({ text, link }) => {
