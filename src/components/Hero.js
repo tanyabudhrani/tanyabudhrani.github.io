@@ -4,21 +4,18 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-blue-500 to-black px-6"
+      className="flex flex-col items-center justify-center h-screen bg-gradient-to-b"
     >
       {/* Centered Text Section */}
       <div className="text-center text-white space-y-6">
-        <h1 className="text-4xl sm:text-6xl font-bold">
+        <h1 className="text-2xl sm:text-6xl font-bold">
           Hi, I'm Tanya Budhrani,
         </h1>
-        <h2 className="text-3xl sm:text-5xl font-bold text-gradient">
+        <h2 className="text-xl sm:text-5xl font-bold text-gradient">
           Computer Scientist & Linguist
         </h2>
         <p className="max-w-md mx-auto text-lg sm:text-xl">
-          As a passionate computer science student with a keen interest in
-          Natural Language Processing and Large Language Models, I bring over
-          five years of hands-on programming experience. I aim to leverage my
-          skills in delivering innovative solutions to problems unexplored.
+          As a passionate computer science student with a keen interest in Natural Language Processing and Large Language Models, I bring over five years of hands-on programming experience. I aim to leverage my skills in delivering innovative solutions to problems unexplored.
         </p>
 
         {/* Call to Action Buttons */}
