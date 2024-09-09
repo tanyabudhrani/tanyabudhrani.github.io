@@ -4,7 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 // Import your components
-import Home from './components/Home';
 import Hero from "./components/Hero";
 import Experience from './components/Experience';
 import Projects from './components/Projects';
@@ -27,7 +26,7 @@ const App = () => {
     return (
       <div className="bg-primary w-full overflow-hidden">
         {/* You can replace Loading with an actual loading component */}
-        <div className="text-white flex items-center justify-center h-screen">Tanya Budhrani</div>
+        <div className="text-white flex items-center justify-center h-screen">Loading...</div>
       </div>
     );
   } else {
@@ -42,11 +41,10 @@ const App = () => {
           {/* Navbar and Home Section */}
           <div className="flex justify-center items-center">
             <div className="w-full max-w-screen-xl">
-              <Navbar />
               <Hero />
+              <Navbar />
             </div>
           </div>
-
 
           {/* Experience and Education Section */}
           <div className="bg-primary flex justify-center px-6">
