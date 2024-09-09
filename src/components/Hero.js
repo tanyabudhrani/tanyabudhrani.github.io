@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie-player";
-import animationData from "../lotties/person-coding.json";
+import animationData from "assets/Thread.png";
 
 const Hero = () => {
   return (
