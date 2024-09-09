@@ -1,6 +1,33 @@
-import React from 'react';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
-function Writing() {
+const WritingItem = (props) => {
+  return (
+    <motion.div
+      className="flex flex-col justify-between px-6 py-6 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 transition-colors duration-300 transform border hover:border-transparent dark:border-gray-700 dark:hover:border-transparent"
+      whileInView={{ x: [-40, 0], opacity: [0, 1] }}
+      transition={{ duration: 1 }}
+    >
+      <div className="flex flex-row">
+        <div className="flex flex-col ml-4">
+          <a
+            className="font-poppins font-normal text-[16px] text-white my-1 leading-[24px] hover:text-teal-200"
+            href={props.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {props.title}
+          </a>
+          <p className="font-poppins italic font-normal text-[14px] text-dimWhite my-1">
+            {props.organisation}
+          </p>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
+const Writing = () => {
   const writings = [
     {
       title: "Cracking the Code: Developer Trust and Usage Patterns in AI-Based Code Generators",
@@ -23,33 +50,29 @@ function Writing() {
       link: "https://github.com/tanyabudhrani/Computer-Networking.git",
     },
     {
-        title: "Data Structures",
-        organisation: "PolyU - Notes",
-        link: "https://github.com/tanyabudhrani/Data-Structures.git",
+      title: "Data Structures",
+      organisation: "PolyU - Notes",
+      link: "https://github.com/tanyabudhrani/Data-Structures.git",
     },
     {
-        title: "The Devil's Advocate",
-        organisation: "PolyU - Writing",
-        link: "https://drive.google.com/drive/folders/1UweUc8euIhfRU6ncMwU9IwPHjllBB3vN?usp=sharing",
-    }
+      title: "The Devil's Advocate",
+      organisation: "PolyU - Writing",
+      link: "https://drive.google.com/drive/folders/1UweUc8euIhfRU6ncMwU9IwPHjllBB3vN?usp=sharing",
+    },
   ];
 
   return (
-    <section className="py-20 bg-dark text-white">
+    <section className="py-20 bg-primary text-white">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-6">My Writings</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {writings.map((writing, index) => (
-            <div key={index} className="bg-gray-900 p-4 rounded-lg">
-              <h3 className="text-2xl font-bold">{writing.title}</h3>
-              <p className="text-gray-400">{writing.organisation}</p>
-              <a href={writing.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline mt-4 inline-block">Read More</a>
-            </div>
+            <WritingItem key={index} {...writing} />
           ))}
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Writing;
