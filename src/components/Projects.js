@@ -1,14 +1,9 @@
-
-
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
-import { FaReact, FaNodeJs, FaJava } from "react-icons/fa"; // Import tech icons
-import { SiC } from "react-icons/si"; // Example of MongoDB icon
+import { FaReact, FaNodeJs, FaJava } from "react-icons/fa";
+import { SiC } from "react-icons/si";
 import { motion } from "framer-motion";
-import lineImage from 'tanyabudhrani.github.io/src/assets/line.jpg';
-import threadImage from 'tanyabudhrani.github.io/src/assets/Threads.png';
-import taskImage from 'tanyabudhrani.github.io/src/assets/task.jpg';
 
 // Project component
 const Project = (props) => {
@@ -19,7 +14,7 @@ const Project = (props) => {
       transition={{ duration: 0.75 }}
     >
       <div className="flex flex-col sm:flex-row">
-        {/* Project Image */}
+        {/* Project Image - using absolute path from the public directory */}
         <img
           className="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300"
           src={props.image}
@@ -76,11 +71,10 @@ const Project = (props) => {
 
 // Projects component
 const Projects = () => {
-  // Define the project data directly in this file
   const projects = [
     {
       title: "Task Manager",
-      image: taskImage, // Replace with actual image path
+      image: "/assets/task.jpg", // Updated to use absolute path
       stack: [
         { name: "React", icon: FaReact },
         { name: "Node.js", icon: FaNodeJs },
@@ -88,32 +82,30 @@ const Projects = () => {
       ],
       content: "A comprehensive Java-based task management system for efficient task handling.",
       github: "https://github.com/tanyabudhrani/Task-Management-System.git",
-      link: "", // Add live link if available
+      link: "",
     },
     {
       title: "Line Scheduler",
-      image: lineImage, // Replace with actual image path
+      image: "/assets/line.jpg", // Updated to use absolute path
       stack: [
         { name: "React", icon: FaReact },
         { name: "Node.js", icon: FaNodeJs },
-        { name: "C", icon: SiC}
+        { name: "C", icon: SiC },
       ],
-      content:
-        "This Production Line Scheduling (PLS) tool is specifically designed to enhance production planning.",
+      content: "This Production Line Scheduling (PLS) tool is specifically designed to enhance production planning.",
       github: "https://github.com/tanyabudhrani/Line-Scheduler.git",
-      link: "", // Add live link if available
+      link: "",
     },
     {
       title: "Multi-thread Web Server",
-      image: threadImage, // Replace with actual image path
+      image: "/assets/Threads.png", // Updated to use absolute path
       stack: [
         { name: "React", icon: FaReact },
         { name: "Node.js", icon: FaNodeJs },
       ],
-      content:
-        "A multi-threaded web server implemented in Python to handle concurrent connections efficiently.",
+      content: "A multi-threaded web server implemented in Python to handle concurrent connections efficiently.",
       github: "https://github.com/tanyabudhrani/Multi-thread-Web-Server.git",
-      link: "", // Add live link if available
+      link: "",
     },
   ];
 

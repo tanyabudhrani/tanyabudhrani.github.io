@@ -1,8 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ubcImage from 'tanyabudhrani.github.io/src/assets/ubc.png';
-import polyuImage from 'tanyabudhrani.github.io/src/assets/polyu.png';
-import polkImage from 'tanyabudhrani.github.io/src/assets/polk.png';
 import {
   FaPython,
   FaJava,
@@ -27,7 +24,7 @@ const Content = ({ text, link }) => {
       <p className="bg-primary font-poppins font-normal text-[14px] text-dimWhite mt-4">
         {text}{" "}
         {link && (
-          <a href="https://tanyabudhrani.netlify.app/" target="_blank" rel="noreferrer" className="hover:text-teal-200">
+          <a href={link} target="_blank" rel="noreferrer" className="hover:text-teal-200">
             <span className="inline hover:text-teal-200">🔗</span>
           </a>
         )}
@@ -83,7 +80,7 @@ const Experience = () => {
   const experiences = [
     {
       organisation: "Mitacs Globalink Intern",
-      logo: ubcImage,
+      logo: '/assets/ubc.png',
       positions: [
         {
           title: "Intern",
@@ -101,7 +98,7 @@ const Experience = () => {
     },
     {
       organisation: "Generative AI Researcher",
-      logo: polyuImage,
+      logo: '/assets/polyu.png',
       positions: [
         {
           title: "Researcher",
@@ -116,7 +113,7 @@ const Experience = () => {
     },
     {
       organisation: "Polk Audio",
-      logo: polkImage,
+      logo: '/assets/polk.png',
       positions: [
         {
           title: "Researcher and Web Developer",

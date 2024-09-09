@@ -1,5 +1,4 @@
 import React from "react";
-import profilePic from 'tanyabudhrani.github.io/src/assets/profile.jpeg'; // Ensure you have a similar stylized profile picture.
 
 const About = () => {
   return (
@@ -9,7 +8,7 @@ const About = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-center">
           <img
-            src={profilePic}
+            src="/assets/profile.jpeg" // Updated image source
             alt="Tanya Budhrani"
             className="w-48 h-48 rounded-full mb-6 md:mb-0 md:mr-12"
           />
