@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from './assets/profile.jpeg'; // Ensure you have a similar stylized profile picture.
+import profilePic from 'tanyabudhrani.github.io/src/assets/profile.jpeg'; // Ensure you have a similar stylized profile picture.
 
 const About = () => {
   return (
