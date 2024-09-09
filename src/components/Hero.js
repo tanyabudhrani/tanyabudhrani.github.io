@@ -10,8 +10,9 @@ import {
   FaAngular,
   FaDocker,
   FaReact,
+  FaTerminal
 } from "react-icons/fa";
-import { SiCplusplus, SiR, SiLatex, SiMysql, SiAssemblyscript, SiBash, SiPytorch, SiTensorflow, SiThreeDotJs, SiVueDotJs, SiC, SiCss3} from "react-icons/si";
+import { SiCplusplus, SiR, SiLatex, SiMysql, SiAssemblyscript, SiPytorch, SiTensorflow, SiThreeDotJs, SiVueDotJs, SiC, SiCss3} from "react-icons/si";
 
 const Hero = () => {
   return (
@@ -111,7 +112,7 @@ const Hero = () => {
               <p>Assembly</p>
             </div>
             <div className="flex flex-col items-center">
-              <SiBash className="text-4xl" />
+              <FaTerminal className="text-4xl" />
               <p>Bash</p>
             </div>
           </div>
