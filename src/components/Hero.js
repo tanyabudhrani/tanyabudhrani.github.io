@@ -66,8 +66,8 @@ const Hero = () => {
             frameBorder="0"
             className="giphy-embed"
             allowFullScreen
-            title="Coding Animation from Giphy" {/* This is the fix */}
-          ></iframe>
+            title="Coding Animation from Giphy" >
+        </iframe>
         </div>
       </div>
     </section>
