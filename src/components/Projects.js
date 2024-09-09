@@ -49,7 +49,7 @@ import { motion } from "framer-motion";
 const Project = (props) => {
   return (
     <motion.div
-      className="bg-dark px-12 py-8 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card"
+      className="px-12 py-8 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card"
       whileInView={{ y: [-30, 0], opacity: [0, 1] }}
       transition={{ duration: 0.75 }}
     >
@@ -153,7 +153,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-800 text-white">
+    <section id="projects" className="py-20 bg-dark-800 text-white">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-6">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
