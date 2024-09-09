@@ -136,8 +136,8 @@ const Experience = () => {
       <div className="container mx-auto flex flex-col md:flex-row">
         {/* Left: Experience Section */}
         <div className="flex-1 md:mr-8">
-          <h2 className="text-5xl font-extrabold text-secondary tracking-wide mb-6">
-            Experience
+          <h2 className="text-4xl font-extrabold text-primary tracking-wide mb-6">
+            Experience & Skills
           </h2>
           <motion.div className="flex flex-1 items-center justify-start flex-col">
             {experiences.map((exp, index) => (

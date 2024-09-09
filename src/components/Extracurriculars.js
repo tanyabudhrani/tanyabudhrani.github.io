@@ -190,7 +190,7 @@ const Extracurriculars = () => {
   ];
 
   return (
-    <section id="extracurriculars" className="py-20 bg-gray-900 text-white">
+    <section id="extracurriculars" className="py-20 bg-primary text-white">
       <div className="container mx-auto">
         <h2 className="text-5xl font-poppins font-semibold text-white mb-8">
           Extracurricular Activities

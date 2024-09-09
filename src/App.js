@@ -25,7 +25,7 @@ const App = () => {
   if (isLoading) {
     return (
       <div className="bg-primary w-full overflow-hidden">
-        <div className="text-white flex items-center justify-center h-screen">Tanya Budhrani</div>
+        <div className="text-white text-5xl flex items-center justify-center h-screen">Tanya Budhrani</div>
       </div>
     );
   } else {
