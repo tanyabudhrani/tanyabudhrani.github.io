@@ -40,7 +40,7 @@ const Hero = () => {
             href="https://github.com/tanyabudhrani"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-white text-black rounded-lg hover:bg-gray-900 transition-all"
+            className="px-6 py-3 bg-gradient-to-r(#35d3e4, #4a80ec) text-black rounded-lg hover:bg-grey-900 transition-all"
           >
             GitHub
           </a>

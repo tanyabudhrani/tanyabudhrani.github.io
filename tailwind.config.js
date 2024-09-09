@@ -7,12 +7,12 @@ module.exports = {
     extend: {
       colors: {
         primary: '#00040f',  // Dark color
-        secondary: '#00040f', // Accent color
-        dimWhite: '#00040f',  // Dim white for text
+        secondary: '#C3073F', // Accent color
+        dimWhite: '#E0E0E0',  // Dim white for text
       },
       backgroundImage: {
-        'gradient-to-b': 'linear-gradient(to bottom, #00040f, #00040f)',
-        'text-gradient': 'linear-gradient(to right, #35d3e4, #4a80ec))',
+        'gradient-to-b': 'linear-gradient(to bottom, #1A1A1D, #4E4E50)',
+        'text-gradient': 'linear-gradient(to right, #C3073F, #ff4d6d)',
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
