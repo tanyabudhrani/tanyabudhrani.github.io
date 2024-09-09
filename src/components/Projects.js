@@ -2,7 +2,6 @@
 // import { BsLink45Deg } from "react-icons/bs";
 import { FaReact, FaNodeJs, FaJava } from "react-icons/fa";
 import { SiC } from "react-icons/si";
-import { motion } from "framer-motion";
 
 // // Project component
 // const Project = (props) => {
