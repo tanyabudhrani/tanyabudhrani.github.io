@@ -11,7 +11,8 @@ module.exports = {
         dimWhite: '#E0E0E0',  // Dim white for text
       },
       backgroundImage: {
-        'gradient-to-b': 'linear-gradient(to bottom, #1A1A1D, #4E4E50)',
+        'dark': '#00040f',
+        'gradient-to-b': 'linear-gradient(to bottom, #C3073F, #ff4d6d)',
         'text-gradient': 'linear-gradient(to right, #C3073F, #ff4d6d)',
       },
       fontFamily: {
