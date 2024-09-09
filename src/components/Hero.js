@@ -1,26 +1,28 @@
 import React from "react";
+
 const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col md:flex-row items-center justify-between py-16 px-6 bg-gradient-to-b from-blue-500 to-black"
+      className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-blue-500 to-black px-6"
     >
-      {/* Left: Text Section */}
-      <div className="flex-1 flex flex-col items-start justify-center text-white space-y-6">
+      {/* Centered Text Section */}
+      <div className="text-center text-white space-y-6">
         <h1 className="text-4xl sm:text-6xl font-bold">
           Hi, I'm Tanya Budhrani,
         </h1>
         <h2 className="text-3xl sm:text-5xl font-bold text-gradient">
           Computer Scientist & Linguist
         </h2>
-        <p className="max-w-md text-lg sm:text-xl">
-        As a passionate computer science student with a keen interest in Natural Language Processing and Large Language Models, 
-        I bring over five years of hands-on programming experience. I aim to leverage my skills in delivering innovative solutions 
-        to problems unexplored.
+        <p className="max-w-md mx-auto text-lg sm:text-xl">
+          As a passionate computer science student with a keen interest in
+          Natural Language Processing and Large Language Models, I bring over
+          five years of hands-on programming experience. I aim to leverage my
+          skills in delivering innovative solutions to problems unexplored.
         </p>
 
-        {/* Call to Action Buttons (LetsConnect) */}
-        <div className="flex space-x-4 mt-6">
+        {/* Call to Action Buttons */}
+        <div className="flex justify-center space-x-4 mt-6">
           <a
             href="https://www.linkedin.com/in/tanya-budhrani/"
             target="_blank"
