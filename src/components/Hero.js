@@ -1,10 +1,26 @@
 import React from "react";
+import {
+  FaPython,
+  FaJava,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaCuttlefish,
+  FaCplusplus,
+  FaGitAlt,
+  FaGithub,
+  FaNodeJs,
+  FaAngular,
+  FaDocker,
+  FaReact,
+} from "react-icons/fa";
+import { SiR, SiLatex, SiMysql, SiAssemblyscript, SiBash, SiPytorch, SiTensorflow, SiThreeDotJs, SiVueDotJs } from "react-icons/si";
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col md:flex-row items-center justify-between py-16 px-6 bg-gradient-to-r from-blue-500 via-teal-400 to-indigo-600"
+      className="flex flex-col md:flex-row items-center justify-between py-16 px-6 bg-gradient-to-b from-blue-500 via-teal-400 to-black-600"
     >
       {/* Left: Text Section */}
       <div className="flex-1 flex flex-col items-start justify-center text-white space-y-6">
@@ -48,26 +64,98 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Right: Giphy Embed */}
-      <div className="flex-1 flex justify-center items-center mt-10 md:mt-0">
-        <div
-          style={{
-            width: "100%",
-            height: 0,
-            paddingBottom: "67%",
-            position: "relative",
-          }}
-        >
-          <iframe
-            src="https://giphy.com/embed/u2wg2uXJbHzkXkPphr/video"
-            width="100%"
-            height="100%"
-            style={{ position: "absolute" }}
-            frameBorder="0"
-            className="giphy-embed"
-            allowFullScreen
-            title="Coding Animation from Giphy" >
-        </iframe>
+      {/* Right: Skills Section */}
+      <div className="flex-1 flex flex-col items-center justify-center mt-10 md:mt-0 text-white">
+        <div className="mb-8">
+          <h3 className="text-2xl font-bold">Programming Languages</h3>
+          <div className="grid grid-cols-4 gap-6 mt-4">
+            <div className="flex flex-col items-center">
+              <FaPython className="text-4xl" />
+              <p>Python</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <SiR className="text-4xl" />
+              <p>R</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <FaCplusplus className="text-4xl" />
+              <p>C++</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <FaCuttlefish className="text-4xl" />
+              <p>C</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <FaJava className="text-4xl" />
+              <p>Java</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <FaHtml5 className="text-4xl" />
+              <p>HTML5 (HTML, CSS, JS)</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <SiLatex className="text-4xl" />
+              <p>Latex</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <SiMysql className="text-4xl" />
+              <p>SQL</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <SiAssemblyscript className="text-4xl" />
+              <p>Assembly</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <SiBash className="text-4xl" />
+              <p>Bash</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 className="text-2xl font-bold">Tools & Frameworks</h3>
+          <div className="grid grid-cols-4 gap-6 mt-4">
+            <div className="flex flex-col items-center">
+              <FaNodeJs className="text-4xl" />
+              <p>Node.js</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <FaAngular className="text-4xl" />
+              <p>Angular</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <FaDocker className="text-4xl" />
+              <p>Docker</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <FaGitAlt className="text-4xl" />
+              <p>Git</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <FaGithub className="text-4xl" />
+              <p>GitHub</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <FaReact className="text-4xl" />
+              <p>React</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <SiPytorch className="text-4xl" />
+              <p>PyTorch</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <SiTensorflow className="text-4xl" />
+              <p>Tensorflow</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <SiThreeDotJs className="text-4xl" />
+              <p>Three.js</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <SiVueDotJs className="text-4xl" />
+              <p>Vue.js</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
