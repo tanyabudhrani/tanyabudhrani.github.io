@@ -41,8 +41,8 @@
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
-import { FaReact, FaNodeJs } from "react-icons/fa"; // Import tech icons
-import { SiMongodb } from "react-icons/si"; // Example of MongoDB icon
+import { FaReact, FaNodeJs, FaJava } from "react-icons/fa"; // Import tech icons
+import { SiC, SiMongodb } from "react-icons/si"; // Example of MongoDB icon
 import { motion } from "framer-motion";
 
 // Project component
@@ -115,11 +115,11 @@ const Projects = () => {
   const projects = [
     {
       title: "Task Manager",
-      image: "path/to/image/task.jpg", // Replace with actual image path
+      image: "/Users/tanyabudhrani/Desktop/code/tanyabudhrani.github.io/src/assets/task.jpg", // Replace with actual image path
       stack: [
         { name: "React", icon: FaReact },
         { name: "Node.js", icon: FaNodeJs },
-        { name: "MongoDB", icon: SiMongodb },
+        { name: "Java", icon: FaJava },
       ],
       content: "A comprehensive Java-based task management system for efficient task handling.",
       github: "https://github.com/tanyabudhrani/Task-Management-System.git",
@@ -127,10 +127,11 @@ const Projects = () => {
     },
     {
       title: "Line Scheduler",
-      image: "path/to/image/line.jpg", // Replace with actual image path
+      image: "/Users/tanyabudhrani/Desktop/code/tanyabudhrani.github.io/src/assets/line.jpg", // Replace with actual image path
       stack: [
         { name: "React", icon: FaReact },
         { name: "Node.js", icon: FaNodeJs },
+        { name: "C", icon: SiC}
       ],
       content:
         "This Production Line Scheduling (PLS) tool is specifically designed to enhance production planning.",
@@ -139,7 +140,7 @@ const Projects = () => {
     },
     {
       title: "Multi-thread Web Server",
-      image: "path/to/image/threads.png", // Replace with actual image path
+      image: "/Users/tanyabudhrani/Desktop/code/tanyabudhrani.github.io/src/assets/Threads.png", // Replace with actual image path
       stack: [
         { name: "React", icon: FaReact },
         { name: "Node.js", icon: FaNodeJs },

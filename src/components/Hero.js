@@ -3,10 +3,7 @@ import {
   FaPython,
   FaJava,
   FaHtml5,
-  FaCss3Alt,
   FaJs,
-  FaCuttlefish,
-  FaCplusplus,
   FaGitAlt,
   FaGithub,
   FaNodeJs,
@@ -14,7 +11,7 @@ import {
   FaDocker,
   FaReact,
 } from "react-icons/fa";
-import { SiR, SiLatex, SiMysql, SiAssemblyscript, SiBash, SiPytorch, SiTensorflow, SiThreeDotJs, SiVueDotJs } from "react-icons/si";
+import { SiCplusplus, SiR, SiLatex, SiMysql, SiAssemblyscript, SiBash, SiPytorch, SiTensorflow, SiThreeDotJs, SiVueDotJs, SiC, SiCss3 } from "react-icons/si";
 
 const Hero = () => {
   return (
@@ -78,11 +75,15 @@ const Hero = () => {
               <p>R</p>
             </div>
             <div className="flex flex-col items-center">
-              <FaCplusplus className="text-4xl" />
+              <SiCplusplus className="text-4xl" />
               <p>C++</p>
             </div>
             <div className="flex flex-col items-center">
-              <FaCuttlefish className="text-4xl" />
+              <FaJs className="text-4xl" />
+              <p>JavaScript+</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <SiC className="text-4xl" />
               <p>C</p>
             </div>
             <div className="flex flex-col items-center">
@@ -91,7 +92,11 @@ const Hero = () => {
             </div>
             <div className="flex flex-col items-center">
               <FaHtml5 className="text-4xl" />
-              <p>HTML5 (HTML, CSS, JS)</p>
+              <p>HTML5</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <SiCss3 className="text-4xl" />
+              <p>CSS</p>
             </div>
             <div className="flex flex-col items-center">
               <SiLatex className="text-4xl" />

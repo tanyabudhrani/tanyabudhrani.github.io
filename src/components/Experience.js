@@ -65,7 +65,7 @@ const Experience = () => {
   const experiences = [
     {
       organisation: "Mitacs Globalink Intern",
-      logo: "/path-to-logo/mitacs.png", // Path to company logo
+      logo: "/Users/tanyabudhrani/Desktop/code/tanyabudhrani.github.io/src/assets/ubc.png", // Path to company logo
       positions: [
         {
           title: "Intern",
@@ -83,7 +83,7 @@ const Experience = () => {
     },
     {
       organisation: "Generative AI Researcher",
-      logo: "/path-to-logo/polyu.png", // Path to company logo
+      logo: "/Users/tanyabudhrani/Desktop/code/tanyabudhrani.github.io/src/assets/polyu.png", // Path to company logo
       positions: [
         {
           title: "Researcher",
@@ -98,7 +98,7 @@ const Experience = () => {
     },
     {
       organisation: "Polk Audio",
-      logo: "/path-to-logo/polk-audio.png",
+      logo: "/Users/tanyabudhrani/Desktop/code/tanyabudhrani.github.io/src/assets/polk.png",
       positions: [
         {
           title: "Researcher and Web Developer",
