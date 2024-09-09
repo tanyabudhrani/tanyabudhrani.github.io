@@ -9,14 +9,11 @@ const Hero = () => {
       {/* Centered Text Section */}
       <div className="text-center text-white space-y-6">
         <h1 className="text-2xl sm:text-6xl font-bold">
-          Hi, I'm Tanya Budhrani,
+          Hello, World!
         </h1>
         <h2 className="text-xl sm:text-5xl font-bold text-gradient">
-          Computer Scientist & Linguist
+          I'm Tanya
         </h2>
-        <p className="max-w-md mx-auto text-lg sm:text-xl">
-          As a passionate computer science student with a keen interest in Natural Language Processing and Large Language Models, I bring over five years of hands-on programming experience. I aim to leverage my skills in delivering innovative solutions to problems unexplored.
-        </p>
 
         {/* Call to Action Buttons */}
         <div className="flex justify-center space-x-4 mt-6">
