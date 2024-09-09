@@ -21,7 +21,7 @@ import { TbBrandThreejs } from "react-icons/tb";
 const Content = ({ text, link }) => {
   return (
     <div>
-      <p className="bg-dark font-poppins font-normal text-[14px] text-dimWhite mt-4">
+      <p className="bg-primary font-poppins font-normal text-[14px] text-dimWhite mt-4">
         {text}{" "}
         {link && (
           <a href="https://tanyabudhrani.netlify.app/" target="_blank" rel="noreferrer" className="hover:text-teal-200">
@@ -132,7 +132,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gray-900 text-white">
+    <section id="experience" className="py-20 bg-primary text-white">
       <div className="container mx-auto flex flex-col md:flex-row">
         {/* Left: Experience Section */}
         <div className="flex-1 md:mr-8">
