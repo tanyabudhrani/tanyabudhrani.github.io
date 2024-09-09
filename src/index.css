@@ -5,7 +5,7 @@
 /* Global body styles */
 body {
   margin: 0;
-  background-color: #1A1A1D; /* Dark background color */
+  background-color: #00040f; /* Dark background color */
   color: #FFFFFF; /* White text color */
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -24,12 +24,12 @@ code {
 
 /* Links and hover state */
 a {
-  color: #C3073F; /* Accent color for links */
+  color: #001249; /* Accent color for links */
   text-decoration: none;
 }
 
 a:hover {
-  color: #ff4d6d; /* Lighter shade for hover */
+  color: #ffffff; /* Lighter shade for hover */
   transition: color 0.3s ease;
 }
 
@@ -40,18 +40,18 @@ button, .hover\:text-teal-200:hover {
 
 /* Smooth background transitions */
 .bg-primary {
-  background-color: #1A1A1D;
+  background-color: #00040f;
   transition: background-color 0.3s ease;
 }
 
 /* Apply gradient background for sections */
 .bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, #1A1A1D, #4E4E50);
+  background-image: linear-gradient(to bottom, #00040f, #00040f);
 }
 
 /* Text gradients */
 .text-gradient {
-  background: linear-gradient(to right, #C3073F, #ff4d6d);
+  background: linear-gradient(to right, #35d3e4, #4a80ec);
   background-clip: text;
 -webkit-background-clip: text;
   color: transparent;
