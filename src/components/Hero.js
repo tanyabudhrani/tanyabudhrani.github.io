@@ -8,12 +8,8 @@ const Hero = () => {
     >
       {/* Centered Text Section */}
       <div className="text-center text-white space-y-6">
-        <h1 className="text-2xl sm:text-6xl font-bold">
-          Hello, World!
-        </h1>
-        <h2 className="text-xl sm:text-5xl font-bold text-gradient">
-          I'm Tanya
-        </h2>
+        <h1 className="text-2xl sm:text-6xl font-bold">Hello, World!</h1>
+        <h2 className="text-xl sm:text-5xl font-bold text-gradient">I'm Tanya</h2>
 
         {/* Call to Action Buttons */}
         <div className="flex justify-center space-x-4 mt-6">
@@ -21,14 +17,14 @@ const Hero = () => {
             href="https://www.linkedin.com/in/tanya-budhrani/"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-gradient text-white rounded-lg hover:bg-teal transition-all border-2 border-transparent"
+            className="px-6 py-3 bg-gradient text-white rounded-lg hover:bg-teal-500 hover:text-black transition-all border-2 border-transparent"
           >
             LinkedIn
           </a>
 
           <a
             href="mailto:tanyabudhrani04@gmail.com"
-            className="px-6 py-3 bg-gradient text-white rounded-lg hover:bg-teal transition-all border-2 border-transparent"
+            className="px-6 py-3 bg-gradient text-white rounded-lg hover:bg-teal-500 hover:text-black transition-all border-2 border-transparent"
           >
             Email Me
           </a>
@@ -37,7 +33,7 @@ const Hero = () => {
             href="https://github.com/tanyabudhrani"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-gradient text-white rounded-lg hover:bg-teal transition-all border-2 border-transparent"
+            className="px-6 py-3 bg-gradient text-white rounded-lg hover:bg-teal-500 hover:text-black transition-all border-2 border-transparent"
           >
             GitHub
           </a>
