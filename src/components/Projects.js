@@ -87,7 +87,7 @@ const Projects = () => {
         { name: "React", icon: FaReact },
         { name: "Node.js", icon: FaNodeJs },
       ],
-      content: "This project is a multi-threaded web server implemented in Python, designed to handle concurrent connections efficiently. It leverages Python's socket and threading modules to manage and serve HTTP requests.",
+      content: "This project is a multi-threaded web server implemented in Python, designed to handle concurrent connections efficiently.",
       github: "https://github.com/tanyabudhrani/Multi-thread-Web-Server.git",
       link: "",
     },
