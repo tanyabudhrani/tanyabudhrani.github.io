@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
-import Typed from 'react-typed';
+import { Typed } from 'react-typed';
+
 
 function Contact() {
   return (
