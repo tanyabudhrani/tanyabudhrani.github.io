@@ -13,7 +13,7 @@ function Contact() {
           <a href="https://github.com/tanyabudhrani" target="_blank" rel="noopener noreferrer" className="bg-primary hover:teal transition-colors duration-300 text-white font-bold py-2 px-4 rounded">
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/tanya-budhrani/" target="_blank" rel="noopener noreferrer" className="bg-primary hover:teal transition-colors duration-300 text-white font-bold py-2 px-4 rounded">
+          <a href="https://www.linkedin.com/in/tanya-budhrani/" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-gradient text-white rounded-lg border-gray-500 hover:bg-teal-500 hover:text-black transition-all border-2 shadow-xl hover:shadow-2xl border-transparent">
             LinkedIn
           </a>
         </div>
