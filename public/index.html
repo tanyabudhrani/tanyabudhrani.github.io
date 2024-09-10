@@ -12,9 +12,28 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/assets/lg192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/assets/manifest.json" />
     <title>Tanya Budhrani</title>
+    <style>
+      /* Loading styles to center the icon */
+      .loading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .loading-container img {
+        width: 64px;
+        height: 64px;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    
+    <!-- Add a loading container with your icon -->
+    <div id="root">
+      <div class="loading-container">
+        <img src="%PUBLIC_URL%/assets/icon.ico" alt="Loading Icon" />
+      </div>
+    </div>
   </body>
 </html>
