@@ -1,54 +1,7 @@
+
 import React from "react";
 import { BsLink45Deg } from "react-icons/bs";
 import { motion } from "framer-motion";
-
-const Content = ({ text, link }) => {
-  return (
-    <div>
-      <p className="font-poppins font-normal text-[14px] text-dimWhite my-4 leading-[32px]">
-        ● {text}{" "}
-        {link ? (
-          <a href={link} target="_blank" rel="noopener noreferrer" className="color-whitw hover:text-teal-200">
-            <BsLink45Deg size="1rem" className="inline" />
-          </a>
-        ) : (
-          ""
-        )}
-      </p>
-    </div>
-  );
-};
-
-const ExtraCurricularCard = (props) => {
-  return (
-    <motion.div
-      className="flex flex-col justify-between px-6 py-6 rounded-[20px] bg-primary max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 transition-colors duration-300 transform border border-gray-500 hover:border-transparent shadow-xl hover:shadow-2xl"
-      whileInView={{ x: [-40, 0], opacity: [0, 1] }}
-      transition={{ duration: 1 }}
-      whileHover={{ scale: 1.05 }}
-    >
-      <div className="flex flex-row">
-        <div className="flex flex-col ml-4">
-          <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px]">
-            {props.organisation}
-          </h4>
-          <p className="font-poppins font-normal text-[16px] text-white my-1 leading-[24px]">
-            {props.title}
-          </p>
-          <p className="font-poppins italic font-normal text-[14px] text-dimWhite my-1">
-            {props.duration}
-          </p>
-        </div>
-      </div>
-
-      <div className="mt-4">
-        {props.content.map((info, index) => (
-          <Content key={index} text={info.text} link={info.link} />
-        ))}
-      </div>
-    </motion.div>
-  );
-};
 
 const Extracurriculars = () => {
   const extracurriculars = [
@@ -116,7 +69,15 @@ const Extracurriculars = () => {
   ];
 
   return (
-    <section id="extracurriculars" className="py-20 bg-primary text-white">
+    <section
+      id="extracurriculars"
+      className="py-20 bg-primary text-white"
+      style={{
+        backgroundImage: `url('/assets/2.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       <div className="container mx-auto">
         <h2 className="text-5xl font-poppins font-semibold text-white mb-8">
           Extracurricular Activities
@@ -124,7 +85,42 @@ const Extracurriculars = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {extracurriculars.map((extra, index) => (
-            <ExtraCurricularCard key={index} {...extra} />
+            <motion.div
+              key={index}
+              className="flex flex-col justify-between px-6 py-6 rounded-[20px] bg-primary max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 transition-colors duration-300 transform border border-gray-500 hover:border-transparent shadow-xl hover:shadow-2xl"
+              whileInView={{ x: [-40, 0], opacity: [0, 1] }}
+              transition={{ duration: 1 }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <div className="flex flex-row">
+                <div className="flex flex-col ml-4">
+                  <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px]">
+                    {extra.organisation}
+                  </h4>
+                  <p className="font-poppins font-normal text-[16px] text-white my-1 leading-[24px]">
+                    {extra.title}
+                  </p>
+                  <p className="font-poppins italic font-normal text-[14px] text-dimWhite my-1">
+                    {extra.duration}
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-4">
+                {extra.content.map((info, index) => (
+                  <div key={index}>
+                    <p className="font-poppins font-normal text-[14px] text-dimWhite my-4 leading-[32px]">
+                      ● {info.text}{" "}
+                      {info.link && (
+                        <a href={info.link} target="_blank" rel="noopener noreferrer">
+                          <BsLink45Deg size="1rem" className="inline" />
+                        </a>
+                      )}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>
