@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Slider from "react-slick";
 import { AiFillGithub } from "react-icons/ai";
@@ -10,15 +9,15 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Project = (props) => {
   return (
-    <div className="px-12 py-8 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card">
+    <div className="px-6 py-4 transition-colors duration-300 transform border rounded-lg hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card max-w-sm"> {/* Adjusted width and padding */}
       <div className="flex flex-col sm:flex-row">
-        <img className="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src={props.image} alt={props.title} />
+        <img className="flex-shrink-0 object-cover w-16 h-16 rounded-full sm:mx-4 ring-4 ring-gray-300" src={props.image} alt={props.title} /> {/* Reduced image size */}
         <div className="mt-4 sm:mx-4 sm:mt-0">
-          <h1 className="text-xl font-semibold text-gray-700 capitalize md:text-2xl group-hover:text-white text-gradient">{props.title}</h1>
-          <p className="font-poppins font-normal text-dimWhite mt-3">Tech Stack</p>
+          <h1 className="text-lg font-semibold text-gray-700 capitalize md:text-xl group-hover:text-white text-gradient">{props.title}</h1> {/* Adjusted text size */}
+          <p className="font-poppins font-normal text-dimWhite mt-2">Tech Stack</p>
           <div className="flex sm:flex-row mt-2">
             {props.stack.map((tech, index) => (
-              <div key={index} className="text-dimWhite mr-5 text-[20px] hover:text-teal-200">
+              <div key={index} className="text-dimWhite mr-4 text-[16px] hover:text-teal-200">
                 {React.createElement(tech.icon)}
                 <span className="tooltiptext">{tech.name}</span>
               </div>
@@ -26,16 +25,16 @@ const Project = (props) => {
           </div>
         </div>
       </div>
-      <p className="mt-8 text-gray-500 dark:text-gray-300 group-hover:text-gray-300">{props.content}</p>
+      <p className="mt-6 text-sm text-gray-500 dark:text-gray-300 group-hover:text-gray-300">{props.content}</p> {/* Reduced content padding */}
       <div className="flex mt-4 -mx-2">
         {props.github && (
           <a href={props.github} target="_blank" rel="noopener noreferrer">
-            <AiFillGithub size="2rem" className="text-white mr-1 hover:text-teal-200" />
+            <AiFillGithub size="1.5rem" className="text-white mr-1 hover:text-teal-200" /> {/* Reduced icon size */}
           </a>
         )}
         {props.link && (
           <a href={props.link} target="_blank" rel="noopener noreferrer">
-            <BsLink45Deg size="2rem" className="text-white hover:text-teal-200" />
+            <BsLink45Deg size="1.5rem" className="text-white hover:text-teal-200" /> {/* Reduced icon size */}
           </a>
         )}
       </div>
