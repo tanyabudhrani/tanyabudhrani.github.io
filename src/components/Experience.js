@@ -147,7 +147,7 @@ const Experience = () => {
         {/* Right: Skills Section */}
         <div className="flex-1 flex flex-col items-center justify-center mt-10 md:mt-0 text-white">
           <div className="mb-8">
-            <h3 className="text-2xl font-bold">Programming Languages</h3>
+            <h3 className="text-2xl font-semibold text-gradien">Programming Languages</h3>
             <div className="grid grid-cols-4 gap-6 mt-4">
               <div className="flex flex-col items-center">
                 <FaPython className="text-4xl" />
@@ -201,7 +201,7 @@ const Experience = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold">Tools & Frameworks</h3>
+            <h3 className="text-2xl font-semibold text-gradient">Tools & Frameworks</h3>
             <div className="grid grid-cols-4 gap-6 mt-4">
               <div className="flex flex-col items-center">
                 <FaNodeJs className="text-4xl" />

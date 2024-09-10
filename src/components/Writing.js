@@ -17,14 +17,14 @@ const WritingItem = (props) => {
       <div className="flex flex-row mt-4">
         <div className="flex flex-col ml-4">
           <a
-            className="font-poppins font-normal text-[16px] text-teal-200 my-1 leading-[24px] hover:text-teal-500" // Use light text color on dark background
+            className="font-poppins font-bold text-[17px] text-gradient my-1 leading-[24px] hover:text-teal-500" // Use light text color on dark background
             href={props.link}
             target="_blank"
             rel="noopener noreferrer"
           >
             {props.title}
           </a>
-          <p className="font-poppins italic font-normal text-[14px] text-gray-400 my-1">
+          <p className="font-poppins italic font-normal text-[15px] text-white my-1">
             {props.organisation}
           </p>
         </div>
