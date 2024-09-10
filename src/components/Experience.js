@@ -80,7 +80,7 @@ const Experience = () => {
   const experiences = [
     {
       organisation: "Mitacs Globalink Intern",
-      logo: '/assets/ubc.png',
+      logo: '/assets/ubc.jpeg',
       positions: [
         {
           title: "Intern",

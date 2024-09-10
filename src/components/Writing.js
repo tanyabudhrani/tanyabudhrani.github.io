@@ -1,25 +1,30 @@
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const WritingItem = (props) => {
   return (
     <motion.div
-      className="flex flex-col justify-between px-6 py-6 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 transition-colors duration-300 transform border hover:border-transparent dark:border-gray-700 dark:hover:border-transparent"
+      className="flex flex-col justify-between px-6 py-6 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 transition-colors duration-300 transform border hover:border-transparent dark:border-gray-700 dark:hover:border-transparent bg-gray-100 shadow-lg"
       whileInView={{ x: [-40, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-row">
+      {/* Add image at the top of the card */}
+      <img
+        src={props.image}
+        alt={props.title}
+        className="object-cover w-full h-40 rounded-lg"
+      />
+      <div className="flex flex-row mt-4">
         <div className="flex flex-col ml-4">
           <a
-            className="font-poppins font-normal text-[16px] text-white my-1 leading-[24px] hover:text-teal-200"
+            className="font-poppins font-normal text-[16px] text-black my-1 leading-[24px] hover:text-teal-500"
             href={props.link}
             target="_blank"
             rel="noopener noreferrer"
           >
             {props.title}
           </a>
-          <p className="font-poppins italic font-normal text-[14px] text-dimWhite my-1">
+          <p className="font-poppins italic font-normal text-[14px] text-gray-600 my-1">
             {props.organisation}
           </p>
         </div>
@@ -34,31 +39,37 @@ const Writing = () => {
       title: "Cracking the Code: Developer Trust and Usage Patterns in AI-Based Code Generators",
       organisation: "Publication",
       link: "https://drive.google.com/file/d/1oDX_l60n4EGd8x16vLN_ZwMTbYGDdQQb/view?usp=sharing",
+      image: "/assets/ubc.jpeg", // Replace with your actual image paths
     },
     {
       title: "Data Analytics",
       organisation: "Notes",
       link: "https://github.com/tanyabudhrani/Data-Analytics.git",
+      image: "/assets/dataanalytics.jpeg",
     },
     {
       title: "Operating Systems",
       organisation: "Notes",
       link: "https://github.com/tanyabudhrani/Operating-Systems.git",
+      image: "/assets/os.jpeg",
     },
     {
       title: "Computer Networking",
       organisation: "Notes",
       link: "https://github.com/tanyabudhrani/Computer-Networking.git",
+      image: "/assets/networking.jpeg",
     },
     {
       title: "Data Structures",
       organisation: "Notes",
       link: "https://github.com/tanyabudhrani/Data-Structures.git",
+      image: "/assets/ds.jpeg",
     },
     {
       title: "The Devil's Advocate",
       organisation: "Writing",
       link: "https://drive.google.com/drive/folders/1UweUc8euIhfRU6ncMwU9IwPHjllBB3vN?usp=sharing",
+      image: "/assets/eng.jpeg",
     },
   ];
 
@@ -83,7 +94,7 @@ const Writing = () => {
             </button>
           ))}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {filteredWritings.map((writing, index) => (
             <WritingItem key={index} {...writing} />
           ))}
