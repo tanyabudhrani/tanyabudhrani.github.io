@@ -77,13 +77,13 @@ const Writing = () => {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 m-1 rounded ${selectedCategory === category ? 'bg-teal-500 text-white' : 'bg-primary text-white'}`}
+              className={`px-5 py-3 m-1 rounded ${selectedCategory === category ? 'bg-teal-500 text-white' : 'bg-primary text-white'}`}
             >
               {category}
             </button>
           ))}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {filteredWritings.map((writing, index) => (
             <WritingItem key={index} {...writing} />
           ))}
