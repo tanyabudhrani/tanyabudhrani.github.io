@@ -52,6 +52,11 @@ button, .hover\:text-teal-200:hover {
   background-image: linear-gradient(to bottom, #00040f, #00040f);
 }
 
+.bg-secondary {
+  background-color: #25427d ;
+  transition: background-color 0.3s ease;
+}
+
 /* Text gradients */
 .text-gradient {
   background: linear-gradient(to right, #35d3e4, #4a80ec);
