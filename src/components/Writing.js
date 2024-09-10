@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const WritingItem = (props) => {
   return (
     <motion.div
-      className="flex flex-col justify-between px-6 py-6 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 transition-colors duration-300 transform border hover:border-transparent dark:border-gray-700 dark:hover:border-transparent bg-gray-100 shadow-lg"
+      className="flex flex-col justify-between px-6 py-10 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 transition-colors duration-300 transform border hover:border-transparent dark:border-gray-700 dark:hover:border-transparent bg-gray-100 shadow-lg"
       whileInView={{ x: [-40, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
     >
@@ -12,7 +12,7 @@ const WritingItem = (props) => {
       <img
         src={props.image}
         alt={props.title}
-        className="object-cover w-full h-40 rounded-lg"
+        className="object-cover w-full h-500 rounded-lg"
       />
       <div className="flex flex-row mt-4">
         <div className="flex flex-col ml-4">
