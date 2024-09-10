@@ -1,27 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
+import Typed from 'react-typed';
 
 function Contact() {
   return (
     <section id="contact" className="py-20 bg-primary text-white">
       <div className="container mx-auto text-center">
-        {/* Animated "Contact Me" heading */}
-        <motion.h2
-          className="text-4xl font-bold mb-6"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
-        >
-          Contact Me
-        </motion.h2>
+        {/* Typing animation for "Contact Me" */}
+        <h2 className="text-4xl font-bold mb-6">
+          <Typed
+            strings={['Contact Me']}
+            typeSpeed={100}
+            backSpeed={50}
+            loop={false}
+          />
+        </h2>
 
         {/* Animate "Let's get in touch" text */}
         <motion.p
           className="text-xl"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.75, ease: 'easeInOut' }}
         >
           Let’s get in touch:
         </motion.p>
@@ -31,9 +32,8 @@ function Contact() {
           {/* Email Icon */}
           <motion.a
             href="mailto:tanyabudhrani04@gmail.com"
-            className="p-4 bg-gradient-to-r from-teal-500 to-teal-400 text-white rounded-full hover:bg-teal-500 transition-all border-2 shadow-xl hover:shadow-2xl"
-            whileHover={{ scale: 1.2, rotate: 10 }}
-            transition={{ type: "spring", stiffness: 200 }}
+            className="px-4 py-4 bg-gradient text-white rounded-full border-gray-500 hover:bg-teal-500 hover:text-black transition-all border-2 shadow-xl hover:shadow-2xl border-transparent"
+            whileHover={{ scale: 1.2 }}
           >
             <AiOutlineMail size="2.5rem" />
           </motion.a>
@@ -43,9 +43,8 @@ function Contact() {
             href="https://github.com/tanyabudhrani"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-4 bg-gradient-to-r from-teal-500 to-teal-400 text-white rounded-full hover:bg-teal-500 transition-all border-2 shadow-xl hover:shadow-2xl"
-            whileHover={{ scale: 1.2, rotate: 10 }}
-            transition={{ type: "spring", stiffness: 200 }}
+            className="px-4 py-4 bg-gradient text-white rounded-full border-gray-500 hover:bg-teal-500 hover:text-black transition-all border-2 shadow-xl hover:shadow-2xl border-transparent"
+            whileHover={{ scale: 1.2 }}
           >
             <AiFillGithub size="2.5rem" />
           </motion.a>
@@ -55,9 +54,8 @@ function Contact() {
             href="https://www.linkedin.com/in/tanya-budhrani/"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-4 bg-gradient-to-r from-teal-500 to-teal-400 text-white rounded-full hover:bg-teal-500 transition-all border-2 shadow-xl hover:shadow-2xl"
-            whileHover={{ scale: 1.2, rotate: 10 }}
-            transition={{ type: "spring", stiffness: 200 }}
+            className="px-4 py-4 bg-gradient text-white rounded-full border-gray-500 hover:bg-teal-500 hover:text-black transition-all border-2 shadow-xl hover:shadow-2xl border-transparent"
+            whileHover={{ scale: 1.2 }}
           >
             <AiFillLinkedin size="2.5rem" />
           </motion.a>
