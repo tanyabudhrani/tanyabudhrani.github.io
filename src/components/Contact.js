@@ -1,22 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
-import { Typed } from 'react-typed';
-
 
 function Contact() {
   return (
     <section id="contact" className="py-20 bg-primary text-white">
       <div className="container mx-auto text-center">
-        {/* Typing animation for "Contact Me" */}
-        <h2 className="text-4xl font-bold mb-6">
-          <Typed
-            strings={['Contact Me']}
-            typeSpeed={100}
-            backSpeed={50}
-            loop={false}
-          />
-        </h2>
+        {/* Animated "Let's get in touch" text */}
+        <motion.h2
+          className="text-4xl font-bold mb-6"
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
+        >
+          Contact Me
+        </motion.h2>
 
         {/* Animate "Let's get in touch" text */}
         <motion.p
