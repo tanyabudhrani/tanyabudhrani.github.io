@@ -26,7 +26,7 @@ const About = () => {
               href="https://drive.google.com/file/d/15LZ11bRZXB91_zkGCiLQoVu17GRVcqWE/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block bg-white text-black rounded px-6 py-3 text-lg hover:bg-gray-900 transition-all"
+              className="mt-4 inline-block bg-gradient text-white rounded-px-6 py-3 text-lg hover:bg-teal transition-all border-2 border-teal-500"
             >
               Download My Resume
             </a>
