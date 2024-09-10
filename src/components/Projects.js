@@ -1,5 +1,6 @@
 // import React from "react";
 import Slider from "react-slick";
+import React from 'react';
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
 import { FaReact, FaNodeJs, FaJava } from "react-icons/fa";
