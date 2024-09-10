@@ -47,12 +47,12 @@ const Projects = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,  // Show only one card at a time
+    slidesToShow: 2,  // Show only one card at a time
     slidesToScroll: 1, // Scroll one card at a time
     centerMode: true,  // Center the card
     variableWidth: false, // Disable variable width for full-screen fit
     arrows: true,
-    centerPadding: '0px', // Remove extra padding around cards
+    centerPadding: '50px', // Remove extra padding around cards
   };
 
   const projects = [
