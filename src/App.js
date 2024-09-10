@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -26,7 +24,10 @@ const App = () => {
   if (isLoading) {
     return (
       <div className="bg-primary w-full overflow-hidden">
-        <div className="text-white text-5xl flex items-center justify-center h-screen">Tanya Budhrani</div>
+        {/* Use your icon instead of the text */}
+        <div className="flex items-center justify-center h-screen">
+          <img src="/assets/icon.ico" alt="Loading Icon" className="w-24 h-24" />
+        </div>
       </div>
     );
   } else {
