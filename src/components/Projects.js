@@ -9,15 +9,15 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Project = (props) => {
   return (
-    <div className="px-6 py-4 transition-colors duration-300 transform border rounded-lg hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card max-w-sm"> {/* Adjusted width and padding */}
+    <div className="px-8 py-8 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card max-w-lg mx-auto"> {/* Center the card, make it longer */}
       <div className="flex flex-col sm:flex-row">
-        <img className="flex-shrink-0 object-cover w-16 h-16 rounded-full sm:mx-4 ring-4 ring-gray-300" src={props.image} alt={props.title} /> {/* Reduced image size */}
+        <img className="flex-shrink-0 object-cover w-32 h-32 rounded-full sm:mx-4 ring-4 ring-gray-300" src={props.image} alt={props.title} /> {/* Larger image */}
         <div className="mt-4 sm:mx-4 sm:mt-0">
-          <h1 className="text-lg font-semibold text-gray-700 capitalize md:text-xl group-hover:text-white text-gradient">{props.title}</h1> {/* Adjusted text size */}
-          <p className="font-poppins font-normal text-dimWhite mt-2">Tech Stack</p>
+          <h1 className="text-2xl font-semibold text-gray-700 capitalize md:text-3xl group-hover:text-white text-gradient">{props.title}</h1> {/* Larger title */}
+          <p className="font-poppins font-normal text-dimWhite mt-3">Tech Stack</p>
           <div className="flex sm:flex-row mt-2">
             {props.stack.map((tech, index) => (
-              <div key={index} className="text-dimWhite mr-4 text-[16px] hover:text-teal-200">
+              <div key={index} className="text-dimWhite mr-5 text-[20px] hover:text-teal-200">
                 {React.createElement(tech.icon)}
                 <span className="tooltiptext">{tech.name}</span>
               </div>
@@ -25,16 +25,16 @@ const Project = (props) => {
           </div>
         </div>
       </div>
-      <p className="mt-6 text-sm text-gray-500 dark:text-gray-300 group-hover:text-gray-300">{props.content}</p> {/* Reduced content padding */}
+      <p className="mt-8 text-gray-500 dark:text-gray-300 group-hover:text-gray-300">{props.content}</p> {/* Adjusted content size */}
       <div className="flex mt-4 -mx-2">
         {props.github && (
           <a href={props.github} target="_blank" rel="noopener noreferrer">
-            <AiFillGithub size="1.5rem" className="text-white mr-1 hover:text-teal-200" /> {/* Reduced icon size */}
+            <AiFillGithub size="2rem" className="text-white mr-1 hover:text-teal-200" />
           </a>
         )}
         {props.link && (
           <a href={props.link} target="_blank" rel="noopener noreferrer">
-            <BsLink45Deg size="1.5rem" className="text-white hover:text-teal-200" /> {/* Reduced icon size */}
+            <BsLink45Deg size="2rem" className="text-white hover:text-teal-200" />
           </a>
         )}
       </div>
@@ -47,12 +47,12 @@ const Projects = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    centerMode: true,
-    variableWidth: true,
+    slidesToShow: 1,  // Show only one card at a time
+    slidesToScroll: 1, // Scroll one card at a time
+    centerMode: true,  // Center the card
+    variableWidth: false, // Disable variable width for full-screen fit
     arrows: true,
-    centerPadding: '60px',
+    centerPadding: '0px', // Remove extra padding around cards
   };
 
   const projects = [
