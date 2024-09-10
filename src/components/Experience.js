@@ -136,9 +136,7 @@ const Experience = () => {
       <div className="container mx-auto flex flex-col md:flex-row">
         {/* Left: Experience Section */}
         <div className="flex-1 md:mr-8">
-          <h2 className="text-4xl font-extrabold text-primary tracking-wide mb-6">
-            Experience & Skills
-          </h2>
+          <h1 className="text-4xl font-bold mb-10">Experience</h1> {/* Added new heading for Experience */}
           <motion.div className="flex flex-1 items-center justify-start flex-col">
             {experiences.map((exp, index) => (
               <ExperienceCard key={index} {...exp} />
