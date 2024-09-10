@@ -21,14 +21,14 @@ const Hero = () => {
             href="https://www.linkedin.com/in/tanya-budhrani/"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-gradient text-white rounded-lg hover:bg-teal transition-all"
+            className="px-6 py-3 bg-gradient text-white rounded-lg hover:bg-teal transition-all border-2 border-teal-500"
           >
             LinkedIn
           </a>
 
           <a
             href="mailto:tanyabudhrani04@gmail.com"
-            className="px-6 py-3 bg-gradient text-white rounded-lg hover:bg-teal transition-all"
+            className="px-6 py-3 bg-gradient text-white rounded-lg hover:bg-teal transition-all border-2 border-teal-500"
           >
             Email Me
           </a>
@@ -37,7 +37,7 @@ const Hero = () => {
             href="https://github.com/tanyabudhrani"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-gradient text-white rounded-lg hover:bg-teal transition-all"
+            className="px-6 py-3 bg-gradient text-white rounded-lg hover:bg-teal transition-all border-2 border-teal-500"
           >
             GitHub
           </a>
