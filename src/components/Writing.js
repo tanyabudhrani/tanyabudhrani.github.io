@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const WritingItem = (props) => {
   return (
     <motion.div
-      className="flex flex-col justify-between px-6 py-10 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 transition-colors duration-300 transform border hover:border-transparent dark:border-gray-700 dark:hover:border-transparent bg-gray-100 shadow-lg"
+      className="flex flex-col justify-between px-6 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 transition-colors duration-300 transform border hover:border-transparent dark:border-gray-700 dark:hover:border-transparent bg-dark-800 shadow-lg" // Updated background color and padding
       whileInView={{ x: [-40, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
     >
@@ -12,19 +12,19 @@ const WritingItem = (props) => {
       <img
         src={props.image}
         alt={props.title}
-        className="object-cover w-full h-500 rounded-lg"
+        className="object-cover w-full h-40 rounded-lg" // Set a specific height for the image
       />
       <div className="flex flex-row mt-4">
         <div className="flex flex-col ml-4">
           <a
-            className="font-poppins font-normal text-[16px] text-black my-1 leading-[24px] hover:text-teal-500"
+            className="font-poppins font-normal text-[16px] text-teal-200 my-1 leading-[24px] hover:text-teal-500" // Use light text color on dark background
             href={props.link}
             target="_blank"
             rel="noopener noreferrer"
           >
             {props.title}
           </a>
-          <p className="font-poppins italic font-normal text-[14px] text-gray-600 my-1">
+          <p className="font-poppins italic font-normal text-[14px] text-gray-400 my-1">
             {props.organisation}
           </p>
         </div>
@@ -80,7 +80,7 @@ const Writing = () => {
   const categories = ["All", "Publication", "Notes", "Writing"];
 
   return (
-    <section className="py-20 bg-primary text-white">
+    <section className="py-20 bg-primary text-white"> {/* Updated background color */}
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-6">My Writings</h2>
         <div className="mb-4 flex justify-center">
@@ -88,7 +88,7 @@ const Writing = () => {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-5 py-3 m-1 rounded ${selectedCategory === category ? 'bg-teal-500 text-white' : 'bg-primary text-white'}`}
+              className={`px-5 py-3 m-1 rounded ${selectedCategory === category ? 'bg-teal-500 text-white' : 'bg-dark-700 text-white'}`} // Updated button styling
             >
               {category}
             </button>
