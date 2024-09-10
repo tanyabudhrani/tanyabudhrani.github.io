@@ -41,7 +41,6 @@ const ExperienceCard = (props) => {
       transition={{ duration: 1 }}
     >
       <div className="flex flex-row items-center mb-6 text-white">
-      <h2 className="text-4xl font-bold mb-6">Experience & Skills</h2>
         <img
           src={props.logo}
           alt={props.organisation}
