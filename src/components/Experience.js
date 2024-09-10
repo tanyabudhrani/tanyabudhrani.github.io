@@ -40,29 +40,29 @@ const ExperienceCard = (props) => {
       whileInView={{ y: [-20, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-row items-center mb-6 text-white">
+      <div className="flex flex-row items-center mb-8 text-white"> {/* Increased bottom margin for spacing */}
         <img
           src={props.logo}
           alt={props.organisation}
           className="w-[45px] h-[45px] rounded-full z-[2]"
         />
-        <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px] ml-2">
+        <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px] ml-4"> {/* Added more spacing to the left */}
           {props.organisation}
         </h4>
       </div>
-      <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-6">
+      <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-8"> {/* Added more left margin */}
         {props.positions.map((position, index) => (
           <li
             key={index}
             className={`${
-              index === props.positions.length - 1 ? "mb-0" : "mb-4"
+              index === props.positions.length - 1 ? "mb-0" : "mb-6" // Added more bottom margin between positions
             } ml-4`}
           >
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border dark:border-gray-900 dark:bg-gray-700"></div>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
               {position.title}
             </h3>
-            <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time className="mb-3 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> {/* Increased bottom margin */}
               {position.duration}
             </time>
             {position.content.map((info, index) => (
@@ -132,11 +132,11 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-primary text-white">
+    <section id="experience" className="py-24 bg-primary text-white"> {/* Increased padding for top and bottom */}
       <div className="container mx-auto flex flex-col md:flex-row">
         {/* Left: Experience Section */}
-        <div className="flex-1 md:mr-8">
-          <h1 className="text-4xl font-bold mb-10">Experience</h1> {/* Added new heading for Experience */}
+        <div className="flex-1 md:mr-10"> {/* Increased right margin */}
+          <h1 className="text-4xl font-bold mb-12">Experience</h1> {/* Added more bottom margin */}
           <motion.div className="flex flex-1 items-center justify-start flex-col">
             {experiences.map((exp, index) => (
               <ExperienceCard key={index} {...exp} />
@@ -145,10 +145,10 @@ const Experience = () => {
         </div>
 
         {/* Right: Skills Section */}
-        <div className="flex-1 flex flex-col items-center justify-center mt-10 md:mt-0 text-white">
-          <div className="mb-8">
-            <h3 className="text-2xl font-semibold text-gradient">Programming Languages</h3>
-            <div className="grid grid-cols-4 gap-6 mt-4">
+        <div className="flex-1 flex flex-col items-center justify-center mt-16 md:mt-0 text-white"> {/* Increased top margin */}
+          <div className="mb-12"> {/* Increased bottom margin */}
+            <h3 className="text-xl font-semibold text-gradient">Programming Languages</h3>
+            <div className="grid grid-cols-4 gap-8 mt-6"> {/* Increased grid gap and top margin */}
               <div className="flex flex-col items-center">
                 <FaPython className="text-4xl" />
                 <p>Python</p>
@@ -201,8 +201,8 @@ const Experience = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-semibold text-gradient">Tools & Frameworks</h3>
-            <div className="grid grid-cols-4 gap-6 mt-4">
+            <h3 className="text-xl font-semibold text-gradient">Tools & Frameworks</h3>
+            <div className="grid grid-cols-4 gap-8 mt-6"> {/* Increased grid gap and top margin */}
               <div className="flex flex-col items-center">
                 <FaNodeJs className="text-4xl" />
                 <p>Node.js</p>
