@@ -43,7 +43,7 @@ This is where you write a short description about yourself and your interest. Fe
 
 <p align="center">
   <br>
-  <img src="public/assets/about.png" alt="wb" width="500">
+  <img src="public/assets/about.png" alt="wb" width="700">
   <br>
 </p>
 
@@ -52,7 +52,7 @@ This is where you document your experience and skills. I used the React Icons fo
 
 <p align="center">
   <br>
-  <img src="public/assets/experience.png" alt="wb" width="500">
+  <img src="public/assets/experience.png" alt="wb" width="700">
   <br>
 </p>
 
@@ -61,7 +61,7 @@ Using a carouself to sift through, you can add your projects here along with the
 
 <p align="center">
   <br>
-  <img src="public/assets/projects.png" alt="wb" width="500">
+  <img src="public/assets/projects.png" alt="wb" width="700">
   <br>
 </p>
 
@@ -70,7 +70,7 @@ This section is very flexible. While I did use it to showcase my research public
 
 <p align="center">
   <br>
-  <img src="public/assets/writing.png" alt="wb" width="500">
+  <img src="public/assets/writing.png" alt="wb" width="700">
   <br>
 </p>
 
@@ -79,7 +79,7 @@ This is where I detailed my extracurriculars, whether in University or outside.
 
 <p align="center">
   <br>
-  <img src="public/assets/extras.png" alt="wb" width="500">
+  <img src="public/assets/extras.png" alt="wb" width="700">
   <br>
 </p>
 
@@ -88,7 +88,7 @@ The bottom of the website is a contact from detailing how users can get in touch
 
 <p align="center">
   <br>
-  <img src="public/assets/contact.png" alt="wb" width="500">
+  <img src="public/assets/contact.png" alt="wb" width="700">
   <br>
 </p>
 
