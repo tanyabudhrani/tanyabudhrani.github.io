@@ -52,7 +52,7 @@ const Projects = () => {
     slidesToShow: 2,  // Show only one card at a time
     slidesToScroll: 1, // Scroll one card at a time
     centerMode: true,  // Center the card
-    variableWidth: false, // Disable variable width for full-screen fit
+    variableWidth: true, // Disable variable width for full-screen fit
     arrows: true,
     centerPadding: '50px', // Remove extra padding around cards
   };
