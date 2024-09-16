@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
-import { FaReact, FaNodeJs, FaJava, FaJavaScript, FaPython, FaCss3 } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaJava, FaPython, FaCss3 } from "react-icons/fa";
 import { SiC } from "react-icons/si";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
