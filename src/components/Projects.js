@@ -2,10 +2,11 @@ import React from 'react';
 import Slider from "react-slick";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
-import { FaReact, FaNodeJs, FaJava } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaJava, FaJavaScript, FaPython, FaCss3 } from "react-icons/fa";
 import { SiC } from "react-icons/si";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 const Project = (props) => {
   return (
@@ -86,9 +87,23 @@ const Projects = () => {
       stack: [
         { name: "React", icon: FaReact },
         { name: "Node.js", icon: FaNodeJs },
+        { name: "Python", icon: FaPython },
       ],
       content: "This project is a multi-threaded web server implemented in Python, designed to handle concurrent connections efficiently.",
       github: "https://github.com/tanyabudhrani/Multi-thread-Web-Server.git",
+      link: "",
+    },
+    {
+      title: "Personal Perfolio",
+      image: "/assets/main.png",
+      stack: [
+        { name: "React", icon: FaReact },
+        { name: "Tailwind", icon: RiTailwindCssFill },
+        { name: "JavaScript", icon: FaJavaScript },
+        { name: "CSS", icon: FaCss3 }
+      ],
+      content: "This project is a multi-threaded web server implemented in Python, designed to handle concurrent connections efficiently.",
+      github: "https://github.com/tanyabudhrani/tanyabudhrani.github.io.git",
       link: "",
     },
   ];

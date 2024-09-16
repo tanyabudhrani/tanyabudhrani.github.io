@@ -83,8 +83,8 @@ const Experience = () => {
       logo: '/assets/ubc.jpeg',
       positions: [
         {
-          title: "Intern",
-          duration: "2024 - Present",
+          title: "ML and NLP Researcher",
+          duration: "2024 - 2024",
           content: [
             {
               text: "Performed meticulous research on LLMs to aid in software programming.",
@@ -97,11 +97,11 @@ const Experience = () => {
       ],
     },
     {
-      organisation: "Generative AI Researcher",
+      organisation: "The Hong Kong Polytechnic University",
       logo: '/assets/polyu.png',
       positions: [
         {
-          title: "Researcher",
+          title: "Generatative AI Researcher",
           duration: "2024 - Present",
           content: [
             {
@@ -116,7 +116,7 @@ const Experience = () => {
       logo: '/assets/polk.png',
       positions: [
         {
-          title: "Researcher and Web Developer",
+          title: "Product Researcher and Web Developer",
           duration: "2021 - 2022",
           content: [
             {
@@ -125,6 +125,24 @@ const Experience = () => {
             {
               text: "Conducted research on Polk Audio's product line, staying up-to-date with the latest industry trends and market demands, to author informative posts and enhance product awareness.",
             },
+          ],
+        },
+      ],
+    },
+    {
+      organisation: "Lokal",
+      logo: '/assets/lokal.png',
+      positions: [
+        {
+          title: "Product Researcher",
+          duration: "2020 - 2021",
+          content: [
+            {
+              text: "Led the research department, authoring informationalarticles and conducting extensive research on thelatest technological products.",
+            },
+            {
+              text: "Employed a testing, research, and experimentationapproach to drive innovation and enhance marketingstrategies, contributing to successful client campaignsand optimized product launches."
+            }
           ],
         },
       ],
