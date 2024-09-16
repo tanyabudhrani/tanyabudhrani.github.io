@@ -103,7 +103,7 @@ const Projects = () => {
         { name: "JavaScript", icon: IoLogoJavascript },
         { name: "CSS", icon: FaCss3 }
       ],
-      content: "This project is a multi-threaded web server implemented in Python, designed to handle concurrent connections efficiently.",
+      content: "This project showcases my skills using React, Tailwind, CSS, Javascript, and Figma. It includes a brief introduction about me, my tech and research-based projects, the technologies I've worked with, and my experience. Made with React, Tailwind, Javascript, CSS, and HTML. Deployed with Netlify.",
       github: "https://github.com/tanyabudhrani/tanyabudhrani.github.io.git",
       link: "",
     },
