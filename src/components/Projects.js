@@ -11,7 +11,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 
 const Project = (props) => {
   return (
-    <div className="px-12 py-12 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card max-w-lg mx-auto"> {/* Center the card, make it longer */}
+    <div className="px-9 py-9 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card max-w-lg mx-auto"> {/* Center the card, make it longer */}
       <div className="flex flex-col sm:flex-row">
         <img className="flex-shrink-0 object-cover w-30 h-30 rounded-full sm:mx-4 ring-4 ring-gray-300" src={props.image} alt={props.title} /> {/* Larger image */}
         <div className="mt-4 sm:mx-4 sm:mt-0">
@@ -54,7 +54,7 @@ const Projects = () => {
     centerMode: true,  // Center the card
     variableWidth: false, // Disable variable width for full-screen fit
     arrows: true,
-    centerPadding: '60px', // Remove extra padding around cards
+    centerPadding: '0', // Remove extra padding around cards
   };
 
   const projects = [
