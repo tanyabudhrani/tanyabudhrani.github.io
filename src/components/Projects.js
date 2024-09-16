@@ -7,6 +7,7 @@ import { SiC } from "react-icons/si";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { IoLogoJavascript } from "react-icons/io5";
 
 const Project = (props) => {
   return (
@@ -99,7 +100,7 @@ const Projects = () => {
       stack: [
         { name: "React", icon: FaReact },
         { name: "Tailwind", icon: RiTailwindCssFill },
-        { name: "JavaScript", icon: FaJavaScript },
+        { name: "JavaScript", icon: IoLogoJavascript },
         { name: "CSS", icon: FaCss3 }
       ],
       content: "This project is a multi-threaded web server implemented in Python, designed to handle concurrent connections efficiently.",
