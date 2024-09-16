@@ -15,7 +15,7 @@ const Project = (props) => {
       <div className="flex flex-col sm:flex-row">
         <img className="flex-shrink-0 object-cover w-32 h-32 rounded-full sm:mx-4 ring-4 ring-gray-300" src={props.image} alt={props.title} /> {/* Larger image */}
         <div className="mt-4 sm:mx-4 sm:mt-0">
-          <h1 className="text-2xl font-semibold text-gray-700 capitalize md:text-3xl group-hover:text-white text-gradient">{props.title}</h1> {/* Larger title */}
+          <h1 className="text-2xl font-semibold text-gray-700 capitalize md:text-2xl group-hover:text-white text-gradient">{props.title}</h1> {/* Larger title */}
           <p className="font-poppins font-normal text-dimWhite mt-3">Tech Stack</p>
           <div className="flex sm:flex-row mt-2">
             {props.stack.map((tech, index) => (
@@ -49,12 +49,12 @@ const Projects = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,  // Show only one card at a time
+    slidesToShow: 1,  // Show only one card at a time
     slidesToScroll: 1, // Scroll one card at a time
     centerMode: true,  // Center the card
     variableWidth: true, // Disable variable width for full-screen fit
     arrows: true,
-    centerPadding: '50px', // Remove extra padding around cards
+    centerPadding: '0', // Remove extra padding around cards
   };
 
   const projects = [
