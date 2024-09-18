@@ -15,8 +15,8 @@ const Hero = () => {
     >
       {/* Centered Text Section */}
       <div className="text-center text-white space-y-6">
-        <h1 className="text-4xl sm:text-6xl font-bold">Hello, World!</h1>
-        <h2 className="text-3xl sm:text-5xl font-bold text-gradient">I'm Tanya</h2>
+        <h1 className="text-4xl sm:text-10xl font-bold">Hello, World!</h1>
+        <h2 className="text-3xl sm:text-7xl font-bold text-gradient">I'm Tanya</h2>
 
         {/* Call to Action Buttons */}
         <div className="flex justify-center space-x-4 mt-6">
