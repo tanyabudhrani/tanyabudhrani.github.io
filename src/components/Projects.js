@@ -2,12 +2,12 @@ import React from 'react';
 import Slider from "react-slick";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
-import { FaReact, FaNodeJs, FaJava, FaPython, FaCss3 } from "react-icons/fa";
-import { SiC } from "react-icons/si";
+import { FaReact, FaNodeJs, FaJava, FaPython } from "react-icons/fa";
+import { SiC, SiVite } from "react-icons/si";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { IoLogoJavascript } from "react-icons/io5";
+
 
 const Project = (props) => {
   return (
@@ -100,12 +100,22 @@ const Projects = () => {
       stack: [
         { name: "React", icon: FaReact },
         { name: "Tailwind", icon: RiTailwindCssFill },
-        { name: "JavaScript", icon: IoLogoJavascript },
-        { name: "CSS", icon: FaCss3 }
       ],
       content: "This project showcases my skills using React, Tailwind, CSS, Javascript, and Figma. It includes a brief introduction about me, my tech and research-based projects, the technologies I've worked with, and my experience. Made with React, Tailwind, Javascript, CSS, and HTML. Deployed with Netlify.",
       github: "https://github.com/tanyabudhrani/tanyabudhrani.github.io.git",
-      link: "",
+      link: "https://tanyabudhrani.netlify.app/",
+    },
+    {
+      title: "Cybersify",
+      image: "/assets/c.png",
+      stack: [
+        { name: "React", icon: FaReact },
+        { name: "Tailwind", icon: RiTailwindCssFill },
+        { name: "Vite", icon: SiVite },
+      ],
+      content: "Cybersifyph is an online educational organization whose goal is to spread internet literacy among the youth with educational posts and projects. This website is built using React, Tailwind, and Vite, and deployed with Netlify.",
+      github: "https://github.com/tanyabudhrani/cybersifyph",
+      link: "https://cybersifyph.netlify.app/",
     },
   ];
 
