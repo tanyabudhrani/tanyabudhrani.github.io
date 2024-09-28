@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
-import { FaReact, FaNodeJs, FaJava, FaPython } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaJava, FaPython, FaFigma } from "react-icons/fa";
 import { SiC, SiVite } from "react-icons/si";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -116,6 +116,18 @@ const Projects = () => {
       content: "Cybersifyph is an online educational organization whose goal is to spread internet literacy among the youth with educational posts and projects. This website is built using React, Tailwind, and Vite, and deployed with Netlify.",
       github: "https://github.com/tanyabudhrani/cybersifyph",
       link: "https://cybersifyph.netlify.app/",
+    },
+    {
+      title: "Progressive Web App",
+      image: "/assets/demo.png",
+      stack: [
+        { name: "React", icon: FaReact },
+        { name: "Tailwind", icon: RiTailwindCssFill },
+        { name: "Figma", icon: FaFigma },
+      ],
+      content: "This is a project I created to lessen the wait times at the Communal Student Canteen by allowing for concurrent ordering on a Progressive Web App (PWA). This project was created using Figma, React, CSS, and Builder.",
+      github: "https://github.com/tanyabudhrani/Ordering-System",
+      link: "",
     },
   ];
 
