@@ -40,11 +40,11 @@ const ExperienceCard = (props) => {
       whileInView={{ y: [-20, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-row items-center mb-8 text-white"> {/* Increased bottom margin for spacing */}
+      <div className="flex flex-row items-center mb-8 text-white relative"> {/* Increased bottom margin for spacing */}
         <img
           src={props.logo}
           alt={props.organisation}
-          className="w-[45px] h-[45px] rounded-full z-[2]"
+          className="w-[45px] h-[45px] rounded-full z-[2] mt-2"
         />
         <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px] ml-4"> {/* Added more spacing to the left */}
           {props.organisation}
