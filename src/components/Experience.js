@@ -79,18 +79,15 @@ const ExperienceCard = (props) => {
 const Experience = () => {
   const experiences = [
     {
-      organisation: "Mitacs Globalink Intern",
-      logo: '/assets/ubc.jpeg',
+      organisation: "Microsoft",
+      logo: '/assets/micro.png',
       positions: [
         {
-          title: "ML and NLP Researcher",
-          duration: "2024 - 2024",
+          title: "Technical Community Builder",
+          duration: "2024 - Present",
           content: [
             {
-              text: "Performed meticulous research on LLMs to aid in software programming.",
-            },
-            {
-              text: "Conducted literature reviews and data analysis to deliver scientific reports using Python, Latex, and more.",
+              text: "Works as a student ambassador for Microsoft to share and teach content on Microsoft services, such as Azure Fundamentals, AI and Machine Learning, CoPilot for MSFT, etc.",
             },
           ],
         },
@@ -106,6 +103,24 @@ const Experience = () => {
           content: [
             {
               text: "Performed extensive research on generative AI models and tools at the Industrial Lab of PolyU to create an intelligent chatbot.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      organisation: "Mitacs Globalink Intern",
+      logo: '/assets/ubc.jpeg',
+      positions: [
+        {
+          title: "ML and NLP Researcher",
+          duration: "2024 - 2024",
+          content: [
+            {
+              text: "Performed meticulous research on LLMs to aid in software programming.",
+            },
+            {
+              text: "Conducted literature reviews and data analysis to deliver scientific reports using Python, Latex, and more.",
             },
           ],
         },
