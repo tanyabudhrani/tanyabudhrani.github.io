@@ -44,7 +44,7 @@ const ExperienceCard = (props) => {
         <img
           src={props.logo}
           alt={props.organisation}
-          className="w-[45px] h-[45px] rounded-full z-[2] mt-2"
+          className="w-[45px] h-[45px] rounded-full z-[4] mt-5"
         />
         <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px] ml-4"> {/* Added more spacing to the left */}
           {props.organisation}
