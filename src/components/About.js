@@ -2,38 +2,67 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-primary text-white">
-      <div className="container mx-auto text-right">
-        <h1 className="text-6xl font-bold mb-6">About Me</h1>
+    <section
+      id="about"
+      className="py-20 bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 text-white"
+    >
+      <div className="container mx-auto text-center md:text-right px-6 md:px-0">
+        <h1 className="text-6xl font-bold mb-6 tracking-wide text-teal-300">
+          About Me
+        </h1>
 
-        <div className="flex flex-col md:flex-row items-center right-center">
+        <div className="flex flex-col md:flex-row items-center md:items-start">
           <img
             src="/assets/profile.jpeg"
             alt="Tanya Budhrani"
-            className="w-48 h-48 rounded-full mb-6 md:mb-0 md:mr-12"
+            className="w-48 h-48 rounded-full mb-6 md:mb-0 md:mr-12 transform transition-transform duration-300 hover:scale-105 shadow-lg"
           />
-          <div className="ml-auto mr-auto md:ml-20">
-            <p className="text-xl md:text-2xl mb-4 hover:bubble">
+          <div className="md:ml-20 text-left">
+            <p className="text-xl md:text-2xl mb-4 hover:text-teal-400 transition-colors duration-200">
               Hello there, I'm <strong>Tans</strong>
             </p>
-            <p className="text-lg md:text-lg mb-4 hover:bubble">
-              I am a third-year Computer Science and Linguistics student at the Hong Kong Polytechnic University with a keen interest in Natural Language Processing and Machine Learning.
+            <p className="text-lg md:text-xl mb-6 leading-relaxed text-gray-200">
+              I am a third-year Computer Science and Linguistics student at the
+              Hong Kong Polytechnic University with a keen interest in Natural
+              Language Processing and Machine Learning.
             </p>
+
+            <hr className="border-teal-500 mb-6" />
+
             <div>
-              <p className="text-lg md:text-lg mb-4 hover:bubble">
-                I am currently:
+              <p className="text-lg md:text-xl mb-4 text-teal-300">
+                I am currently involved in:
               </p>
-              <ul className="list-none ml-5 text-lg md:text-lg">
-                <li>Working on a paper to examine the <strong>behavioral pattern of software practitioners</strong> when using AI-based code generation tools.</li>
-                <li>Working with<strong>Microsoft</strong> as a community builder for students.</li>
-                <li>Working with the <strong>ACM-W</strong> to support and advocate for women in computing.</li>
+              <ul className="list-none ml-5 text-lg md:text-lg space-y-3">
+                <li className="flex items-start">
+                  <span className="text-teal-300 mr-2">•</span>
+                  <span>
+                    Working on a paper to examine the{" "}
+                    <strong>behavioral pattern of software practitioners</strong>{" "}
+                    when using AI-based code generation tools.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-teal-300 mr-2">•</span>
+                  <span>
+                    Working with <strong>Microsoft</strong> as a community
+                    builder for students.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-teal-300 mr-2">•</span>
+                  <span>
+                    Working with the <strong>ACM-W</strong> to support and
+                    advocate for women in computing.
+                  </span>
+                </li>
               </ul>
             </div>
             <a
               href="https://drive.google.com/file/d/1_Djkp0_x8UF9px_c_ZSTFrG_5hTHPo76/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 mt-4 inline-block bg-gradient text-white rounded-lg text-lg hover:bg-teal transition-all border-2 border-teal-500"
+              className="inline-block mt-6 px-8 py-4 bg-gradient-to-r from-teal-400 to-teal-600 text-white rounded-lg text-lg font-semibold tracking-wide hover:from-teal-500 hover:to-teal-700 transition-transform transform hover:scale-105 shadow-lg border-2 border-teal-500"
             >
               Download My Resume
             </a>
