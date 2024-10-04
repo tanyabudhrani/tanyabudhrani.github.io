@@ -23,7 +23,7 @@ const About = () => {
               <p className="text-lg md:text-lg mb-4 hover:bubble">
                 I am currently:
               </p>
-              <ul className="list-disc ml-5 text-lg md:text-lg">
+              <ul className="list-disc ml-5 text-lg md:text-lg left-center">
                 <li>Working on a paper to examine the behavioral pattern of software practitioners when using AI-based code generation tools.</li>
                 <li>Working with Microsoft as a community builder for students.</li>
                 <li>Working with the ACM-W to support and advocate for women in computing.</li>
