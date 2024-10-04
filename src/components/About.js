@@ -25,7 +25,7 @@ const About = () => {
             <hr className="border-gradient mb-6" />
 
             <div>
-              <p className="text-lg md:text-xl mb-4 text-gradient text-right">
+              <p className="text-lg md:text-xl mb-4 text-gradient text-center">
                 I am currently involved in:
               </p>
               <ul className="list-none ml-5 text-lg md:text-lg space-y-3">
@@ -57,7 +57,7 @@ const About = () => {
               href="https://drive.google.com/file/d/1_Djkp0_x8UF9px_c_ZSTFrG_5hTHPo76/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
-              className="items-right inline-block mt-6 px-8 py-4 bg-gradient text-white rounded-lg text-lg font-semibold tracking-wide hover:from-teal-500 hover:to-teal-700 transition-transform transform hover:scale-105 shadow-lg border-2 border-teal-500"
+              className="items-right inline-block mt-6 px-8 py-4 bg-gradient text-white rounded-lg text-lg font-semibold tracking-wide hover:from-teal-500 hover:to-teal-700 transition-transform transform hover:scale-105 shadow-lg border-2 border-gradient"
             >
               Download My Resume
             </a>
