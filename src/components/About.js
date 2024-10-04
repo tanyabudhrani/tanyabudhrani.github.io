@@ -19,15 +19,16 @@ const About = () => {
             <p className="text-lg md:text-lg mb-4 hover:bubble">
               I am a third-year Computer Science and Linguistics student at the Hong Kong Polytechnic University with a keen interest in Natural Language Processing and Machine Learning.
             </p>
-            <p>
-
-              I am currently:
-                <p>
-                - Working on a paper to examine the behavioral pattern of software practitioners when using AI-based code generation tools.
-                - Working with Microsoft as a community builder for students. 
-                - Working with the ACM-W to support and advocate for women in computing.
-                </p>
-            </p>
+            <div>
+              <p className="text-lg md:text-lg mb-4 hover:bubble">
+                I am currently:
+              </p>
+              <ul className="list-disc ml-5 text-lg md:text-lg">
+                <li>Working on a paper to examine the behavioral pattern of software practitioners when using AI-based code generation tools.</li>
+                <li>Working with Microsoft as a community builder for students.</li>
+                <li>Working with the ACM-W to support and advocate for women in computing.</li>
+              </ul>
+            </div>
             <a
               href="https://drive.google.com/file/d/1_Djkp0_x8UF9px_c_ZSTFrG_5hTHPo76/view?usp=drive_link"
               target="_blank"
