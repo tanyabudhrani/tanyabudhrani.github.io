@@ -12,6 +12,10 @@ body {
   color: transparent;
 }
 
+.border-gradient {
+  background: linear-gradient(to right,  #35d3e4, #4a80ec);
+}
+
 .bg-primary {
   background-color: #00040f;
 }
