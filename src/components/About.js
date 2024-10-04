@@ -2,14 +2,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="py-20 bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 text-white"
-    >
-      <div className="container mx-auto text-center md:text-right px-6 md:px-0">
-        <h1 className="text-6xl font-bold mb-6 tracking-wide text-teal-300">
-          About Me
-        </h1>
+    <section id="about" className="py-20 bg-primary text-white">
+      <div className="container mx-auto text-right">
+        <h1 className="text-6xl font-bold mb-6">About Me</h1>
 
         <div className="flex flex-col md:flex-row items-center md:items-start">
           <img
