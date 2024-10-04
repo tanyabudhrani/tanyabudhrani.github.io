@@ -12,7 +12,6 @@ const Extracurriculars = () => {
       content: [
         {
           text: "Working with the ACM-W to support and advocate for Women in Computing.",
-          link: "https://www.instagram.com/cybersifyph/",
         },
       ],
     },
@@ -24,6 +23,29 @@ const Extracurriculars = () => {
         {
           text: "Established an online educational platform dedicated to fostering digital literacy and promoting cybersecurity awareness.",
           link: "https://www.instagram.com/cybersifyph/",
+        },
+      ],
+    },
+    {
+      organisation: "Hong Kong Institute of Engineers",
+      title: "Member",
+      duration: "2024 - Present",
+      content: [{ text: "Active member participating in engineering events." }],
+    },
+    {
+      organisation: "PolyU Robotics Club",
+      title: "Member",
+      duration: "2024 - Present",
+      content: [{ text: "Collaborating with robotics enthusiasts to build projects." }],
+    },
+    {
+      organisation: "Inscribe",
+      title: "Editor-in-Chief",
+      duration: "2023 - Present",
+      content: [
+        {
+          text: "Contributed as a dedicated editor for Inscribe, the esteemed school journal.",
+          link: "https://elc.polyu.edu.hk/inscribe/",
         },
       ],
     },
@@ -49,33 +71,10 @@ const Extracurriculars = () => {
       ],
     },
     {
-      organisation: "Inscribe",
-      title: "Editor-in-Chief",
-      duration: "2023 - Present",
-      content: [
-        {
-          text: "Contributed as a dedicated editor for Inscribe, the esteemed school journal.",
-          link: "https://elc.polyu.edu.hk/inscribe/",
-        },
-      ],
-    },
-    {
       organisation: "International Student Association",
       title: "Head",
       duration: "2023 - 2024",
       content: [{ text: "Led a variety of student activities and events." }],
-    },
-    {
-      organisation: "Hong Kong Institute of Engineers",
-      title: "Member",
-      duration: "2024 - Present",
-      content: [{ text: "Active member participating in engineering events." }],
-    },
-    {
-      organisation: "PolyU Robotics Club",
-      title: "Member",
-      duration: "2024 - Present",
-      content: [{ text: "Collaborating with robotics enthusiasts to build projects." }],
     },
   ];
 

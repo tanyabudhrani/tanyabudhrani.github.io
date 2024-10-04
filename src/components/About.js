@@ -17,7 +17,14 @@ const About = () => {
               Hello there, I'm <strong>Tans</strong>
             </p>
             <p className="text-lg md:text-lg mb-4 hover:bubble">
-              A final-year Computer Science and Linguistics student at the Hong Kong Polytechnic University with a keen interest in Natural Language Processing and Machine Learning.
+              I am a third-year Computer Science and Linguistics student at the Hong Kong Polytechnic University with a keen interest in Natural Language Processing and Machine Learning.
+            </p>
+            <p>
+              
+              I am currently:
+                - Working on a paper to examine the behavioral pattern of software practitioners when using AI-based code generation tools.
+                - Working with Microsoft as a community builder for students. 
+                - Working with the ACM-W to support and advocate for women in computing.
             </p>
             <a
               href="https://drive.google.com/file/d/15LZ11bRZXB91_zkGCiLQoVu17GRVcqWE/view?usp=drive_link"
