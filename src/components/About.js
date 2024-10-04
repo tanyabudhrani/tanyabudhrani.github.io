@@ -20,14 +20,14 @@ const About = () => {
               I am a third-year Computer Science and Linguistics student at the Hong Kong Polytechnic University with a keen interest in Natural Language Processing and Machine Learning.
             </p>
             <p>
-              
+
               I am currently:
                 - Working on a paper to examine the behavioral pattern of software practitioners when using AI-based code generation tools.
                 - Working with Microsoft as a community builder for students. 
                 - Working with the ACM-W to support and advocate for women in computing.
             </p>
             <a
-              href="https://drive.google.com/file/d/15LZ11bRZXB91_zkGCiLQoVu17GRVcqWE/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1_Djkp0_x8UF9px_c_ZSTFrG_5hTHPo76/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 mt-4 inline-block bg-gradient text-white rounded-lg text-lg hover:bg-teal transition-all border-2 border-teal-500"
