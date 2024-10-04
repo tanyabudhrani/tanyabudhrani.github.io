@@ -13,7 +13,7 @@ const About = () => {
             className="w-48 h-48 rounded-full mb-6 md:mb-0 md:mr-12 transform transition-transform duration-300 hover:scale-105 shadow-lg"
           />
           <div className="md:ml-20 text-left">
-            <p className="text-xl md:text-2xl mb-4 hover:text-teal-400 transition-colors duration-200">
+            <p className="text-xl md:text-2xl mb-4 hover:text-gradient transition-colors duration-200">
               Hello there, I'm <strong>Tans</strong>
             </p>
             <p className="text-lg md:text-xl mb-6 leading-relaxed text-gray-200">
@@ -22,7 +22,7 @@ const About = () => {
               Language Processing and Machine Learning.
             </p>
 
-            <hr className="border-teal-500 mb-6" />
+            <hr className="border-gradient mb-6" />
 
             <div>
               <p className="text-lg md:text-xl mb-4 text-teal-300">
@@ -30,7 +30,7 @@ const About = () => {
               </p>
               <ul className="list-none ml-5 text-lg md:text-lg space-y-3">
                 <li className="flex items-start">
-                  <span className="text-teal-300 mr-2">•</span>
+                  <span className="text-gradient mr-2">•</span>
                   <span>
                     Working on a paper to examine the{" "}
                     <strong>behavioral pattern of software practitioners</strong>{" "}
@@ -38,14 +38,14 @@ const About = () => {
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-teal-300 mr-2">•</span>
+                  <span className="text-gradient mr-2">•</span>
                   <span>
                     Working with <strong>Microsoft</strong> as a community
                     builder for students.
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-teal-300 mr-2">•</span>
+                  <span className="text-gradient mr-2">•</span>
                   <span>
                     Working with the <strong>ACM-W</strong> to support and
                     advocate for women in computing.
@@ -57,7 +57,7 @@ const About = () => {
               href="https://drive.google.com/file/d/1_Djkp0_x8UF9px_c_ZSTFrG_5hTHPo76/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-6 px-8 py-4 bg-gradient-to-r from-teal-400 to-teal-600 text-white rounded-lg text-lg font-semibold tracking-wide hover:from-teal-500 hover:to-teal-700 transition-transform transform hover:scale-105 shadow-lg border-2 border-teal-500"
+              className="inline-block mt-6 px-8 py-4 bg-gradient text-white rounded-lg text-lg font-semibold tracking-wide hover:from-teal-500 hover:to-teal-700 transition-transform transform hover:scale-105 shadow-lg border-2 border-teal-500"
             >
               Download My Resume
             </a>
