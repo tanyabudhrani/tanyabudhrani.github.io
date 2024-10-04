@@ -94,12 +94,27 @@ const Experience = () => {
       ],
     },
     {
+      organisation: "Hong Kong Trade Development Council",
+      logo: '/assets/hktdc.png',
+      positions: [
+        {
+          title: "TAP Student Ambassador",
+          duration: "2024 - Present",
+          content: [
+            {
+              text: "I was recently accepted into the 24-25 Cohort of HKTDC Student Ambassadors to be tasked with driving business innovation using technology and computer science.",
+            },
+          ],
+        },
+      ],
+    },
+    {
       organisation: "The Hong Kong Polytechnic University",
       logo: '/assets/polyu.png',
       positions: [
         {
           title: "Generatative AI Researcher",
-          duration: "2024 - Present",
+          duration: "2024 - 2024",
           content: [
             {
               text: "Performed extensive research on generative AI models and tools at the Industrial Lab of PolyU to create an intelligent chatbot.",

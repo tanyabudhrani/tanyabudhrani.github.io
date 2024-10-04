@@ -6,9 +6,20 @@ import { motion } from "framer-motion";
 const Extracurriculars = () => {
   const extracurriculars = [
     {
+      organisation: "Association for Computing Machinery",
+      title: "Member and Student Ambassador",
+      duration: "2024 - Present",
+      content: [
+        {
+          text: "Working with the ACM-W to support and advocate for Women in Computing.",
+          link: "https://www.instagram.com/cybersifyph/",
+        },
+      ],
+    },
+    {
       organisation: "Cybersify",
       title: "Founder and Executive Director",
-      duration: "2019 - 2022",
+      duration: "2019 - Present",
       content: [
         {
           text: "Established an online educational platform dedicated to fostering digital literacy and promoting cybersecurity awareness.",
