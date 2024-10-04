@@ -59,7 +59,7 @@ const About = () => {
                   href="https://drive.google.com/file/d/1_Djkp0_x8UF9px_c_ZSTFrG_5hTHPo76/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-8 py-4 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card"
+                  className="inline-block px-8 py-4 text-white transition-colors duration-300 transform border rounded-xl hover: text-gradient border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card"
                 >
                   Download My Resume
                 </a>
