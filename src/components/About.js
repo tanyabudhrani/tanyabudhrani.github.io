@@ -22,9 +22,11 @@ const About = () => {
             <p>
 
               I am currently:
+                <p>
                 - Working on a paper to examine the behavioral pattern of software practitioners when using AI-based code generation tools.
                 - Working with Microsoft as a community builder for students. 
                 - Working with the ACM-W to support and advocate for women in computing.
+                </p>
             </p>
             <a
               href="https://drive.google.com/file/d/1_Djkp0_x8UF9px_c_ZSTFrG_5hTHPo76/view?usp=drive_link"
