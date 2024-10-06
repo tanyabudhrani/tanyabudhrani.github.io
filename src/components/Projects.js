@@ -59,6 +59,18 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Pōwehi",
+      image: "/assets/landing.png",
+      stack: [
+        { name: "React", icon: FaReact },
+        { name: "Figma", icon: FaFigma },
+        { name: "Python", icon: FaPython },
+      ],
+      content: "Powehi is an immersive web application where you explore the universe (through stunning images captured by the James Webb Space Telescope), accompanied by algorithmically generated audios.",
+      github: "https://github.com/jyotsna-venkatesan/Powehi.git",
+      link: "",
+    },
+    {
       title: "Task Manager",
       image: "/assets/task.jpg",
       stack: [
