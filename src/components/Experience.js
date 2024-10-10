@@ -21,7 +21,7 @@ import { TbBrandThreejs } from "react-icons/tb";
 const Content = ({ text, link }) => {
   return (
     <div>
-      <p className="bg-primary font-poppins font-normal text-[14px] text-dimWhite mt-4">
+      <p className="bg-primary font-poppins font-normal text-[14px] text-white mt-4">
         {text}{" "}
         {link && (
           <a href={link} target="_blank" rel="noreferrer" className="hover:text-teal-200">
@@ -59,10 +59,10 @@ const ExperienceCard = (props) => {
             } ml-4`}
           >
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border dark:border-gray-900 dark:bg-gray-700"></div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            <h3 className="text-lg font-semibold text-white dark:text-white">
               {position.title}
             </h3>
-            <time className="mb-3 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> {/* Increased bottom margin */}
+            <time className="mb-3 text-sm font-normal leading-none text-white dark:text-gray-500"> {/* Increased bottom margin */}
               {position.duration}
             </time>
             {position.content.map((info, index) => (
