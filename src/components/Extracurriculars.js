@@ -6,6 +6,16 @@ import { motion } from "framer-motion";
 const Extracurriculars = () => {
   const extracurriculars = [
     {
+      organisation: "Hong Kong Computer Society",
+      title: "Member and Student Ambassador",
+      duration: "2024 - Present",
+      content: [
+        {
+          text: "Working with the HKCS to raise awareness amongst university students in Computer Science.",
+        },
+      ],
+    },
+    {
       organisation: "Association for Computing Machinery",
       title: "Member and Student Ambassador",
       duration: "2024 - Present",

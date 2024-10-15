@@ -51,6 +51,13 @@ const About = () => {
                     advocate for women in computing.
                   </span>
                 </li>
+                <li className="flex items-start">
+                  <span className="text-gradient mr-2">•</span>
+                  <span>
+                    Working with the <strong>HKCS</strong> to empower 
+                    Hong Kong students wanting to learn Computer Science.
+                  </span>
+                </li>
               </ul>
 
               {/* Center the button underneath "I am currently involved in" */}
