@@ -3,10 +3,11 @@ import Slider from "react-slick";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
 import { FaReact, FaNodeJs, FaJava, FaPython, FaFigma } from "react-icons/fa";
-import { SiC, SiVite, siTypeScript } from "react-icons/si";
+import { SiC, SiVite } from "react-icons/si";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiTypescript } from "react-icons/si";
 
 
 const Project = (props) => {
@@ -63,7 +64,7 @@ const Projects = () => {
       image: "/assets/demoMap.png",
       stack: [
         { name: "React", icon: FaReact },
-        { name: "TypeScript", icon: siTypeScript },
+        { name: "TypeScript", icon: SiTypescript },
         { name: "TailWind", icon: RiTailwindCssFill },
       ],
       content: "COVID-19 Tracker is a web application built using React and TypeScript that provides real-time global and country-specific statistics on COVID-19 cases, deaths, recoveries, and active cases.",
