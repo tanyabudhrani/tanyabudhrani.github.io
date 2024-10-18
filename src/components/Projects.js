@@ -126,7 +126,7 @@ const Projects = () => {
         { name: "React", icon: FaReact },
         { name: "Tailwind", icon: RiTailwindCssFill },
       ],
-      content: "This project showcases my skills using React, Tailwind, CSS, and Javascript. It includes a brief introduction about me, my tech and research-based projects, the technologies I know, and my experience.",
+      content: "This project showcases my skills using React, Tailwind, CSS, and Javascript. It includes a brief introduction about me, my tech and research-based projects, and my experience.",
       github: "https://github.com/tanyabudhrani/tanyabudhrani.github.io.git",
       link: "https://tanyabudhrani.netlify.app/",
     },
