@@ -154,6 +154,18 @@ const Projects = () => {
       github: "https://github.com/tanyabudhrani/Ordering-System",
       link: "",
     },
+    {
+      title: "SkyByte",
+      image: "/assets/cathay.png",
+      stack: [
+        { name: "React", icon: FaReact },
+        { name: "Tailwind", icon: RiTailwindCssFill },
+        { name: "Figma", icon: FaFigma },
+      ],
+      content: "Luxury, redefined, reimagined, refined.​ ​SkyByte™brings premium travel to everyone, one bite-sized component at a time. Made for the Cathay Hackathon.",
+      github: "https://github.com/tanyabudhrani/SkyByte",
+      link: "",
+    },
   ];
 
   return (
