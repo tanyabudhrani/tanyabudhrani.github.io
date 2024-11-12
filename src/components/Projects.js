@@ -52,6 +52,7 @@ const Projects = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
+    rows: 2,
     centerMode: true,
     variableWidth: false,
     arrows: true,
