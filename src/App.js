@@ -6,6 +6,7 @@ import About from "./components/About";
 import Hero from "./components/Hero";
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Project2 from './components/Project2';
 import Contact from './components/Contact';
 import Extracurriculars from './components/Extracurriculars';
 import Writing from './components/Writing';
@@ -59,6 +60,7 @@ const App = () => {
           <div className="bg-primary flex justify-center px-6">
             <div className="w-full max-w-screen-xl">
               <Projects />
+              <Project2 /> {/* Add more projects as needed */}
               <Writing />
               <Extracurriculars />
             </div>
