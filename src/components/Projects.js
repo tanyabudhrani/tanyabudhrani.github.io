@@ -172,7 +172,7 @@ const Projects = () => {
       stack: [
         { name: "Java", icon: FaJava }
       ],
-      content: "A command-line Monopoly game implementing core gameplay mechanics, board customization, and error handling.",
+      content: "A command-line Monopoly game implementing core gameplay mechanics, board customization, and error handling. Made for COMP3211.",
       github: "https://github.com/tanyabudhrani/Monopoly-Game",
       link: "",
     },
