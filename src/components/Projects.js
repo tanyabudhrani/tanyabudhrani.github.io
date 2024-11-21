@@ -166,6 +166,16 @@ const Projects = () => {
       github: "https://github.com/tanyabudhrani/SkyByte",
       link: "",
     },
+    {
+      title: "Monopoly Game",
+      image: "/assets/monopoly.jpeg",
+      stack: [
+        { name: "Java", icon: FaJava }
+      ],
+      content: "A command-line Monopoly game implementing core gameplay mechanics, board customization, and error handling.",
+      github: "https://github.com/tanyabudhrani/Monopoly-Game",
+      link: "",
+    },
   ];
 
   return (
