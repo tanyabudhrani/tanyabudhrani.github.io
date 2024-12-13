@@ -40,32 +40,30 @@ const ExperienceCard = (props) => {
       whileInView={{ y: [-20, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
     >
-      {/* Container for logo and organisation name */}
       <div className="flex flex-row items-center mb-8 text-white relative">
         <img
           src={props.logo}
           alt={props.organisation}
-          className="w-[45px] h-[45px] rounded-full z-[4] mt-0" // Removed extra top margin
+          className="w-[45px] h-[45px] rounded-full z-[4] mt-2" // Reduced top margin
         />
         <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px] ml-4">
           {props.organisation}
         </h4>
       </div>
 
-      {/* Timeline and position details */}
-      <ol className="relative border-l-2 border-gray-300 dark:border-gray-700 pl-6"> {/* Updated padding and border */}
+      <ol className="relative border-l border-gray-200 dark:border-gray-700 pl-6"> {/* Adjusted left padding */}
         {props.positions.map((position, index) => (
           <li
             key={index}
             className={`${
               index === props.positions.length - 1 ? "mb-0" : "mb-6"
-            } pl-4`} // Changed ml-4 to pl-4 for consistent spacing
+            } pl-4`} // Changed ml-4 to pl-4 for better control
           >
-            <div className="absolute w-3 h-3 bg-gray-300 rounded-full -left-[6px] border dark:border-gray-800 dark:bg-gray-600"></div> {/* Adjusted bullet position */}
-            <h3 className="text-lg font-semibold text-white">
+            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-2 border dark:border-gray-900 dark:bg-gray-700"></div>
+            <h3 className="text-lg font-semibold text-white dark:text-white">
               {position.title}
             </h3>
-            <time className="mb-3 text-sm font-normal text-white dark:text-gray-500">
+            <time className="mb-3 text-sm font-normal leading-none text-white dark:text-gray-500">
               {position.duration}
             </time>
             {position.content.map((info, index) => (
@@ -77,7 +75,6 @@ const ExperienceCard = (props) => {
     </motion.div>
   );
 };
-
 
 
 // Main Experience component that contains all experiences and skills
@@ -92,7 +89,7 @@ const Experience = () => {
           duration: "2024 - Present",
           content: [
             {
-              text: "",
+              text: "for Microsoft to share and teach content on Microsoft services, such as Azure Fundamentals, AI and Machine Learning, CoPilot for MSFT, etc.",
             },
           ],
         },
