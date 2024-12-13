@@ -94,15 +94,15 @@ const Experience = () => {
       ],
     },
     {
-      organisation: "Hong Kong Trade Development Council",
-      logo: '/assets/hktdc.png',
+      organisation: "Hong Kong Science and Technology Park",
+      logo: '/assets/hkstp.jpeg',
       positions: [
         {
-          title: "TAP Student Ambassador",
+          title: "Software Developer",
           duration: "2024 - Present",
           content: [
             {
-              text: "I was recently accepted into the 24-25 Cohort of HKTDC Student Ambassadors to be tasked with driving business innovation using technology and computer science.",
+              text: "Currently working as a Software Developer at Expando AI in HKSTP",
             },
           ],
         },

@@ -37,6 +37,16 @@ const Extracurriculars = () => {
       ],
     },
     {
+      organisation: "Hong Kong Trade Development Council",
+      title: "TAP Student Ambassador",
+      duration: "2024 - Present",
+      content: [
+        {
+          text: "I was recently accepted into the 24-25 Cohort of HKTDC Student Ambassadors to be tasked with driving business innovation using technology and computer science.",
+        },
+      ],
+    },
+    {
       organisation: "Hong Kong Institute of Engineers",
       title: "Member",
       duration: "2024 - Present",
