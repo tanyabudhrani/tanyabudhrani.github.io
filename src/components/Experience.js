@@ -87,7 +87,7 @@ const Experience = () => {
           duration: "2024 - Present",
           content: [
             {
-              text: "Works as a student ambassador for Microsoft to share and teach content on Microsoft services, such as Azure Fundamentals, AI and Machine Learning, CoPilot for MSFT, etc.",
+              text: "Currently working as Software Developer at Expando AI in HKSTP.",
             },
           ],
         },
