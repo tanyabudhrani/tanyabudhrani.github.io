@@ -94,7 +94,7 @@ const Experience = () => {
           duration: "2024 - Present",
           content: [
             {
-              text: "for Microsoft to share and teach content on Microsoft services, such as Azure Fundamentals, AI and Machine Learning, CoPilot for MSFT, etc.",
+              text: "Working as a Software Developer with Expando AI at HKSTP.",
             },
           ],
         },
