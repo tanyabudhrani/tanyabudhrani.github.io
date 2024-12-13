@@ -51,6 +51,7 @@ const ExperienceCard = (props) => {
         </h4>
       </div>
 
+
       <ol className="relative border-l border-gray-200 dark:border-gray-700 pr-2"> {/* Adjusted left padding */}
         {props.positions.map((position, index) => (
           <li
