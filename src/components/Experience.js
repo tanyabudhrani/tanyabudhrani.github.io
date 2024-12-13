@@ -95,7 +95,7 @@ const Experience = () => {
           duration: "2024 - Present",
           content: [
             {
-              text: "Works as a student ambassador for Microsoft to share and teach content on Microsoft services, ",
+              text: "Works as a student ambassador for ",
             },
           ],
         },
