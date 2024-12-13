@@ -32,9 +32,8 @@ const About = () => {
                 <li className="flex items-start">
                   <span className="text-gradient mr-2">•</span>
                   <span>
-                    Working on a paper to examine the{" "}
-                    <strong>behavioral pattern of software practitioners</strong>{" "}
-                    when using AI-based code generation tools.
+                    Working at the Hong Kong Science and Technology Parks 
+                    as a <strong>Software Developer Intern.</strong>
                   </span>
                 </li>
                 <li className="flex items-start">
