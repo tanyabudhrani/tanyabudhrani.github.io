@@ -40,13 +40,13 @@ const ExperienceCard = (props) => {
       whileInView={{ y: [-20, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-row items-left mb-8 text-white relative">
+      <div className="flex flex-row items-center mb-8 text-white relative">
         <img
           src={props.logo}
           alt={props.organisation}
           className="w-[45px] h-[45px] rounded-full z-[4] mt-2" // Reduced top margin
         />
-        <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px] ml-0">
+        <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px] ml-4">
           {props.organisation}
         </h4>
       </div>
@@ -59,7 +59,7 @@ const ExperienceCard = (props) => {
               index === props.positions.length - 1 ? "mb-5" : "mb-6"
             } pl-6`} // Adjusted padding
           >
-            <div className="relative flex items-center">
+            <div className="relative flex items-left">
               {/* <span className="w-3 h-3 bg-gray-200 rounded-full mt-1.5 mr-4 border dark:border-gray-900 dark:bg-gray-700"></span> */}
               <div>
                 <h3 className="text-lg font-semibold text-white dark:text-white">
