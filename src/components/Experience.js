@@ -56,7 +56,7 @@ const ExperienceCard = (props) => {
           <li
             key={index}
             className={`relative ${
-              index === props.positions.length - 1 ? "mb-0" : "mb-6"
+              index === props.positions.length - 1 ? "mb-5" : "mb-6"
             } pl-6`} // Adjusted padding
           >
             <div className="relative flex items-center">
