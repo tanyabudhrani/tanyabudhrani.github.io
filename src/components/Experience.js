@@ -79,7 +79,7 @@ const ExperienceCard = (props) => {
 const Experience = () => {
   const experiences = [
     {
-      organisation: "Hong Kong Science and Technology Park",
+      organisation: "Hong Kong Science and Technology Parks",
       logo: '/assets/hkstp.jpeg',
       positions: [
         {
@@ -87,7 +87,7 @@ const Experience = () => {
           duration: "2024 - Present",
           content: [
             {
-              text: "Currently working as a Software Developer at Expando AI in HKSTP",
+              text: "Works as a student ambassador for Microsoft to share and teach content on Microsoft services, such as Azure Fundamentals, AI and Machine Learning, CoPilot for MSFT, etc.",
             },
           ],
         },
