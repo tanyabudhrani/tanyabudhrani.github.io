@@ -50,28 +50,32 @@ const ExperienceCard = (props) => {
           {props.organisation}
         </h4>
       </div>
-
-      <ol className="relative border-l border-gray-200 dark:border-gray-700 pl-6"> {/* Adjusted left padding */}
+      <ol className="relative border-l border-gray-200 dark:border-gray-700 pl-10"> {/* Adjusted left padding */}
         {props.positions.map((position, index) => (
           <li
             key={index}
-            className={`${
+            className={`relative ${
               index === props.positions.length - 1 ? "mb-0" : "mb-6"
-            } pl-4`} // Changed ml-4 to pl-4 for better control
+            } pl-6`} // Adjusted padding
           >
-            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-2 border dark:border-gray-900 dark:bg-gray-700"></div>
-            <h3 className="text-lg font-semibold text-white dark:text-white">
-              {position.title}
-            </h3>
-            <time className="mb-3 text-sm font-normal leading-none text-white dark:text-gray-500">
-              {position.duration}
-            </time>
-            {position.content.map((info, index) => (
-              <Content key={index} text={info.text} link={info.link} />
-            ))}
+            <div className="relative flex items-center">
+              <span className="w-3 h-3 bg-gray-200 rounded-full mt-1.5 mr-4 border dark:border-gray-900 dark:bg-gray-700"></span>
+              <div>
+                <h3 className="text-lg font-semibold text-white dark:text-white">
+                  {position.title}
+                </h3>
+                <time className="mb-3 text-sm font-normal leading-none text-white dark:text-gray-500">
+                  {position.duration}
+                </time>
+                {position.content.map((info, index) => (
+                  <Content key={index} text={info.text} link={info.link} />
+                ))}
+              </div>
+            </div>
           </li>
         ))}
       </ol>
+
     </motion.div>
   );
 };
