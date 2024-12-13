@@ -50,7 +50,8 @@ const ExperienceCard = (props) => {
           {props.organisation}
         </h4>
       </div>
-      <ol className="relative border-l border-gray-200 dark:border-gray-700 pl-10"> {/* Adjusted left padding */}
+
+      <ol className="relative border-l border-gray-200 dark:border-gray-700 pl-5"> {/* Adjusted left padding */}
         {props.positions.map((position, index) => (
           <li
             key={index}
@@ -59,7 +60,7 @@ const ExperienceCard = (props) => {
             } pl-6`} // Adjusted padding
           >
             <div className="relative flex items-center">
-              <span className="w-3 h-3 bg-gray-200 rounded-full mt-1.5 mr-4 border dark:border-gray-900 dark:bg-gray-700"></span>
+              {/* <span className="w-3 h-3 bg-gray-200 rounded-full mt-1.5 mr-4 border dark:border-gray-900 dark:bg-gray-700"></span> */}
               <div>
                 <h3 className="text-lg font-semibold text-white dark:text-white">
                   {position.title}
