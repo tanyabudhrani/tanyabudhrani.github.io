@@ -89,7 +89,22 @@ const Experience = () => {
           duration: "2024 - Present",
           content: [
             {
-              text: "Currently working as Software Developer at Expando AI in HKSTP.",
+              text: "",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      organisation: "Microsoft",
+      logo: '/assets/micro.png',
+      positions: [
+        {
+          title: "Technical Community Builder",
+          duration: "2024 - Present",
+          content: [
+            {
+              text: "Works as a student ambassador for Microsoft to share and teach content on Microsoft services, such as Azure Fundamentals, AI and Machine Learning, CoPilot for MSFT, etc.",
             },
           ],
         },
