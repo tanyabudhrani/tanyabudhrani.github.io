@@ -79,21 +79,6 @@ const ExperienceCard = (props) => {
 const Experience = () => {
   const experiences = [
     {
-      organisation: "Microsoft",
-      logo: '/assets/micro.png',
-      positions: [
-        {
-          title: "Technical Community Builder",
-          duration: "2024 - Present",
-          content: [
-            {
-              text: "Works as a student ambassador for Microsoft to share and teach content on Microsoft services, such as Azure Fundamentals, AI and Machine Learning, CoPilot for MSFT, etc.",
-            },
-          ],
-        },
-      ],
-    },
-    {
       organisation: "Hong Kong Science and Technology Park",
       logo: '/assets/hkstp.jpeg',
       positions: [
@@ -103,6 +88,21 @@ const Experience = () => {
           content: [
             {
               text: "Currently working as a Software Developer at Expando AI in HKSTP",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      organisation: "Microsoft",
+      logo: '/assets/micro.png',
+      positions: [
+        {
+          title: "Technical Community Builder",
+          duration: "2024 - Present",
+          content: [
+            {
+              text: "Works as a student ambassador for Microsoft to share and teach content on Microsoft services, such as Azure Fundamentals, AI and Machine Learning, CoPilot for MSFT, etc.",
             },
           ],
         },
