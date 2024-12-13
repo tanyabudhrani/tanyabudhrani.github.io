@@ -95,7 +95,7 @@ const Experience = () => {
           duration: "2024 - Present",
           content: [
             {
-              text: "Works as a Software Developer with ExpandoAI during my winter internship at the Hong Kong Science and Technology Parks.",
+              text: "Currently working as a Software Developer with ExpandoAI during my winter internship at the Hong Kong Science and Technology Parks.",
             },
           ],
         },
