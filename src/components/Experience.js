@@ -161,24 +161,6 @@ const Experience = () => {
         },
       ],
     },
-    {
-      organisation: "Lokal",
-      logo: '/assets/lokal.png',
-      positions: [
-        {
-          title: "Product Researcher",
-          duration: "2020 - 2021",
-          content: [
-            {
-              text: "Led the research department, authoring informationalarticles and conducting extensive research on thelatest technological products.",
-            },
-            {
-              text: "Employed a testing, research, and experimentationapproach to drive innovation and enhance marketingstrategies, contributing to successful client campaignsand optimized product launches."
-            }
-          ],
-        },
-      ],
-    },
   ];
 
   return (
