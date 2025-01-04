@@ -12,9 +12,10 @@ import {
   FaDocker,
   FaReact,
   FaTerminal,
-  FaFigma
+  FaFigma,
+  FaCss3
 } from "react-icons/fa";
-import { SiCplusplus, SiR, SiLatex, SiMysql, SiAssemblyscript, SiFastapi, SiC, SiCss, SiTypescript} from "react-icons/si";
+import { SiCplusplus, SiR, SiLatex, SiMysql, SiAssemblyscript, SiFastapi, SiC, SiTypescript} from "react-icons/si";
 
 // Content component handles each bullet point or description within a position
 const Content = ({ text, link }) => {
@@ -215,7 +216,7 @@ const Experience = () => {
                 <p>HTML5</p>
               </div>
               <div className="flex flex-col items-center">
-                <SiCss className="text-4xl" />
+                <FaCss3 className="text-4xl" />
                 <p>CSS</p>
               </div>
               <div className="flex flex-col items-center">
