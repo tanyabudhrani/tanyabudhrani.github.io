@@ -71,6 +71,18 @@ const Writing = () => {
       link: "https://drive.google.com/drive/folders/1UweUc8euIhfRU6ncMwU9IwPHjllBB3vN?usp=sharing",
       image: "/assets/eng.jpeg",
     },
+    {
+      title: "Human Computer Interaction",
+      organisation: "Notes",
+      link: "https://github.com/tanyabudhrani/Human-Computer-Interaction.git",
+      image: "/assets/hci.jpeg", // Replace with your actual image paths
+    },
+    {
+      title: "Software Engineering",
+      organisation: "Notes",
+      link: "https://github.com/tanyabudhrani/Software-Engineering.git",
+      image: "/assets/software.jpg", // Replace with your actual image paths
+    },
   ];
 
   const [selectedCategory, setSelectedCategory] = useState("All");

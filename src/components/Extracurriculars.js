@@ -6,6 +6,16 @@ import { motion } from "framer-motion";
 const Extracurriculars = () => {
   const extracurriculars = [
     {
+      organisation: "Microsoft",
+      title: "Technical Community Builder",
+      duration: "2024 - Present",
+      content: [
+        {
+          text: "Works as a student ambassador for Microsoft to share and teach content on Microsoft services, such as Azure Fundamentals, AI and Machine Learning, CoPilot for MSFT, etc.",
+        },
+      ],
+    },
+    {
       organisation: "Hong Kong Computer Society",
       title: "Member and Student Ambassador",
       duration: "2024 - Present",

@@ -87,6 +87,21 @@ const ExperienceCard = (props) => {
 const Experience = () => {
   const experiences = [
     {
+      organisation: "Gateway Private Markets",
+      logo: '/assets/gateway.jpeg',
+      positions: [
+        {
+          title: "Software Developer",
+          duration: "2025 - Present",
+          content: [
+            {
+              text: "Currently working as a Software Developer at Gateway to develop an intelligent chatbot to manage client data.",
+            },
+          ],
+        },
+      ],
+    },
+    {
       organisation: "Hong Kong Science and Technology Parks",
       logo: '/assets/hkstp.jpeg',
       positions: [
@@ -95,22 +110,7 @@ const Experience = () => {
           duration: "2024 - Present",
           content: [
             {
-              text: "Currently working as a Software Developer with ExpandoAI during my winter internship at the Hong Kong Science and Technology Parks.",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      organisation: "Microsoft",
-      logo: '/assets/micro.png',
-      positions: [
-        {
-          title: "Technical Community Builder",
-          duration: "2024 - Present",
-          content: [
-            {
-              text: "Works as a student ambassador for Microsoft to share and teach content on Microsoft services, such as Azure Fundamentals, AI and Machine Learning, CoPilot for MSFT, etc.",
+              text: "Currently working as a Software Developer at HKSTP to build an intelligent chatbot to manage referral data.",
             },
           ],
         },
