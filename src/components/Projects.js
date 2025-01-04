@@ -60,7 +60,7 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Interactive Covid Tracker",
+      title: "Covid Tracker",
       image: "/assets/demoMap.png",
       stack: [
         { name: "React", icon: FaReact },
