@@ -239,7 +239,7 @@ const Experience = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-gradient">Tools & Frameworks</h3>
+            <h3 className="text-xl font-semibold text-gradient">Frameworks and Software</h3>
             <div className="grid grid-cols-4 gap-8 mt-6"> {/* Increased grid gap and top margin */}
               <div className="flex flex-col items-center">
                 <FaNodeJs className="text-4xl" />
