@@ -215,7 +215,7 @@ const Experience = () => {
                 <p>HTML5</p>
               </div>
               <div className="flex flex-col items-center">
-                <SiCss3 className="text-4xl" />
+                <SiCss className="text-4xl" />
                 <p>CSS</p>
               </div>
               <div className="flex flex-col items-center">
