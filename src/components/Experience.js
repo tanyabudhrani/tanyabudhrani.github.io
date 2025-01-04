@@ -12,10 +12,9 @@ import {
   FaDocker,
   FaReact,
   FaTerminal,
-  FaVuejs
+  FaFigma
 } from "react-icons/fa";
-import { SiCplusplus, SiR, SiLatex, SiMysql, SiAssemblyscript, SiPytorch, SiTensorflow, SiC, SiCss3} from "react-icons/si";
-import { TbBrandThreejs } from "react-icons/tb";
+import { SiCplusplus, SiR, SiLatex, SiMysql, SiAssemblyscript, SiFastapi, SiC, SiCss, SiTypescript} from "react-icons/si";
 
 // Content component handles each bullet point or description within a position
 const Content = ({ text, link }) => {
@@ -235,6 +234,10 @@ const Experience = () => {
                 <FaTerminal className="text-4xl" />
                 <p>Bash</p>
               </div>
+              <div className="flex flex-col items-center">
+                <SiTypescript className="text-4xl" />
+                <p>TypeScript</p>
+              </div>
             </div>
           </div>
 
@@ -266,20 +269,12 @@ const Experience = () => {
                 <p>React</p>
               </div>
               <div className="flex flex-col items-center">
-                <SiPytorch className="text-4xl" />
-                <p>PyTorch</p>
+                <SiFastapi className="text-4xl" />
+                <p>FastAPI</p>
               </div>
               <div className="flex flex-col items-center">
-                <SiTensorflow className="text-4xl" />
-                <p>Tensorflow</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <TbBrandThreejs className="text-4xl" />
-                <p>Three.js</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <FaVuejs className="text-4xl" />
-                <p>Vue.js</p>
+                <FaFigma className="text-4xl" />
+                <p>Figma</p>
               </div>
             </div>
           </div>
