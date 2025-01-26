@@ -95,7 +95,7 @@ const Experience = () => {
           duration: "2025 - Present",
           content: [
             {
-              text: "Currently working as a Software Developer at Gateway to develop an intelligent chatbot to manage client data.",
+              text: "Contributing to the development of integrated, intelligent chatbots using Azure AI tools, along with overseeing the design and implementation of matching rules. Also working on conducting blockchain analysis on the secondary market.",
             },
           ],
         },
@@ -110,7 +110,7 @@ const Experience = () => {
           duration: "2025 - Present",
           content: [
             {
-              text: "Working as a Digital Marketing Intern at GL.iNet for their Astrowarp drop.",
+              text: "Working as a Digital Marketing Intern at GL.iNet for their Astrowarp drop; using Python to webscrape data from KOLs.",
             },
           ],
         },
@@ -119,7 +119,7 @@ const Experience = () => {
           duration: "2024 - Present",
           content: [
             {
-              text: "Currently working as a Software Developer at HKSTP to build an intelligent chatbot to manage referral data.",
+              text: "Currently working as a Software Developer at HKSTP to build an intelligent chatbot to manage referral data using n8n, PostmanAPI, Supabase, and Gemini.",
             },
           ],
         },
