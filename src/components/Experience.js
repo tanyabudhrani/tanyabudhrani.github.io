@@ -106,6 +106,15 @@ const Experience = () => {
       logo: '/assets/hkstp.jpeg',
       positions: [
         {
+          title: "Digital Marketing Intern",
+          duration: "2025 - Present",
+          content: [
+            {
+              text: "Working as a Digital Marketing Intern at GL.iNet for their Astrowarp drop.",
+            },
+          ],
+        },
+        {
           title: "Software Developer",
           duration: "2024 - Present",
           content: [
@@ -115,6 +124,7 @@ const Experience = () => {
           ],
         },
       ],
+      
     },
     {
       organisation: "The Hong Kong Polytechnic University",
