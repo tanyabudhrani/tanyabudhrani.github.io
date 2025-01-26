@@ -32,7 +32,7 @@ const About = () => {
                 <li className="flex items-start">
                   <span className="text-gradient mr-2">•</span>
                   <span>
-                    Working at the Hong Kong Science and Technology Parks 
+                    Working at Gateway Private Markets 
                     as a <strong>Software Developer Intern.</strong>
                   </span>
                 </li>

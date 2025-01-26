@@ -95,7 +95,10 @@ const Experience = () => {
           duration: "2025 - Present",
           content: [
             {
-              text: "Contributing to the development of integrated, intelligent chatbots using Azure AI tools, along with overseeing the design and implementation of matching rules. Also working on conducting blockchain analysis on the secondary market.",
+              text: "Contributing to the development of integrated, intelligent chatbots using Azure AI tools, along with overseeing the design and implementation of matching rules.",
+            },
+            {
+              text: "Working on conducting blockchain analysis on the secondary market."
             },
           ],
         },
