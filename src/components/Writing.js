@@ -38,13 +38,13 @@ const Writing = () => {
     {
       title: "Garbage Classification using Histogram of Oriented Gradients (HOG)",
       organisation: "Publication",
-      link: "https://drive.google.com/file/d/1oDX_l60n4EGd8x16vLN_ZwMTbYGDdQQb/view?usp=sharing",
+      link: "https://docs.google.com/document/d/1qFV6vtIO1fCoeZwsbRuv598TYKwv2aW2bjWfwkxBBio/edit?usp=sharing",
       image: "/assets/polyu.png", // Replace with your actual image paths
     },
     {
       title: "Cracking the Code: Developer Trust and Usage Patterns in AI-Based Code Generators",
       organisation: "Publication",
-      link: "https://docs.google.com/document/d/1qFV6vtIO1fCoeZwsbRuv598TYKwv2aW2bjWfwkxBBio/edit?usp=sharing",
+      link: "https://drive.google.com/file/d/1oDX_l60n4EGd8x16vLN_ZwMTbYGDdQQb/view?usp=sharing",
       image: "/assets/ubc.jpeg", // Replace with your actual image paths
     },
     {
