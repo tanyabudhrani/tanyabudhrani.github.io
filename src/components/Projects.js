@@ -85,7 +85,7 @@ const Projects = () => {
     },
     {
       title: "Garbage Collection",
-      image: "/assets/trash.png",
+      image: "/assets/trash.jpg",
       stack: [
         { name: "Python", icon: FaPython },
       ],
