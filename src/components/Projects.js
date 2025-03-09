@@ -84,6 +84,16 @@ const Projects = () => {
       link: "",
     },
     {
+      title: "Garbage Collection",
+      image: "/assets/trash.png",
+      stack: [
+        { name: "Python", icon: FaPython },
+      ],
+      content: "This project implements an image-based garbage classification system using Histogram of Oriented Gradients (HOG) for feature extraction and Support Vector Machines (SVM) for classification.",
+      github: "https://github.com/tanyabudhrani/Garbage-Collection.git",
+      link: "",
+    },
+    {
       title: "Task Manager",
       image: "/assets/task.jpg",
       stack: [
