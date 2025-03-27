@@ -163,18 +163,18 @@ const Experience = () => {
       ],
     },
     {
-      organisation: "Polk Audio",
-      logo: '/assets/polk.png',
+      organisation: "Bowers and Wilkins",
+      logo: '/assets/bw.png',
       positions: [
         {
           title: "Product Researcher and Web Developer",
           duration: "2021 - 2022",
           content: [
             {
-              text: "Spearheaded the design and development of their website using HTML, ensuring a visually appealing and user-friendly online presence.",
+              text: "Conducted research on their products and market trends to support content strategy and product positioning.",
             },
             {
-              text: "Conducted research on Polk Audio's product line, staying up-to-date with the latest industry trends and market demands, to author informative posts and enhance product awareness.",
+              text: "Managed backend functionality and cross-device compatibility, enhancing overall site performance and user experience.",
             },
           ],
         },

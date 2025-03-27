@@ -62,7 +62,7 @@ const About = () => {
               {/* Center the button underneath "I am currently involved in" */}
               <div className="flex justify-center mt-6">
                 <a
-                  href="https://drive.google.com/file/d/1WGSUxuxPsCYRs9xBw2id4eTWJWwWJWBT/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1wQBLQMZyU5b92i1nYc3sr2EkAkgIl9l9/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-8 py-4 text-white transition-colors duration-300 transform border rounded-xl hover: text-gradient border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card"
