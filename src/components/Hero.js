@@ -24,14 +24,14 @@ const Hero = () => {
             href="https://www.linkedin.com/in/tanya-budhrani/"
             target="_blank"
             rel="noopener noreferrer"
-            className="className=px-6 py-3 border-2 border-white text-white rounded-lg bg-transparent hover:bg-teal-500 hover:text-white transition-all duration-300"
+            className="px-10 py-3 border border-white text-white rounded-lg bg-transparent hover:bg-teal-500 hover:text-white transition-all duration-300"
           >
             LinkedIn
           </a>
 
           <a
             href="mailto:tanyabudhrani04@gmail.com"
-            className="className=px-6 py-3 border-2 border-white text-white rounded-lg bg-transparent hover:bg-teal-500 hover:text-white transition-all duration-300"
+            className="px-10 py-3 border border-white text-white rounded-lg bg-transparent hover:bg-teal-500 hover:text-white transition-all duration-300"
           >
             Email Me
           </a>
@@ -40,7 +40,8 @@ const Hero = () => {
             href="https://github.com/tanyabudhrani"
             target="_blank"
             rel="noopener noreferrer"
-            className="className=px-6 py-3 border-2 border-white text-white rounded-lg bg-transparent hover:bg-teal-500 hover:text-white transition-all duration-300"
+            className="px-10 py-3 border border-white text-white rounded-lg bg-transparent hover:bg-teal-500 hover:text-white transition-all duration-300"
+
           >
             GitHub
           </a>
