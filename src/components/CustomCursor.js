@@ -12,13 +12,20 @@ const CustomCursor = () => {
 
   useEffect(() => {
     const move = (e) => {
-        dotX.set(e.clientX - 20); // half of ring (80px)
-        dotY.set(e.clientY - 20);
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
+  
+      // Center dot and ring
+      dotX.set(mouseX - 4);   // 8px dot
+      dotY.set(mouseY - 4);
+  
+      ringX.set(mouseX - 20); // 40px ring
+      ringY.set(mouseY - 20);
     };
-
+  
     window.addEventListener('mousemove', move);
     return () => window.removeEventListener('mousemove', move);
-  }, [dotX, dotY]);
+  }, [dotX, dotY, ringX, ringY]);
 
   return (
     <>
