@@ -12,8 +12,8 @@ const CustomCursor = () => {
 
   useEffect(() => {
     const move = (e) => {
-      dotX.set(e.clientX - 4); // offset: dot size / 2
-      dotY.set(e.clientY - 4);
+        dotX.set(e.clientX - 20); // half of ring (80px)
+        dotY.set(e.clientY - 20);
     };
 
     window.addEventListener('mousemove', move);
