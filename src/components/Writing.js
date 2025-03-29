@@ -1,35 +1,41 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Tilt } from 'react-tilt';
+
 
 const WritingItem = (props) => {
   return (
-    <motion.div
-      className="flex flex-col justify-between px-6 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 transition-colors duration-300 transform border hover:border-transparent dark:border-gray-700 dark:hover:border-transparent bg-dark-800 shadow-lg" // Updated background color and padding
-      whileInView={{ x: [-40, 0], opacity: [0, 1] }}
-      transition={{ duration: 1 }}
+    <Tilt
+      options={{ max: 15, scale: 1, speed: 400 }}
+      className="transition-transform"
     >
-      {/* Add image at the top of the card */}
-      <img
-        src={props.image}
-        alt={props.title}
-        className="object-cover w-full h-40 rounded-lg" // Set a specific height for the image
-      />
-      <div className="flex flex-row mt-4">
-        <div className="flex flex-col ml-4">
-          <a
-            className="font-poppins font-bold text-[17px] text-gradient my-1 leading-[24px] hover:text-teal-500" // Use light text color on dark background
-            href={props.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {props.title}
-          </a>
-          <p className="font-poppins italic font-normal text-[15px] text-white my-1">
-            {props.organisation}
-          </p>
+      <motion.div
+        className="flex flex-col justify-between px-6 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 transition-colors duration-300 transform border hover:border-transparent dark:border-gray-700 dark:hover:border-transparent bg-dark-800 shadow-lg"
+        whileInView={{ x: [-40, 0], opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+      >
+        <img
+          src={props.image}
+          alt={props.title}
+          className="object-cover w-full h-40 rounded-lg"
+        />
+        <div className="flex flex-row mt-4">
+          <div className="flex flex-col ml-4">
+            <a
+              className="font-poppins font-bold text-[17px] text-gradient my-1 leading-[24px] hover:text-teal-500"
+              href={props.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {props.title}
+            </a>
+            <p className="font-poppins italic font-normal text-[15px] text-white my-1">
+              {props.organisation}
+            </p>
+          </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </Tilt>
   );
 };
 
