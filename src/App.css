@@ -31,8 +31,8 @@ body {
 }
 
 .custom-cursor-outer {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 40px;
   border: 2px solid white;
   border-radius: 50%;
   position: fixed;
