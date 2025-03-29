@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import CustomCursor from "./components/CustomCursor"; // 👈 Add this at the top
 
 // Import your components
 import About from "./components/About";
@@ -31,8 +32,10 @@ const App = () => {
     );
   } else {
     return (
-      // A div to wrap the entire application with a gradient background
       <div className="bg-primary w-full overflow-hidden">
+        <CustomCursor /> {/* 👈 This stays here */}
+    
+        {/* A div to wrap the entire application with a gradient background */}
         <motion.section
           initial={{ x: -100, opacity: 0.25 }}
           animate={{ x: 0, opacity: 1 }}
@@ -46,7 +49,7 @@ const App = () => {
               <About />
             </div>
           </div>
-
+    
           {/* Experience and Education Section */}
           <div className="bg-primary flex justify-center px-6">
             <div className="w-full max-w-screen-xl">
@@ -54,7 +57,7 @@ const App = () => {
               {/*<Education /> */}
             </div>
           </div>
-
+    
           {/* Projects, Writing, and Extracurriculars Section */}
           <div className="bg-primary flex justify-center px-6">
             <div className="w-full max-w-screen-xl">
@@ -63,14 +66,14 @@ const App = () => {
               <Extracurriculars />
             </div>
           </div>
-
+    
           {/* Contact Section */}
           <div className="bg-primary w-full max-w-screen-xl">
             <Contact />
           </div>
         </motion.section>
       </div>
-    );
+    );    
   }
 };
 
