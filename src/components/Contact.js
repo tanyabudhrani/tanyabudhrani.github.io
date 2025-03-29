@@ -31,7 +31,8 @@ function Contact() {
           {/* Email Icon */}
           <motion.a
             href="mailto:tanyabudhrani04@gmail.com"
-            className="px-4 py-4 bg-gradient text-white rounded-full border-gray-500 hover:bg-teal-500 hover:text-black transition-all border-2 shadow-xl hover:shadow-2xl border-transparent"
+            className="p-4 border border-white text-white rounded-full bg-transparent hover:bg-teal-500 hover:text-white transition-all duration-300"
+
             whileHover={{ scale: 1.2 }}
           >
             <AiOutlineMail size="2.5rem" />
@@ -42,7 +43,7 @@ function Contact() {
             href="https://github.com/tanyabudhrani"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-4 bg-gradient text-white rounded-full border-gray-500 hover:bg-teal-500 hover:text-black transition-all border-2 shadow-xl hover:shadow-2xl border-transparent"
+            className="p-4 border border-white text-white rounded-full bg-transparent hover:bg-teal-500 hover:text-white transition-all duration-300"
             whileHover={{ scale: 1.2 }}
           >
             <AiFillGithub size="2.5rem" />
@@ -53,7 +54,7 @@ function Contact() {
             href="https://www.linkedin.com/in/tanya-budhrani/"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-4 bg-gradient text-white rounded-full border-gray-500 hover:bg-teal-500 hover:text-black transition-all border-2 shadow-xl hover:shadow-2xl border-transparent"
+            className="p-4 border border-white text-white rounded-full bg-transparent hover:bg-teal-500 hover:text-white transition-all duration-300"
             whileHover={{ scale: 1.2 }}
           >
             <AiFillLinkedin size="2.5rem" />
