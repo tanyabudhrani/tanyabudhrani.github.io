@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import CustomCursor from "./components/CustomCursor"; // 👈 Add this at the top
+import './App.css';
+
 
 // Import your components
 import About from "./components/About";
