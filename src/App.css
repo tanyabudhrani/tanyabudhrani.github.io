@@ -3,6 +3,7 @@ body {
   background-color: #00040f; /* Dark background */
   color: #FFFFFF; /* White text */
   font-family: 'Poppins', sans-serif;
+  cursor: none;
 }
 
 .text-gradient {
