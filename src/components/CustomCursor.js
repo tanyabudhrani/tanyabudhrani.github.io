@@ -1,5 +1,5 @@
 // CustomCursor.js
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { motion, useSpring, useMotionValue } from 'framer-motion';
 
 const CustomCursor = () => {
@@ -11,8 +11,6 @@ const CustomCursor = () => {
 
   const smoothInnerX = useSpring(innerX, { stiffness: 120, damping: 20 });
   const smoothInnerY = useSpring(innerY, { stiffness: 120, damping: 20 });
-
-  const cursorRef = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
     const move = (e) => {
