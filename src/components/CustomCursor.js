@@ -1,66 +1,47 @@
-import { useEffect, useState, useRef } from 'react';
-import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+// CustomCursor.js
+import { useEffect, useRef } from 'react';
+import { motion, useSpring, useMotionValue } from 'framer-motion';
 
 const CustomCursor = () => {
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
+  const outerX = useMotionValue(0);
+  const outerY = useMotionValue(0);
 
-  const cursorX = useSpring(mouseX, { stiffness: 200, damping: 20 });
-  const cursorY = useSpring(mouseY, { stiffness: 200, damping: 20 });
+  const innerX = useMotionValue(0);
+  const innerY = useMotionValue(0);
 
-  const [velocity, setVelocity] = useState({ vx: 0, vy: 0 });
-  const prev = useRef({ x: 0, y: 0 });
+  const smoothInnerX = useSpring(innerX, { stiffness: 120, damping: 20 });
+  const smoothInnerY = useSpring(innerY, { stiffness: 120, damping: 20 });
+
+  const cursorRef = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
-    const moveCursor = (e) => {
-      const x = e.clientX;
-      const y = e.clientY;
+    const move = (e) => {
+      const { clientX, clientY } = e;
 
-      const vx = x - prev.current.x;
-      const vy = y - prev.current.y;
+      // Outer ring follows mouse directly
+      outerX.set(clientX - 40); // half of outer width
+      outerY.set(clientY - 40);
 
-      setVelocity({ vx, vy });
-
-      prev.current = { x, y };
-
-      mouseX.set(x - 50); // adjust for cursor size
-      mouseY.set(y - 50);
+      // Inner dot follows with spring
+      innerX.set(clientX - 4); // half of inner size
+      innerY.set(clientY - 4);
     };
 
-    window.addEventListener('mousemove', moveCursor);
-    return () => window.removeEventListener('mousemove', moveCursor);
-  }, [mouseX, mouseY]);
-
-  // 👇 ADD THIS useEffect BELOW THE ABOVE ONE
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const randomRadius = `${50 + Math.random() * 20}% ${50 + Math.random() * 20}% ${50 + Math.random() * 20}% ${50 + Math.random() * 20}%`;
-      const cursor = document.querySelector('.custom-cursor');
-      if (cursor) {
-        cursor.style.borderRadius = randomRadius;
-      }
-    }, 200);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const scaleX = useTransform(
-    () => Math.min(Math.max(1 + velocity.vx / 150, 0.8), 1.6)
-  );
-  const scaleY = useTransform(
-    () => Math.min(Math.max(1 + velocity.vy / 150, 0.8), 1.6)
-  );
+    window.addEventListener('mousemove', move);
+    return () => window.removeEventListener('mousemove', move);
+  }, [outerX, outerY, innerX, innerY]);
 
   return (
-    <motion.div
-      className="custom-cursor"
-      style={{
-        x: cursorX,
-        y: cursorY,
-        scaleX,
-        scaleY,
-      }}
-    />
+    <>
+      <motion.div
+        className="custom-cursor-outer"
+        style={{ x: outerX, y: outerY }}
+      />
+      <motion.div
+        className="custom-cursor-inner"
+        style={{ x: smoothInnerX, y: smoothInnerY }}
+      />
+    </>
   );
 };
 

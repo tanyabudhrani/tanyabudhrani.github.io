@@ -30,15 +30,22 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-.custom-cursor {
-  width: 100px;
-  height: 100px;
+.custom-cursor-outer {
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15); /* semi-transparent white */
   position: fixed;
   pointer-events: none;
   z-index: 9999;
-  mix-blend-mode: difference; /* helps it show on dark backgrounds */
-  filter: blur(10px);
-  transition: border-radius 0.2s ease;
+}
+
+.custom-cursor-inner {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
 }
