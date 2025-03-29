@@ -1,4 +1,3 @@
-// CustomCursor.js
 import { useEffect, useState, useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
@@ -6,8 +5,8 @@ const CustomCursor = () => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  const cursorX = useSpring(mouseX, { stiffness: 300, damping: 30 });
-  const cursorY = useSpring(mouseY, { stiffness: 300, damping: 30 });
+  const cursorX = useSpring(mouseX, { stiffness: 200, damping: 20 });
+  const cursorY = useSpring(mouseY, { stiffness: 200, damping: 20 });
 
   const [velocity, setVelocity] = useState({ vx: 0, vy: 0 });
   const prev = useRef({ x: 0, y: 0 });
@@ -24,20 +23,32 @@ const CustomCursor = () => {
 
       prev.current = { x, y };
 
-      mouseX.set(x - 25);
-      mouseY.set(y - 25);
+      mouseX.set(x - 50); // adjust for cursor size
+      mouseY.set(y - 50);
     };
 
     window.addEventListener('mousemove', moveCursor);
     return () => window.removeEventListener('mousemove', moveCursor);
   }, [mouseX, mouseY]);
 
-  // Distortion based on velocity
+  // 👇 ADD THIS useEffect BELOW THE ABOVE ONE
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const randomRadius = `${50 + Math.random() * 20}% ${50 + Math.random() * 20}% ${50 + Math.random() * 20}% ${50 + Math.random() * 20}%`;
+      const cursor = document.querySelector('.custom-cursor');
+      if (cursor) {
+        cursor.style.borderRadius = randomRadius;
+      }
+    }, 200);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const scaleX = useTransform(
-    () => Math.min(Math.max(1 + Math.abs(velocity.vx) / 100, 0.8), 2),
+    () => Math.min(Math.max(1 + velocity.vx / 150, 0.8), 1.6)
   );
   const scaleY = useTransform(
-    () => Math.min(Math.max(1 - Math.abs(velocity.vy) / 250, 0.75), 1.5),
+    () => Math.min(Math.max(1 + velocity.vy / 150, 0.8), 1.6)
   );
 
   return (

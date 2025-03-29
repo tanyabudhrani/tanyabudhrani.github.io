@@ -33,12 +33,12 @@ body {
 .custom-cursor {
   width: 100px;
   height: 100px;
-  border-radius: 40% 60% 55% 45%;
-  background: radial-gradient(circle, #FFFFFF, #35d3e4);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15); /* semi-transparent white */
   position: fixed;
   pointer-events: none;
   z-index: 9999;
-  mix-blend-mode: multiply;
-  filter: blur(6px);
+  mix-blend-mode: difference; /* helps it show on dark backgrounds */
+  filter: blur(10px);
   transition: border-radius 0.2s ease;
 }
