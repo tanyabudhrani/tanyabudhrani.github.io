@@ -178,7 +178,7 @@ const Experience = () => {
       <div className="container mx-auto flex flex-col md:flex-row">
         {/* Left: Experience Section */}
         <div className="flex-1 md:mr-10"> {/* Increased right margin */}
-        <h1 ref={titleRef} className="text-4xl font-bold mb-12">
+        <h1 ref={titleRef} className="text-6xl font-bold mb-12">
           {showTypewriter && (
             <Typewriter
               words={['Experience']}
