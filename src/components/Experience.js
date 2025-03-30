@@ -196,97 +196,91 @@ const Experience = () => {
         </div>
 
         {/* Right: Skills Section */}
-        <div className="flex-1 flex flex-col items-center justify-center mt-16 md:mt-0 text-white"> {/* Increased top margin */}
-          <div className="mb-12"> {/* Increased bottom margin */}
-            <h3 className="text-xl font-semibold text-gradient">Programming Languages</h3>
-            <div className="grid grid-cols-4 gap-8 mt-6"> {/* Increased grid gap and top margin */}
-              <div className="flex flex-col items-center">
-                <FaPython className="text-4xl" />
-                <p>Python</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <SiR className="text-4xl" />
-                <p>R</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <SiCplusplus className="text-4xl" />
-                <p>C++</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <FaJs className="text-4xl" />
-                <p>JavaScript+</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <SiC className="text-4xl" />
-                <p>C</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <FaJava className="text-4xl" />
-                <p>Java</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <FaHtml5 className="text-4xl" />
-                <p>HTML5</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <FaCss3 className="text-4xl" />
-                <p>CSS</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <SiMysql className="text-4xl" />
-                <p>SQL</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <SiAssemblyscript className="text-4xl" />
-                <p>Assembly</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <FaTerminal className="text-4xl" />
-                <p>Bash</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <SiTypescript className="text-4xl" />
-                <p>TypeScript</p>
-              </div>
-            </div>
+        <div className="flex-1 flex flex-col items-center justify-center mt-16 md:mt-0 text-white">
+          <div className="mb-12">
+            <motion.h3
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-xl font-semibold text-gradient"
+            >
+              Programming Languages
+            </motion.h3>
+
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="grid grid-cols-4 gap-8 mt-6"
+            >
+              {[ 
+                { icon: <FaPython />, label: "Python" },
+                { icon: <SiR />, label: "R" },
+                { icon: <SiCplusplus />, label: "C++" },
+                { icon: <FaJs />, label: "JavaScript+" },
+                { icon: <SiC />, label: "C" },
+                { icon: <FaJava />, label: "Java" },
+                { icon: <FaHtml5 />, label: "HTML5" },
+                { icon: <FaCss3 />, label: "CSS" },
+                { icon: <SiMysql />, label: "SQL" },
+                { icon: <SiAssemblyscript />, label: "Assembly" },
+                { icon: <FaTerminal />, label: "Bash" },
+                { icon: <SiTypescript />, label: "TypeScript" }
+              ].map((skill, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="flex flex-col items-center transition-all duration-300 hover:text-teal-400"
+                >
+                  <div className="text-4xl">{skill.icon}</div>
+                  <p className="mt-1">{skill.label}</p>
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-gradient">Frameworks and Software</h3>
-            <div className="grid grid-cols-4 gap-8 mt-6"> {/* Increased grid gap and top margin */}
-              <div className="flex flex-col items-center">
-                <FaNodeJs className="text-4xl" />
-                <p>Node.js</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <FaAngular className="text-4xl" />
-                <p>Angular</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <FaDocker className="text-4xl" />
-                <p>Docker</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <FaGitAlt className="text-4xl" />
-                <p>Git</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <FaGithub className="text-4xl" />
-                <p>GitHub</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <FaReact className="text-4xl" />
-                <p>React</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <SiFastapi className="text-4xl" />
-                <p>FastAPI</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <FaFigma className="text-4xl" />
-                <p>Figma</p>
-              </div>
-            </div>
+            <motion.h3
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-xl font-semibold text-gradient"
+            >
+              Frameworks and Software
+            </motion.h3>
+
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="grid grid-cols-4 gap-8 mt-6"
+            >
+              {[
+                { icon: <FaNodeJs />, label: "Node.js" },
+                { icon: <FaAngular />, label: "Angular" },
+                { icon: <FaDocker />, label: "Docker" },
+                { icon: <FaGitAlt />, label: "Git" },
+                { icon: <FaGithub />, label: "GitHub" },
+                { icon: <FaReact />, label: "React" },
+                { icon: <SiFastapi />, label: "FastAPI" },
+                { icon: <FaFigma />, label: "Figma" }
+              ].map((skill, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="flex flex-col items-center transition-all duration-300 hover:text-teal-400"
+                >
+                  <div className="text-4xl">{skill.icon}</div>
+                  <p className="mt-1">{skill.label}</p>
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </div>
