@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const WritingBlock = ({ title, organisation, link, image }) => {
+const WritingBlock = ({ title, organisation, link, image, index }) => {
   return (
     <motion.a
       href={link}
       target="_blank"
       rel="noopener noreferrer"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      viewport={{ once: true, amount: 0.2 }}
       whileHover={{ scale: 1.015 }}
       className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-white/5 to-white/10 p-6 border border-white/10 backdrop-blur-lg hover:border-teal-400 transition-all duration-300 cursor-pointer"
     >
