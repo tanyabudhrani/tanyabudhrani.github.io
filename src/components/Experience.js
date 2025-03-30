@@ -20,82 +20,62 @@ import { Typewriter } from 'react-simple-typewriter';
 import { useRef, useEffect, useState } from 'react';
 
 // Content component handles each bullet point or description within a position
-const Content = ({ text, link }) => {
-  const titleRef = useRef();
-  const isInView = useInView(titleRef, { once: true });
-  const [showTypewriter, setShowTypewriter] = useState(false);
-
-  useEffect(() => {
-    if (isInView) {
-      setShowTypewriter(true);
-    }
-  }, [isInView]);
-  return (
-    <div>
-      <p className="bg-primary font-poppins font-normal text-[14px] text-white mt-4">
-        {text}{" "}
-        {link && (
-          <a href={link} target="_blank" rel="noreferrer" className="hover:text-teal-200">
-            <span className="inline hover:text-teal-200">🔗</span>
-          </a>
-        )}
-      </p>
-    </div>
-  );
-};
+const Content = ({ text, link }) => (
+  <p className="bg-primary font-poppins font-normal text-[14px] text-white mt-4">
+    {text}{" "}
+    {link && (
+      <a href={link} target="_blank" rel="noreferrer" className="hover:text-teal-200">
+        <span className="inline hover:text-teal-200">🔗</span>
+      </a>
+    )}
+  </p>
+);
 
 // ExperienceCard component for each job experience
-const ExperienceCard = (props) => {
-  return (
-    <motion.div
-      whileInView={{ y: [-20, 0], opacity: [0, 1] }}
-      transition={{ duration: 1 }}
-    >
-      <div className="flex flex-row items-center mb-8 text-white relative">
-        <img
-          src={props.logo}
-          alt={props.organisation}
-          className="w-[45px] h-[45px] rounded-full z-[4] mt-2" // Reduced top margin
-        />
-        <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px] ml-4">
-          {props.organisation}
-        </h4>
-      </div>
+const ExperienceCard = ({ organisation, logo, positions }) => (
+  <motion.div
+    whileInView={{ y: [-20, 0], opacity: [0, 1] }}
+    transition={{ duration: 1 }}
+  >
+    <div className="flex flex-row items-center mb-8 text-white relative">
+      <img
+        src={logo}
+        alt={organisation}
+        className="w-[45px] h-[45px] rounded-full z-[4] mt-2"
+      />
+      <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px] ml-4">
+        {organisation}
+      </h4>
+    </div>
 
-
-      <ol className="relative border-l border-gray-200 dark:border-gray-700 pr-2"> {/* Adjusted left padding */}
-        {props.positions.map((position, index) => (
-          <li
-            key={index}
-            className={`relative ${
-              index === props.positions.length - 1 ? "mb-5" : "mb-6"
-            } pl-6`} // Adjusted padding
-          >
-            <div className="relative flex items-left">
-              {/* <span className="w-3 h-3 bg-gray-200 rounded-full mt-1.5 mr-4 border dark:border-gray-900 dark:bg-gray-700"></span> */}
-              <div>
-                <h3 className="text-lg font-semibold text-white dark:text-white">
-                  {position.title}
-                </h3>
-                <time className="mb-3 text-sm font-normal leading-none text-white dark:text-gray-500">
-                  {position.duration}
-                </time>
-                {position.content.map((info, index) => (
-                  <Content key={index} text={info.text} link={info.link} />
-                ))}
-              </div>
+    <ol className="relative border-l border-gray-200 dark:border-gray-700 pr-2">
+      {positions.map((position, i) => (
+        <li key={i} className={`relative ${i === positions.length - 1 ? "mb-5" : "mb-6"} pl-6`}>
+          <div className="relative flex items-left">
+            <div>
+              <h3 className="text-lg font-semibold text-white">{position.title}</h3>
+              <time className="mb-3 text-sm font-normal leading-none text-white">
+                {position.duration}
+              </time>
+              {position.content.map((item, j) => (
+                <Content key={j} text={item.text} link={item.link} />
+              ))}
             </div>
-          </li>
-        ))}
-      </ol>
-
-    </motion.div>
-  );
-};
-
+          </div>
+        </li>
+      ))}
+    </ol>
+  </motion.div>
+);
 
 // Main Experience component that contains all experiences and skills
 const Experience = () => {
+  const titleRef = useRef();
+  const isInView = useInView(titleRef, { once: true });
+  const [showTypewriter, setShowTypewriter] = useState(false);
+  useEffect(() => {
+    if (isInView) setShowTypewriter(true);
+  }, [isInView]);
   const experiences = [
     {
       organisation: "Gateway Private Markets",
