@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
 import { motion } from "framer-motion";
-
+import CustomArrows from "./components/CustomArrows"; // 👈 Add this at the top
 
 
 const Project = (props) => {
@@ -59,6 +59,8 @@ const Projects = () => {
     variableWidth: false,
     arrows: true,
     centerPadding: '0',
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
   };
 
   const projects = [
