@@ -5,13 +5,14 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center h-screen bg-gradient-to-b"
+      className="relative flex flex-col items-center justify-center h-screen grain-overlay"
       style={{
         backgroundImage: `url('/assets/1.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
+
       {/* Centered Text Section */}
       <div className="text-center text-white space-y-6">
         <h1 className="text-4xl sm:text-10xl font-bold">
