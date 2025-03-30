@@ -1,6 +1,5 @@
-import React from "react";
-import { Typewriter } from 'react-simple-typewriter';
 import React, { useEffect, useState } from "react";
+import { Typewriter } from 'react-simple-typewriter';
 
 
 const Hero = () => {
