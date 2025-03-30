@@ -22,7 +22,7 @@ const Hero = () => {
           cursorStyle="|"
           typeSpeed={80}
           deleteSpeed={0}
-          delaySpeed={4000}
+          delaySpeed={6000}
         />
       </h2>
         {/* Call to Action Buttons */}
