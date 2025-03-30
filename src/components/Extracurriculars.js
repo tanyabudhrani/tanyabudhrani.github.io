@@ -1,9 +1,17 @@
-
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { BsLink45Deg } from "react-icons/bs";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 
 const Extracurriculars = () => {
+  const [showTypewriter, setShowTypewriter] = useState(false);
+  const titleRef = useRef();
+  const isInView = useInView(titleRef, { once: true });
+
+  useEffect(() => {
+    if (isInView) setShowTypewriter(true);
+  }, [isInView]);
+
   const extracurriculars = [
     {
       organisation: "Microsoft",
@@ -109,7 +117,6 @@ const Extracurriculars = () => {
   ];
 
   return (
-    
     <section
       id="extracurriculars"
       className="py-20 bg-primary text-white"
@@ -120,8 +127,18 @@ const Extracurriculars = () => {
       }}
     >
       <div className="container mx-auto">
-        <h2 className="text-5xl font-poppins font-semibold text-white mb-8">
-          Extracurricular Activities
+        <h2
+          ref={titleRef}
+          className="text-5xl font-poppins font-semibold text-white mb-8"
+        >
+          {showTypewriter && (
+            <Typewriter
+              words={["Extracurricular Activities"]}
+              typeSpeed={70}
+              cursor
+              cursorStyle="|"
+            />
+          )}
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -148,8 +165,8 @@ const Extracurriculars = () => {
               </div>
 
               <div className="mt-4">
-                {extra.content.map((info, index) => (
-                  <div key={index}>
+                {extra.content.map((info, i) => (
+                  <div key={i}>
                     <p className="font-poppins font-normal text-[14px] text-dimWhite my-4 leading-[32px]">
                       ● {info.text}{" "}
                       {info.link && (
