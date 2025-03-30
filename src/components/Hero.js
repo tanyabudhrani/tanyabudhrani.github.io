@@ -14,16 +14,7 @@ const Hero = () => {
     >
       {/* Centered Text Section */}
       <div className="text-center text-white space-y-6">
-        <h1 className="text-4xl sm:text-10xl font-bold">
-        <Typewriter
-          words={["Hello, World!"]}
-          cursor
-          cursorStyle="|"
-          typeSpeed={80}
-          deleteSpeed={0}
-          delaySpeed={1000}
-        />
-      </h1>
+        <h1 className="text-4xl sm:text-10xl font-bold">Hello, World!</h1>
         <h2 className="text-3xl sm:text-7xl font-bold text-gradient">
         <Typewriter
           words={["I'm Tanya"]}
@@ -31,7 +22,7 @@ const Hero = () => {
           cursorStyle="|"
           typeSpeed={80}
           deleteSpeed={0}
-          delaySpeed={1000}
+          delaySpeed={2000}
         />
       </h2>
         {/* Call to Action Buttons */}
