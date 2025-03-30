@@ -117,9 +117,9 @@ const Writing = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-          {filteredWritings.map((writing, index) => (
-            <WritingBlock key={index} {...writing} />
-          ))}
+        {filteredWritings.map((writing, index) => (
+          <WritingBlock key={index} index={index} {...writing} />
+        ))}
         </div>
       </div>
     </section>
