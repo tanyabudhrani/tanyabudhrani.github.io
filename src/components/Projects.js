@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 
 const Project = (props) => {
   return (
+
     <div className="px-9 py-9 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card mx-auto max-w-2xl"> {/* Increased max width */}
       <div className="flex flex-col sm:flex-row">
         <img className="flex-shrink-0 object-cover w-40 h-40 rounded-full sm:mx-4 ring-4 ring-gray-300" src={props.image} alt={props.title} /> {/* Adjusted image size */}
@@ -195,17 +196,16 @@ const Projects = () => {
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-6">Projects</h2>
         <Slider {...settings}>
-        {projects.map((project, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }} // alternate direction
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, delay: index * 0.1 }}
-            viewport={{ once: true, amount: 0.3 }}
-          >
-            <Project {...project} />
-          </motion.div>
-        ))}
+          {projects.map((project, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Project {...project} />
+            </motion.div>
+          ))}
         </Slider>
       </div>
     </section>
