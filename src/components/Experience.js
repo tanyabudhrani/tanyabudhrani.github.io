@@ -200,36 +200,18 @@ const Experience = () => {
           <div className="mb-12"> {/* Increased bottom margin */}
             <h3 className="text-xl font-semibold text-gradient">Programming Languages</h3>
             <div className="grid grid-cols-4 gap-8 mt-6"> {/* Increased grid gap and top margin */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="flex flex-col items-center transition-transform duration-300 hover:scale-110 hover:text-teal-400"
-            >
-              <FaPython className="text-4xl" />
-              <p className="mt-1">Python</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="flex flex-col items-center transition-transform duration-300 hover:scale-110 hover:text-teal-400"
-            >
-              <SiR className="text-4xl" />
-              <p className="mt-1">R</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="flex flex-col items-center transition-transform duration-300 hover:scale-110 hover:text-teal-400"
-            >
-              <SiCplusplus className="text-4xl" />
-              <p className="mt-1">C++</p>
-            </motion.div>
+              <div className="flex flex-col items-center">
+                <FaPython className="text-4xl" />
+                <p>Python</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <SiR className="text-4xl" />
+                <p>R</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <SiCplusplus className="text-4xl" />
+                <p>C++</p>
+              </div>
               <div className="flex flex-col items-center">
                 <FaJs className="text-4xl" />
                 <p>JavaScript+</p>
