@@ -109,6 +109,7 @@ const Extracurriculars = () => {
   ];
 
   return (
+    
     <section
       id="extracurriculars"
       className="py-20 bg-primary text-white"
