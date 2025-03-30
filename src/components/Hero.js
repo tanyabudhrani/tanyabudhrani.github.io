@@ -14,7 +14,16 @@ const Hero = () => {
     >
       {/* Centered Text Section */}
       <div className="text-center text-white space-y-6">
-        <h1 className="text-4xl sm:text-10xl font-bold">Hello, World!</h1>
+        <h1 className="text-4xl sm:text-10xl font-bold">
+        <Typewriter
+          words={["Hello, World!"]}
+          cursor
+          cursorStyle="|"
+          typeSpeed={50}
+          deleteSpeed={0}
+          delaySpeed={3000}
+        />
+      </h1>
         <h2 className="text-3xl sm:text-7xl font-bold text-gradient">
         <Typewriter
           words={["I'm Tanya"]}
