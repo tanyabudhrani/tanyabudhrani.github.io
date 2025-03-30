@@ -5,14 +5,13 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative flex flex-col items-center justify-center h-screen grain-overlay"
+      className="flex flex-col items-center justify-center h-screen bg-gradient-to-b"
       style={{
-        backgroundImage: `url('/assets/1.jpg')`,
+        backgroundImage: `url('/assets/bg1.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
-
       {/* Centered Text Section */}
       <div className="text-center text-white space-y-6">
         <h1 className="text-4xl sm:text-10xl font-bold">
@@ -30,7 +29,7 @@ const Hero = () => {
           words={["I'm Tanya"]}
           cursor
           cursorStyle="|"
-          typeSpeed={50}
+          typeSpeed={80}
           deleteSpeed={0}
           delaySpeed={3000}
         />

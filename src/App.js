@@ -26,7 +26,7 @@ const App = () => {
 
   if (isLoading) {
     return (
-      <div className="relative z-10">
+      <div className="bg-primary w-full overflow-hidden">
         <div className="flex items-center justify-center h-screen">
           <img src="/assets/lg512.png" alt="Loading Icon" className="w-50 h-50" />
         </div>
