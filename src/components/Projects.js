@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Slider from "react-slick";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
 import { FaReact, FaNodeJs, FaJava, FaPython, FaFigma } from "react-icons/fa";
-import { SiC, SiVite } from "react-icons/si";
+import { SiC, SiVite, SiTypescript } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { motion, useInView } from "framer-motion";
+import { Typewriter } from 'react-simple-typewriter';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiTypescript } from "react-icons/si";
-import { motion } from "framer-motion";
-import { Typewriter } from 'react-simple-typewriter';
 
 
 const Project = (props) => {
@@ -48,6 +47,16 @@ const Project = (props) => {
 };
 
 const Projects = () => {
+  const titleRef = useRef();
+  const isInView = useInView(titleRef, { once: true });
+  const [showTypewriter, setShowTypewriter] = useState(false);
+
+  useEffect(() => {
+    if (isInView) {
+      setShowTypewriter(true);
+    }
+  }, [isInView]);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -193,14 +202,17 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-dark-800 text-white">
       <div className="container mx-auto">
-      <h1 className="text-4xl font-bold mb-6">
-        <Typewriter
-          words={['Projects']}
-          typeSpeed={70}
-          cursor
-          cursorStyle="|"
-        />
-      </h1>
+        <h1 ref={titleRef} className="text-6xl font-bold mb-6">
+          {showTypewriter && (
+            <Typewriter
+              words={['Projects']}
+              typeSpeed={70}
+              delaySpeed={3000}
+              cursor
+              cursorStyle="|"
+            />
+          )}
+        </h1>
         <Slider {...settings}>
           {projects.map((project, index) => (
             <motion.div
