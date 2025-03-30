@@ -59,12 +59,6 @@ const Writing = () => {
       image: "/assets/os.jpeg",
     },
     {
-      title: "Computer Networking",
-      organisation: "Notes",
-      link: "https://github.com/tanyabudhrani/Computer-Networking.git",
-      image: "/assets/networking.jpeg",
-    },
-    {
       title: "Data Structures",
       organisation: "Notes",
       link: "https://github.com/tanyabudhrani/Data-Structures.git",
