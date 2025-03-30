@@ -113,7 +113,7 @@ const Extracurriculars = () => {
       id="extracurriculars"
       className="py-20 bg-primary text-white"
       style={{
-        backgroundImage: `url('/assets/2.jpg')`,
+        backgroundImage: `url('/assets/bg2.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
