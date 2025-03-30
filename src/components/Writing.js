@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useRef, useEffect } from "react";
+import { motion, useInView } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 
 const WritingBlock = ({ title, organisation, link, image, index }) => {
   return (
@@ -95,10 +96,28 @@ const Writing = () => {
 
   const categories = ["All", "Publication", "Notes", "Writing"];
 
+  const titleRef = useRef();
+  const isInView = useInView(titleRef, { once: true });
+  const [showTypewriter, setShowTypewriter] = useState(false);
+
+  useEffect(() => {
+    if (isInView) setShowTypewriter(true);
+  }, [isInView]);
+
   return (
     <section className="py-20 bg-dark-900 text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-10 text-center">Writings & Notes</h2>
+        <h2 ref={titleRef} className="text-6xl font-bold mb-10 text-center">
+          {showTypewriter && (
+            <Typewriter
+              words={["Writings & Notes"]}
+              typeSpeed={70}
+              delaySpeed={1000}
+              cursor
+              cursorStyle="|"
+            />
+          )}
+        </h2>
 
         <div className="flex justify-center mb-8 flex-wrap gap-2">
           {categories.map((category) => (
@@ -117,9 +136,9 @@ const Writing = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-        {filteredWritings.map((writing, index) => (
-          <WritingBlock key={index} index={index} {...writing} />
-        ))}
+          {filteredWritings.map((writing, index) => (
+            <WritingBlock key={index} index={index} {...writing} />
+          ))}
         </div>
       </div>
     </section>
