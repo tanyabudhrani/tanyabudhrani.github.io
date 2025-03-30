@@ -8,6 +8,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
+import { motion } from "framer-motion";
+
 
 
 const Project = (props) => {
@@ -193,11 +195,17 @@ const Projects = () => {
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-6">Projects</h2>
         <Slider {...settings}>
-          {projects.map((project, index) => (
-            <div key={index}>
-              <Project {...project} />
-            </div>
-          ))}
+        {projects.map((project, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }} // alternate direction
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: index * 0.1 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <Project {...project} />
+          </motion.div>
+        ))}
         </Slider>
       </div>
     </section>
