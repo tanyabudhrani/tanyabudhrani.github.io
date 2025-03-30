@@ -7,7 +7,7 @@ const Hero = () => {
       id="home"
       className="flex flex-col items-center justify-center h-screen bg-gradient-to-b"
       style={{
-        backgroundImage: `url('/assets/bg1.jpg')`,
+        backgroundImage: `url('/assets/bg1.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
