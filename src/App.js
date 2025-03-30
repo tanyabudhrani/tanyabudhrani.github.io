@@ -1,4 +1,5 @@
 import React from "react";
+import { Typewriter } from 'react-simple-typewriter'; // 🔥 Add at top of file
 import { motion } from "framer-motion";
 import CustomCursor from "./components/CustomCursor"; // 👈 Add this at the top
 import './App.css';
@@ -27,9 +28,25 @@ const App = () => {
   if (isLoading) {
     return (
       <div className="bg-primary w-full overflow-hidden">
-        <div className="flex items-center justify-center h-screen">
-          <img src="/assets/lg512.png" alt="Loading Icon" className="w-50 h-50" />
-        </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col items-center justify-center h-screen text-white text-3xl font-bold"
+        >
+          <div className="flex items-center space-x-3 text-4xl sm:text-5xl font-extrabold">
+            <span className="text-cyan-400">{'{'}</span>
+            <Typewriter
+              words={['Tanya Budhrani']}
+              typeSpeed={80}
+              deleteSpeed={0}
+              delaySpeed={1000}
+              cursor
+              cursorStyle="|"
+            />
+            <span className="text-cyan-400">{'}'}</span>
+          </div>
+        </motion.div>
       </div>
     );
   } else {
