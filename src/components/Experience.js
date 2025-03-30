@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import {
   FaPython,
   FaJava,
@@ -16,9 +16,20 @@ import {
   FaCss3
 } from "react-icons/fa";
 import { SiCplusplus, SiR, SiMysql, SiAssemblyscript, SiFastapi, SiC, SiTypescript} from "react-icons/si";
+import { Typewriter } from 'react-simple-typewriter';
+import { useRef, useEffect, useState } from 'react';
 
 // Content component handles each bullet point or description within a position
 const Content = ({ text, link }) => {
+  const titleRef = useRef();
+  const isInView = useInView(titleRef, { once: true });
+  const [showTypewriter, setShowTypewriter] = useState(false);
+
+  useEffect(() => {
+    if (isInView) {
+      setShowTypewriter(true);
+    }
+  }, [isInView]);
   return (
     <div>
       <p className="bg-primary font-poppins font-normal text-[14px] text-white mt-4">
@@ -187,7 +198,17 @@ const Experience = () => {
       <div className="container mx-auto flex flex-col md:flex-row">
         {/* Left: Experience Section */}
         <div className="flex-1 md:mr-10"> {/* Increased right margin */}
-          <h1 className="text-4xl font-bold mb-12">Experience</h1> {/* Added more bottom margin */}
+        <h1 ref={titleRef} className="text-4xl font-bold mb-12">
+          {showTypewriter && (
+            <Typewriter
+              words={['Experience']}
+              typeSpeed={70}
+              delaySpeed={3000}
+              cursor
+              cursorStyle="|"
+            />
+          )}
+        </h1>
           <motion.div className="flex flex-1 items-center justify-start flex-col">
             {experiences.map((exp, index) => (
               <ExperienceCard key={index} {...exp} />
