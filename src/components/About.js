@@ -1,9 +1,18 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef, useState, useEffect } from "react";
+import { motion, useInView } from "framer-motion";
 import { Typewriter } from 'react-simple-typewriter';
 
-
 const About = () => {
+  const titleRef = useRef();
+  const isInView = useInView(titleRef, { once: true });
+  const [showTypewriter, setShowTypewriter] = useState(false);
+
+  useEffect(() => {
+    if (isInView) {
+      setShowTypewriter(true);
+    }
+  }, [isInView]);
+
   return (
     <section id="about" className="py-20 bg-primary text-white relative z-10">
       <motion.div
@@ -13,13 +22,15 @@ const About = () => {
         viewport={{ once: true, amount: 0.3 }}
         className="container mx-auto"
       >
-        <h1 className="text-6xl font-bold mb-6 text-right">
-          <Typewriter
-            words={['About Me']}
-            typeSpeed={70}
-            cursor
-            cursorStyle="|"
-          />
+        <h1 ref={titleRef} className="text-6xl font-bold mb-6 text-right">
+          {showTypewriter && (
+            <Typewriter
+              words={['About Me']}
+              typeSpeed={70}
+              cursor
+              cursorStyle="|"
+            />
+          )}
         </h1>
 
         <div className="flex flex-col md:flex-row items-end md:items-start">
