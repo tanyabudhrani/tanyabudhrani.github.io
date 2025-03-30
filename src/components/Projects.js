@@ -193,7 +193,14 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 bg-dark-800 text-white">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold mb-6">Projects</h2>
+      <h1 className="text-4xl font-bold mb-6">
+        <Typewriter
+          words={['Projects']}
+          typeSpeed={70}
+          cursor
+          cursorStyle="|"
+        />
+      </h1>
         <Slider {...settings}>
           {projects.map((project, index) => (
             <motion.div
