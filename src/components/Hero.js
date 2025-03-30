@@ -1,23 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Typewriter } from 'react-simple-typewriter';
 
-
 const Hero = () => {
-  const [scrollY, setScrollY] = useState(0);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPercent = window.scrollY / window.innerHeight;
-      setScrollY(Math.min(scrollPercent, 1));
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   return (
     <section
       id="home"
-      className="relative flex flex-col items-center justify-center h-screen grain-overlay transition-all duration-500"
+      className="flex flex-col items-center justify-center h-screen bg-gradient-to-b"
       style={{
-        background: `linear-gradient(to bottom, rgba(2, 6, 23, 1), rgba(13, 23, 42, ${1 - scrollY}))`,
+        backgroundImage: `url('/assets/1.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
       {/* Centered Text Section */}
