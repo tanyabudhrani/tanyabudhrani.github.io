@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Typewriter } from 'react-simple-typewriter';
+
 
 const About = () => {
   return (
@@ -11,7 +13,14 @@ const About = () => {
         viewport={{ once: true, amount: 0.3 }}
         className="container mx-auto"
       >
-        <h1 className="text-6xl font-bold mb-6 text-right">About Me</h1>
+        <h1 className="text-6xl font-bold mb-6 text-right">
+          <Typewriter
+            words={['About Me']}
+            typeSpeed={70}
+            cursor
+            cursorStyle="|"
+          />
+        </h1>
 
         <div className="flex flex-col md:flex-row items-end md:items-start">
           <img
