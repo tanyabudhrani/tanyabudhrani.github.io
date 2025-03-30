@@ -1,5 +1,6 @@
 import React from "react";
 import { Typewriter } from 'react-simple-typewriter';
+import Scramble from 'react-scramble-text';
 
 const Hero = () => {
   return (
@@ -16,13 +17,13 @@ const Hero = () => {
       <div className="text-center text-white space-y-6">
         <h1 className="text-4xl sm:text-10xl font-bold">Hello, World!</h1>
         <h2 className="text-3xl sm:text-7xl font-bold text-gradient">
-        <Typewriter
-          words={["I'm Tanya"]}
-          cursor
-          cursorStyle="|"
-          typeSpeed={80}
-          deleteSpeed={0}
-          delaySpeed={3000}
+        <Scramble
+          autoStart
+          text="I'm Tanya"
+          speed={0.5}
+          steps={10}
+          revealSpeed={200}
+          scramble="abcdefghijklmnopqrstuvwxyz"
         />
       </h2>
         {/* Call to Action Buttons */}
