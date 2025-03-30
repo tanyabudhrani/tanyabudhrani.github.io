@@ -10,7 +10,7 @@ const About = () => {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      viewport={{ once: true }}
+      viewport={{ once: false, amount: 0.3 }} 
     >
       <div className="container mx-auto text-right">
         <h1 className="text-6xl font-bold mb-6">About Me</h1>
