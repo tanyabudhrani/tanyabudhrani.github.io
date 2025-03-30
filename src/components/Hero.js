@@ -38,7 +38,7 @@ const Hero = () => {
           words={["I'm Tanya"]}
           cursor
           cursorStyle="|"
-          typeSpeed={20}
+          typeSpeed={50}
           deleteSpeed={0}
           delaySpeed={3000}
         />
