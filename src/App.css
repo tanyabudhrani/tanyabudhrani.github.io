@@ -49,3 +49,13 @@ body {
   pointer-events: none;
   z-index: 9999;
 }
+
+.grain-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+  opacity: 0.08;
+  z-index: 1;
+  pointer-events: none;
+}
