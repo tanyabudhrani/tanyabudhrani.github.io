@@ -110,7 +110,7 @@ const Writing = () => {
   const categories = ["All", "Publication", "Notes", "Writing"];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[#0f172a] via-[#0b1c30] to-[#020617] text-white"> {/* Updated background color */}
+    <section className="py-20 bg-primary text-white"> {/* Updated background color */}
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-6">My Writings</h2>
         <div className="mb-4 flex justify-center">
