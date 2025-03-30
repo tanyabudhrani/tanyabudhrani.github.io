@@ -15,7 +15,7 @@ const WritingItem = (props) => {
     className="transition-transform"
   >
     <motion.div
-      className="flex flex-col justify-between px-6 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 transition-colors duration-300 transform border dark:border-gray-700 bg-dark-800 shadow-lg"
+      className="flex flex-col justify-between px-6 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 transition-transform duration-300 transform border border-gray-700 bg-dark-800 hover:scale-[1.03] hover:shadow-[0_0_20px_rgba(13,255,202,0.2)]"
       whileInView={{ x: [-40, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
     >
@@ -110,7 +110,7 @@ const Writing = () => {
   const categories = ["All", "Publication", "Notes", "Writing"];
 
   return (
-    <section className="py-20 bg-primary text-white"> {/* Updated background color */}
+    <section className="py-20 bg-gradient-to-br from-[#0f172a] via-[#0b1c30] to-[#020617] text-white"> {/* Updated background color */}
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-6">My Writings</h2>
         <div className="mb-4 flex justify-center">
