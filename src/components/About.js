@@ -27,6 +27,7 @@ const About = () => {
             <Typewriter
               words={['About Me']}
               typeSpeed={70}
+              delaySpeed={3000}
               cursor
               cursorStyle="|"
             />
