@@ -44,8 +44,20 @@ const Writing = () => {
     {
       title: "Cracking the Code: Developer Trust and Usage Patterns in AI-Based Code Generators",
       organisation: "Publication",
-      link: "https://drive.google.com/file/d/1oDX_l60n4EGd8x16vLN_ZwMTbYGDdQQb/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1IDn1GRWl8jlTrcsFrYYHGJmabulAOSMK/view?usp=sharing",
       image: "/assets/ubc.jpeg",
+    },
+    {
+      title: "Buzzfeed Quizzes: the Windows to our Souls",
+      organisation: "Writing",
+      link: "https://docs.google.com/document/d/1lgwJIVZutmwt-OpFSR3Fnh4VWcMNXyQf95tHL21PNO8/edit?usp=drive_link",
+      image: "/assets/buzz.png",
+    },
+    {
+      title: "The Pragmatics behind Pride and Prejudice",
+      organisation: "Writing",
+      link: "https://docs.google.com/document/d/1Wv3XuBHCUQVYR_CvDFK-tXFvyqHSKuOLlfNu4A70k1o/edit?usp=sharing",
+      image: "/assets/prag.jpeg",
     },
     {
       title: "Data Analytics",
