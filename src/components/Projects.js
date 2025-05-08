@@ -205,9 +205,9 @@ const Projects = () => {
         { name: "HTML", icon: SiHtml5 },
         { name: "CSS", icon: SiCss3 }
       ],
-      content: "A command-line Monopoly game implementing core gameplay mechanics, board customization, and error handling. Made for COMP3211.",
-      github: "https://github.com/tanyabudhrani/Monopoly-Game",
-      link: "",
+      content: "An amalgamation of my inner thoughts and most academic articles. Made out of my love for writing and literature.",
+      github: "https://github.com/tanyabudhrani/tanyasthoughts",
+      link: "https://tanyasthoughts.netlify.app/",
     },
   ];
 
