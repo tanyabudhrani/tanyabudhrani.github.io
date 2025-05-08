@@ -81,7 +81,7 @@ const App = () => {
           <div className="bg-primary flex justify-center px-6">
             <div className="w-full max-w-screen-xl">
               <Projects />
-              {/* <Writing /> */}
+              <Writing />
               <Extracurriculars />
             </div>
           </div>
