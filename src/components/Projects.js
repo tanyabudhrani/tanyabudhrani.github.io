@@ -205,7 +205,7 @@ const Projects = () => {
         { name: "HTML", icon: SiHtml5 },
         { name: "CSS", icon: SiCss3 }
       ],
-      content: "An amalgamation of my inner thoughts and most academic articles. Made out of my love for writing and literature.",
+      content: "An amalgamation of my inner thoughts and most academic articles. Made out of my love for writing and literature-- well, that, along with HTML, JS, and CSS",
       github: "https://github.com/tanyabudhrani/tanyasthoughts",
       link: "https://tanyasthoughts.netlify.app/",
     },
