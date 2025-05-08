@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
 import { FaReact, FaNodeJs, FaJava, FaPython, FaFigma } from "react-icons/fa";
-import { SiC, SiVite, SiTypescript } from "react-icons/si";
+import { SiC, SiVite, SiTypescript, SiHtml5, SiCss3 } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { motion, useInView } from "framer-motion";
 import { Typewriter } from 'react-simple-typewriter';
@@ -192,6 +192,18 @@ const Projects = () => {
       image: "/assets/monopoly.jpeg",
       stack: [
         { name: "Java", icon: FaJava }
+      ],
+      content: "A command-line Monopoly game implementing core gameplay mechanics, board customization, and error handling. Made for COMP3211.",
+      github: "https://github.com/tanyabudhrani/Monopoly-Game",
+      link: "",
+    },
+    {
+      title: "Tanya's thoughts",
+      image: "/assets/tt.png",
+      stack: [
+        { name: "JS", icon: FaNodeJs },
+        { name: "HTML", icon: SiHtml5 },
+        { name: "CSS", icon: SiCss3 }
       ],
       content: "A command-line Monopoly game implementing core gameplay mechanics, board customization, and error handling. Made for COMP3211.",
       github: "https://github.com/tanyabudhrani/Monopoly-Game",
