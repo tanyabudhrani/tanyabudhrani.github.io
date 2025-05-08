@@ -195,7 +195,7 @@ const Writing = () => {
           href="https://tanyasthoughts.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-8 py-3 rounded-full bg-teal-500 text-white text-lg font-semibold transition hover:bg-teal-400"
+          className="inline-block px-10 py-6 text-white transition-colors duration-300 transform border rounded-xl hover: text-gradient border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card"
         >
           Visit My Blog →
         </a>
