@@ -198,6 +198,16 @@ const Projects = () => {
       link: "",
     },
     {
+      title: "YOLOV5 Fine-Tuning and Evaluation",
+      image: "/assets/cv.png",
+      stack: [
+        { name: "Python", icon: FaPython }
+      ],
+      content: "This project explores a dual-pipeline approach in computer vision, combining image-to-image translation using GANs and object detection using YOLOv5.",
+      github: "https://github.com/tanyabudhrani/YOLOV5-Fine-Tuning-and-Evaluation",
+      link: "",
+    },
+    {
       title: "Tanya's thoughts",
       image: "/assets/tt.png",
       stack: [
