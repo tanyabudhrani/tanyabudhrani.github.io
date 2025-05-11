@@ -183,7 +183,7 @@ const Projects = () => {
         { name: "Tailwind", icon: RiTailwindCssFill },
         { name: "Figma", icon: FaFigma },
       ],
-      content: "Luxury, redefined, reimagined, refined.​ ​SkyByte™brings premium travel to everyone, one bite-sized component at a time. Made for the Cathay",
+      content: "Luxury, redefined, reimagined, refined.​ ​SkyByte™brings premium travel to everyone, one bite-sized component at a time. Got us to the finals for the Cathay 2024 Hackathon.",
       github: "https://github.com/tanyabudhrani/SkyByte",
       link: "",
     },
