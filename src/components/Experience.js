@@ -88,7 +88,10 @@ const Experience = () => {
           duration: "2025 - Present",
           content: [
             {
-              text: "Utilizing PowerBI and Adobe Analytics to create analytical dashboards for the APAC region.",
+              text: "Leverage Power BI and Adobe Analytics to monitor client engagement patterns across global digital platforms, identifying key drop-off points and high-performing content.",
+            },
+            {
+              text: "Present strategic recommendations based on data trends, contributing to a 15% improvement in regional campaign click-through rates and 10% increase in client retention through enhanced personalization.",
             },
           ],
         },
