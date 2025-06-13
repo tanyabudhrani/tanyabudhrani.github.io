@@ -15,6 +15,8 @@ import {
   FaFigma,
   FaCss3
 } from "react-icons/fa";
+import { LiaAdobe } from "react-icons/lia";
+import { VscAzure } from "react-icons/vsc";
 import { SiCplusplus, SiR, SiMysql, SiAssemblyscript, SiFastapi, SiC, SiTypescript} from "react-icons/si";
 import { Typewriter } from 'react-simple-typewriter';
 import { useRef, useEffect, useState } from 'react';
@@ -260,8 +262,8 @@ const Experience = () => {
             >
               {[
                 { icon: <FaNodeJs />, label: "Node.js" },
-                { icon: <FaAngular />, label: "Angular" },
-                { icon: <FaDocker />, label: "Docker" },
+                { icon: <VscAzure />, label: "Azure" },
+                { icon: <LiaAdobe />, label: "Adobe Analytics" },
                 { icon: <FaGitAlt />, label: "Git" },
                 { icon: <FaGithub />, label: "GitHub" },
                 { icon: <FaReact />, label: "React" },
