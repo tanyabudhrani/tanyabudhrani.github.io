@@ -78,18 +78,15 @@ const Experience = () => {
   }, [isInView]);
   const experiences = [
     {
-      organisation: "Gateway Private Markets",
-      logo: '/assets/gateway.jpeg',
+      organisation: "Invesco",
+      logo: '/assets/invesco.jpg',
       positions: [
         {
-          title: "Software Developer",
+          title: "Digital Analytics Intern",
           duration: "2025 - Present",
           content: [
             {
-              text: "Contributing to the development of integrated, intelligent chatbots using Azure AI tools, along with overseeing the design and implementation of matching rules.",
-            },
-            {
-              text: "Working on conducting blockchain analysis on the secondary market."
+              text: "Utilizing PowerBI and Adobe Analytics to create analytical dashboards for the APAC region.",
             },
           ],
         },
@@ -100,11 +97,11 @@ const Experience = () => {
       logo: '/assets/hkstp.jpeg',
       positions: [
         {
-          title: "Digital Marketing Intern",
+          title: "Digital Analytics Intern",
           duration: "2025 - Present",
           content: [
             {
-              text: "Working as a Digital Marketing Intern at GL.iNet for their Astrowarp drop; using Python to webscrape data from KOLs.",
+              text: "Working as a Digital Analytics Intern at GL.iNet for their Astrowarp drop; using Python to webscrape data from KOLs.",
             },
           ],
         },
@@ -113,7 +110,7 @@ const Experience = () => {
           duration: "2024 - Present",
           content: [
             {
-              text: "Currently working as a Software Developer at HKSTP to build an intelligent chatbot to manage referral data using n8n, PostmanAPI, Supabase, and Gemini.",
+              text: "Working as a Software Developer at HKSTP to build an intelligent chatbot to manage referral data using n8n, PostmanAPI, Supabase, and Gemini.",
             },
           ],
         },
@@ -136,7 +133,7 @@ const Experience = () => {
       ],
     },
     {
-      organisation: "Mitacs Globalink Intern",
+      organisation: "The University of British Columbia",
       logo: '/assets/ubc.jpeg',
       positions: [
         {
