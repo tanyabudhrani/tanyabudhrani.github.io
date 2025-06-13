@@ -8,8 +8,6 @@ import {
   FaGitAlt,
   FaGithub,
   FaNodeJs,
-  FaAngular,
-  FaDocker,
   FaReact,
   FaTerminal,
   FaFigma,
