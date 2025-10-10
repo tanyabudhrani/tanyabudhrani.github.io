@@ -55,12 +55,12 @@ const Extracurriculars = () => {
       ],
     },
     {
-      organisation: "Hong Kong Trade Development Council",
-      title: "TAP Student Ambassador",
-      duration: "2024 - Present",
+      organisation: "Millenium Fellowship",
+      title: "Millenium Fellow",
+      duration: "2025 - Present",
       content: [
         {
-          text: "I was recently accepted into the 24-25 Cohort of HKTDC Student Ambassadors to be tasked with driving business innovation using technology and computer science.",
+          text: "I was recently accepted into the 2025 cohort of Millenium Fellows, with a 4% acceptance rate, to drive social impact.",
         },
       ],
     },
