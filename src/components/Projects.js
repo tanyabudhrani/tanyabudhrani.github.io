@@ -219,6 +219,16 @@ const Projects = () => {
       github: "https://github.com/tanyabudhrani/tanyasthoughts",
       link: "https://tanyasthoughts.netlify.app/",
     },
+    {
+      title: "Layered Fraud Credit Checker",
+      image: "/assets/fraud.jpeg",
+      stack: [
+        { name: "Python", icon: FaPython },
+      ],
+      content: "A multi-layer, risk-adaptive fraud detection system built on the Kaggle Credit Card Fraud Dataset, that automatically tunes itself while minimizing computational cost",
+      github: "https://github.com/tanyabudhrani/Layered-Fraud-Credit-Checker/tree/main",
+      link: "",
+    },
   ];
 
   return (
