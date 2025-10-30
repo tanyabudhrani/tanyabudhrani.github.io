@@ -229,6 +229,16 @@ const Projects = () => {
       github: "https://github.com/tanyabudhrani/Layered-Fraud-Credit-Checker/tree/main",
       link: "",
     },
+    {
+      title: "Dont Overfit Kaggle Challenge",
+      image: "/assets/k.png",
+      stack: [
+        { name: "Python", icon: FaPython },
+      ],
+      content: "A methodologically sound reimplementation of the classic “Don’t Overfit!” Kaggle competition, focusing on generalization under extreme overfitting risk (250 samples, 300 features).",
+      github: "https://github.com/tanyabudhrani/Dont-Overfit-Kaggle-Challenge",
+      link: "",
+    },
   ];
 
   return (
