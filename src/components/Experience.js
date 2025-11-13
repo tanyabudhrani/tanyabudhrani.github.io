@@ -101,7 +101,7 @@ const Experience = () => {
       positions: [
         {
           title: "ML and NLP Researcher",
-          duration: "2024 - 2024",
+          duration: "May 2024 - Aug 2024",
           content: [
             {
               text: "Performed meticulous research on LLMs to aid in software programming.",
