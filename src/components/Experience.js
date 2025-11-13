@@ -83,53 +83,13 @@ const Experience = () => {
       positions: [
         {
           title: "Digital Analytics Intern",
-          duration: "2025 - Present",
+          duration: "Jun 2025 - Aug 2025",
           content: [
             {
               text: "Leverage Power BI and Adobe Analytics to monitor client engagement patterns across global digital platforms, identifying key drop-off points and high-performing content.",
             },
             {
               text: "Present strategic recommendations based on data trends, contributing to a 15% improvement in regional campaign click-through rates and 10% increase in client retention through enhanced personalization.",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      organisation: "Hong Kong Science and Technology Parks",
-      logo: '/assets/hkstp.jpeg',
-      positions: [
-        {
-          title: "Digital Analytics Intern",
-          duration: "2025 - Present",
-          content: [
-            {
-              text: "Working as a Digital Analytics Intern at GL.iNet for their Astrowarp drop; using Python to webscrape data from KOLs.",
-            },
-          ],
-        },
-        {
-          title: "Software Developer",
-          duration: "2024 - Present",
-          content: [
-            {
-              text: "Working as a Software Developer at HKSTP to build an intelligent chatbot to manage referral data using n8n, PostmanAPI, Supabase, and Gemini.",
-            },
-          ],
-        },
-      ],
-      
-    },
-    {
-      organisation: "The Hong Kong Polytechnic University",
-      logo: '/assets/polyu.png',
-      positions: [
-        {
-          title: "Generatative AI Researcher",
-          duration: "2024 - 2024",
-          content: [
-            {
-              text: "Performed extensive research on generative AI models and tools at the Industrial Lab of PolyU to create an intelligent chatbot.",
             },
           ],
         },
@@ -148,24 +108,6 @@ const Experience = () => {
             },
             {
               text: "Conducted literature reviews and data analysis to deliver scientific reports using Python, Latex, and more.",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      organisation: "Bowers and Wilkins",
-      logo: '/assets/bw.png',
-      positions: [
-        {
-          title: "Product Researcher and Web Developer",
-          duration: "2021 - 2022",
-          content: [
-            {
-              text: "Conducted research on their products and market trends to support content strategy and product positioning.",
-            },
-            {
-              text: "Managed backend functionality and cross-device compatibility, enhancing overall site performance and user experience.",
             },
           ],
         },
