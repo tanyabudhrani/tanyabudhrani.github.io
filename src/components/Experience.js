@@ -100,7 +100,7 @@ const Experience = () => {
       logo: '/assets/ubc.jpeg',
       positions: [
         {
-          title: "ML and NLP Researcher",
+          title: "NLP Researcher",
           duration: "May 2024 - Aug 2024",
           content: [
             {
