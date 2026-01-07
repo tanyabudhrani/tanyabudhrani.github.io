@@ -58,7 +58,7 @@ const About = () => {
               </p>
               <ul className="list-none ml-5 text-lg md:text-lg space-y-3 text-left">
                 {[
-                  "Working at Invesco as a Digital Analytics Intern.",
+                  "Working at Odoo as a Technical Consulting Intern.",
                   "Working with Microsoft as a community builder for students.",
                   "Working with the ACM-W to support and advocate for women in computing.",
                   "Working with the HKCS to empower Hong Kong students wanting to learn Computer Science.",

@@ -78,6 +78,21 @@ const Experience = () => {
   }, [isInView]);
   const experiences = [
     {
+      organisation: "Odoo",
+      logo: '/assets/odoo.png',
+      positions: [
+        {
+          title: "Technical Consulting Intern",
+          duration: "Jan 2026 - June 2026",
+          content: [
+            {
+              text: "Implementing localization features for Odoo modules, pushing Git commits to enhance software adaptability, and collaborating with cross-functional teams to ensure seamless integration of new functionalities.",
+            },
+          ],
+        },
+      ],
+    },
+    {
       organisation: "Invesco",
       logo: '/assets/invesco.jpg',
       positions: [
