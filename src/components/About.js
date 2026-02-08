@@ -45,9 +45,8 @@ const About = () => {
               Hello there, I'm <strong>Tans</strong>
             </p>
             <p className="text-lg md:text-xl mb-6 leading-relaxed text-gray-200">
-              I am a third-year Computer Science and Linguistics student at the
-              Hong Kong Polytechnic University with a keen interest in Natural
-              Language Processing and Machine Learning.
+              I am a fourth-year Computer Science and Linguistics student at the
+              Hong Kong Polytechnic University with a keen interest in Data Analytics and Machine Learning.
             </p>
 
             <hr className="border-gradient mb-6" />
