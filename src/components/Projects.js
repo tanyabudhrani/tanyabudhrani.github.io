@@ -13,7 +13,20 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Project = (props) => {
   return (
-    <div className="px-9 py-9 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card mx-auto max-w-2xl"> {/* Increased max width */}
+    <div className="
+        px-6
+        py-8
+        border
+        rounded-xl
+        transition-colors
+        duration-300
+        group
+        mx-auto
+        w-full
+        max-w-md
+        sm:max-w-lg
+        lg:max-w-2xl
+      ">
       <div className="flex flex-col sm:flex-row">
         <img className="flex-shrink-0 object-cover w-40 h-40 rounded-full sm:mx-4 ring-4 ring-gray-300" src={props.image} alt={props.title} /> {/* Adjusted image size */}
         <div className="mt-4 sm:mx-4 sm:mt-0">
@@ -57,17 +70,53 @@ const Projects = () => {
     }
   }, [isInView]);
 
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 2,
+  //   slidesToScroll: 1,
+  //   centerMode: true,
+  //   variableWidth: false,
+  //   arrows: true,
+  //   centerPadding: '0',
+  // };
+
   const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    centerMode: true,
-    variableWidth: false,
-    arrows: true,
-    centerPadding: '0',
-  };
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  centerMode: true,
+  arrows: true,
+  centerPadding: "0px",
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false,
+        arrows: false,
+      }
+    }
+  ]
+};
+
+
 
   const projects = [
     {
@@ -243,8 +292,19 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-20 bg-dark-800 text-white">
-      <div className="container mx-auto">
-        <h1 ref={titleRef} className="text-6xl font-bold mb-6">
+      <div className="max-w-screen-xl mx-auto px-6">
+       <h1
+          ref={titleRef}
+          className="
+            text-3xl
+            sm:text-4xl
+            md:text-5xl
+            lg:text-6xl
+            font-bold
+            mb-10
+            px-6
+          "
+        >
           {showTypewriter && (
             <Typewriter
               words={['Projects']}

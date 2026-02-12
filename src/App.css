@@ -70,4 +70,12 @@ body::before {
   z-index: 1;
 }
 
+.slick-slide {
+  padding: 0 10px;
+}
 
+@media (max-width: 768px) {
+  .slick-slide {
+    padding: 0;
+  }
+}
