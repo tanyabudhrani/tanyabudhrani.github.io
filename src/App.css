@@ -70,39 +70,4 @@ body::before {
   z-index: 1;
 }
 
-/* 1. Prevent horizontal scrolling globally */
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
 
-/* 2. Fix the cursor for mobile */
-@media (max-width: 768px) {
-  body {
-    cursor: auto !important; /* Bring back the normal touch cursor */
-  }
-  
-  /* Hide the custom cursor circles on mobile */
-  .custom-cursor-outer, 
-  .custom-cursor-inner {
-    display: none !important;
-  }
-
-  /* Reduce padding on the main containers for small screens */
-  .px-6 {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-}
-
-/* 3. Helper for stacking items */
-.flex-responsive {
-  display: flex;
-  flex-direction: column; /* Stack vertically by default (mobile) */
-}
-
-@media (min-width: 768px) {
-  .flex-responsive {
-    flex-direction: row; /* Side-by-side on desktop */
-  }
-}
