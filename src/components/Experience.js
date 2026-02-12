@@ -36,32 +36,35 @@ const ExperienceCard = ({ organisation, logo, positions }) => (
   <motion.div
     whileInView={{ y: [-20, 0], opacity: [0, 1] }}
     transition={{ duration: 1 }}
+    className="w-full"
   >
-    <div className="flex flex-row items-center mb-8 text-white relative">
+    {/* Organisation Header */}
+    <div className="flex items-center mb-6 text-white">
       <img
         src={logo}
         alt={organisation}
-        className="w-[45px] h-[45px] rounded-full z-[4] mt-2"
+        className="w-[45px] h-[45px] rounded-full mt-1"
       />
-      <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px] ml-4">
+      <h4 className="font-semibold text-[20px] ml-4 text-gradient">
         {organisation}
       </h4>
     </div>
 
-    <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-[22px] pr-2">
+    {/* Timeline */}
+    <ol className="relative border-l border-gray-600 pl-6">
       {positions.map((position, i) => (
-        <li key={i} className={`relative ${i === positions.length - 1 ? "mb-5" : "mb-6"} pl-4`}>
-          <div className="relative flex items-left">
-            <div>
-              <h3 className="text-lg font-semibold text-white">{position.title}</h3>
-              <time className="mb-3 text-sm font-normal leading-none text-white">
-                {position.duration}
-              </time>
-              {position.content.map((item, j) => (
-                <Content key={j} text={item.text} link={item.link} />
-              ))}
-            </div>
-          </div>
+        <li key={i} className={`${i === positions.length - 1 ? "mb-6" : "mb-8"}`}>
+          <h3 className="text-lg font-semibold text-white">
+            {position.title}
+          </h3>
+
+          <time className="block mb-2 text-sm text-gray-300">
+            {position.duration}
+          </time>
+
+          {position.content.map((item, j) => (
+            <Content key={j} text={item.text} link={item.link} />
+          ))}
         </li>
       ))}
     </ol>
@@ -146,7 +149,7 @@ const Experience = () => {
             />
           )}
         </h1>
-          <motion.div className="flex flex-1 items-center justify-start flex-col">
+          <motion.div className="flex flex-1 items-start justify-start flex-col w-full">
             {experiences.map((exp, index) => (
               <ExperienceCard key={index} {...exp} />
             ))}
