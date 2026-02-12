@@ -1,4 +1,110 @@
-import React, { useRef, useState, useEffect } from 'react';
+// import React, { useRef, useState, useEffect } from 'react';
+// import Slider from "react-slick";
+// import { AiFillGithub } from "react-icons/ai";
+// import { BsLink45Deg } from "react-icons/bs";
+// import { FaReact, FaNodeJs, FaJava, FaPython, FaFigma } from "react-icons/fa";
+// import { SiC, SiVite, SiTypescript, SiHtml5, SiCss3 } from "react-icons/si";
+// import { RiTailwindCssFill } from "react-icons/ri";
+// import { motion, useInView } from "framer-motion";
+// import { Typewriter } from 'react-simple-typewriter';
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
+
+// const Project = (props) => {
+//   return (
+//     <div className="
+//         px-6
+//         py-8
+//         border
+//         rounded-xl
+//         transition-colors
+//         duration-300
+//         group
+//         mx-auto
+//         w-full
+//         max-w-md
+//         sm:max-w-lg
+//         lg:max-w-2xl
+//       ">
+//       <div className="flex flex-col sm:flex-row">
+//         <img className="flex-shrink-0 object-cover w-40 h-40 rounded-full sm:mx-4 ring-4 ring-gray-300" src={props.image} alt={props.title} /> {/* Adjusted image size */}
+//         <div className="mt-4 sm:mx-4 sm:mt-0">
+//           <h1 className="text-2xl font-semibold text-gray-700 capitalize md:text-2xl group-hover:text-white text-gradient">{props.title}</h1>
+//           <p className="font-poppins font-normal text-dimWhite mt-3">Tech Stack</p>
+//           <div className="flex sm:flex-row mt-2">
+//             {props.stack.map((tech, index) => (
+//               <div key={index} className="text-dimWhite mr-5 text-[20px] hover:text-teal-200">
+//                 {React.createElement(tech.icon)}
+//                 <span className="tooltiptext">{tech.name}</span>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//       <p className="mt-8 text-gray-500 dark:text-gray-300 group-hover:text-gray-300">{props.content}</p>
+//       <div className="flex mt-4 -mx-2">
+//         {props.github && (
+//           <a href={props.github} target="_blank" rel="noopener noreferrer">
+//             <AiFillGithub size="2rem" className="text-white mr-1 hover:text-teal-200" />
+//           </a>
+//         )}
+//         {props.link && (
+//           <a href={props.link} target="_blank" rel="noopener noreferrer">
+//             <BsLink45Deg size="2rem" className="text-white hover:text-teal-200" />
+//           </a>
+//         )}
+//       </div>
+//     </div>
+//   );
+// };
+
+// const Projects = () => {
+//   const titleRef = useRef();
+//   const isInView = useInView(titleRef, { once: true });
+//   const [showTypewriter, setShowTypewriter] = useState(false);
+
+//   useEffect(() => {
+//     if (isInView) {
+//       setShowTypewriter(true);
+//     }
+//   }, [isInView]);
+
+//   const settings = {
+//   dots: true,
+//   infinite: true,
+//   speed: 500,
+//   slidesToShow: 2,
+//   slidesToScroll: 1,
+//   centerMode: true,
+//   arrows: true,
+//   centerPadding: "0px",
+//   responsive: [
+//     {
+//       breakpoint: 1024,
+//       settings: {
+//         slidesToShow: 2,
+//       }
+//     },
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         slidesToShow: 1,
+//         centerMode: false,
+//       }
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         slidesToShow: 1,
+//         centerMode: false,
+//         arrows: false,
+//       }
+//     }
+//   ]
+// };
+
+import React, { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
@@ -6,52 +112,98 @@ import { FaReact, FaNodeJs, FaJava, FaPython, FaFigma } from "react-icons/fa";
 import { SiC, SiVite, SiTypescript, SiHtml5, SiCss3 } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { motion, useInView } from "framer-motion";
-import { Typewriter } from 'react-simple-typewriter';
+import { Typewriter } from "react-simple-typewriter";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const Project = (props) => {
   return (
-    <div className="
-        px-6
-        py-8
+    <div
+      className="
+        w-full
+        max-w-xl
+        mx-auto
+        p-6
         border
         rounded-xl
-        transition-colors
+        bg-dark
+        overflow-hidden
+        break-words
+        transition-all
         duration-300
-        group
-        mx-auto
-        w-full
-        max-w-md
-        sm:max-w-lg
-        lg:max-w-2xl
-      ">
-      <div className="flex flex-col sm:flex-row">
-        <img className="flex-shrink-0 object-cover w-40 h-40 rounded-full sm:mx-4 ring-4 ring-gray-300" src={props.image} alt={props.title} /> {/* Adjusted image size */}
-        <div className="mt-4 sm:mx-4 sm:mt-0">
-          <h1 className="text-2xl font-semibold text-gray-700 capitalize md:text-2xl group-hover:text-white text-gradient">{props.title}</h1>
-          <p className="font-poppins font-normal text-dimWhite mt-3">Tech Stack</p>
-          <div className="flex sm:flex-row mt-2">
+      "
+    >
+      {/* Top Section */}
+      <div className="flex flex-col sm:flex-row items-center sm:items-start">
+        <img
+          className="
+            w-28 h-28
+            sm:w-36 sm:h-36
+            object-cover
+            rounded-full
+            ring-4
+            ring-gray-400
+            flex-shrink-0
+          "
+          src={props.image}
+          alt={props.title}
+        />
+
+        <div className="mt-4 sm:mt-0 sm:ml-6 text-center sm:text-left w-full">
+          <h2 className="text-xl sm:text-2xl font-semibold text-cyan-400">
+            {props.title}
+          </h2>
+
+          <p className="text-sm text-gray-400 mt-3">Tech Stack</p>
+
+          <div className="flex justify-center sm:justify-start flex-wrap gap-4 mt-2">
             {props.stack.map((tech, index) => (
-              <div key={index} className="text-dimWhite mr-5 text-[20px] hover:text-teal-200">
+              <div
+                key={index}
+                className="text-gray-300 text-lg hover:text-teal-300 transition"
+              >
                 {React.createElement(tech.icon)}
-                <span className="tooltiptext">{tech.name}</span>
               </div>
             ))}
           </div>
         </div>
       </div>
-      <p className="mt-8 text-gray-500 dark:text-gray-300 group-hover:text-gray-300">{props.content}</p>
-      <div className="flex mt-4 -mx-2">
+
+      {/* Description */}
+      <p
+        className="
+          mt-6
+          text-gray-300
+          text-sm
+          sm:text-base
+          leading-relaxed
+          break-words
+        "
+      >
+        {props.content}
+      </p>
+
+      {/* Links */}
+      <div className="flex mt-6 gap-4">
         {props.github && (
-          <a href={props.github} target="_blank" rel="noopener noreferrer">
-            <AiFillGithub size="2rem" className="text-white mr-1 hover:text-teal-200" />
+          <a
+            href={props.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-teal-300 transition"
+          >
+            <AiFillGithub size="1.8rem" />
           </a>
         )}
+
         {props.link && (
-          <a href={props.link} target="_blank" rel="noopener noreferrer">
-            <BsLink45Deg size="2rem" className="text-white hover:text-teal-200" />
+          <a
+            href={props.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-teal-300 transition"
+          >
+            <BsLink45Deg size="1.8rem" />
           </a>
         )}
       </div>
@@ -70,51 +222,29 @@ const Projects = () => {
     }
   }, [isInView]);
 
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 2,
-  //   slidesToScroll: 1,
-  //   centerMode: true,
-  //   variableWidth: false,
-  //   arrows: true,
-  //   centerPadding: '0',
-  // };
-
   const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  centerMode: true,
-  arrows: true,
-  centerPadding: "0px",
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        centerMode: false,
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        centerMode: false,
-        arrows: false,
-      }
-    }
-  ]
-};
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+    ],
+  };
 
   const projects = [
     {
@@ -288,10 +418,54 @@ const Projects = () => {
     },
   ];
 
-  return (
-    <section id="projects" className="py-20 bg-dark-800 text-white">
+//   return (
+//     <section id="projects" className="py-20 bg-dark-800 text-white">
+//       <div className="max-w-screen-xl mx-auto px-6">
+//        <h1
+//           ref={titleRef}
+//           className="
+//             text-3xl
+//             sm:text-4xl
+//             md:text-5xl
+//             lg:text-6xl
+//             font-bold
+//             mb-10
+//             px-6
+//           "
+//         >
+//           {showTypewriter && (
+//             <Typewriter
+//               words={['Projects']}
+//               typeSpeed={70}
+//               delaySpeed={3000}
+//               cursor
+//               cursorStyle="|"
+//             />
+//           )}
+//         </h1>
+//         <Slider {...settings}>
+//           {projects.map((project, index) => (
+//             <motion.div
+//               key={index}
+//               initial={{ opacity: 0, scale: 0.95 }}
+//               animate={{ opacity: 1, scale: 1 }}
+//               transition={{ duration: 0.5 }}
+//             >
+//               <Project {...project} />
+//             </motion.div>
+//           ))}
+//         </Slider>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Projects;
+
+return (
+    <section id="projects" className="py-20 bg-dark text-white">
       <div className="max-w-screen-xl mx-auto px-6">
-       <h1
+        <h1
           ref={titleRef}
           className="
             text-3xl
@@ -299,13 +473,12 @@ const Projects = () => {
             md:text-5xl
             lg:text-6xl
             font-bold
-            mb-10
-            px-6
+            mb-12
           "
         >
           {showTypewriter && (
             <Typewriter
-              words={['Projects']}
+              words={["Projects"]}
               typeSpeed={70}
               delaySpeed={3000}
               cursor
@@ -313,10 +486,12 @@ const Projects = () => {
             />
           )}
         </h1>
+
         <Slider {...settings}>
           {projects.map((project, index) => (
             <motion.div
               key={index}
+              className="px-3"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
