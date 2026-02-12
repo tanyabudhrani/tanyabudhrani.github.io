@@ -95,19 +95,20 @@ function Navbar() {
       </div>
 
       {/* Mobile Dropdown Menu */}
+      {/* Mobile Side Menu */}
       <div
-        className={`md:hidden bg-dark transition-all duration-300 overflow-hidden ${
-          isOpen ? "max-h-96 py-6" : "max-h-0"
-        }`}
+        className={`fixed top-0 right-0 h-full w-64 bg-dark shadow-lg transform transition-transform duration-300 z-40 ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        } md:hidden`}
       >
-        <div className="flex flex-col items-center space-y-6 text-white">
-          <a href="#home" onClick={closeMenu}>Home</a>
-          <a href="#about" onClick={closeMenu}>About</a>
-          <a href="#experience" onClick={closeMenu}>Experience</a>
-          <a href="#projects" onClick={closeMenu}>Projects</a>
-          <a href="#extracurriculars" onClick={closeMenu}>Extracurriculars</a>
-          <a href="https://tanyasthoughts.netlify.app/" onClick={closeMenu}>Writing</a>
-          <a href="#contact" onClick={closeMenu}>Contact</a>
+        <div className="flex flex-col items-start px-8 pt-24 space-y-8 text-white text-lg">
+          <a href="#home" onClick={closeMenu} className="hover:text-gray-300">Home</a>
+          <a href="#about" onClick={closeMenu} className="hover:text-gray-300">About</a>
+          <a href="#experience" onClick={closeMenu} className="hover:text-gray-300">Experience</a>
+          <a href="#projects" onClick={closeMenu} className="hover:text-gray-300">Projects</a>
+          <a href="#extracurriculars" onClick={closeMenu} className="hover:text-gray-300">Extracurriculars</a>
+          <a href="https://tanyasthoughts.netlify.app/" onClick={closeMenu} className="hover:text-gray-300">Writing</a>
+          <a href="#contact" onClick={closeMenu} className="hover:text-gray-300">Contact</a>
         </div>
       </div>
     </nav>
