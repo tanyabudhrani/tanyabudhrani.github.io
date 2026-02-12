@@ -14,22 +14,21 @@ import "slick-carousel/slick/slick-theme.css";
 const Project = (props) => {
   return (
     <div className="
-      w-full
-      max-w-lg
-      mx-auto
-      p-6
-      border
-      rounded-xl
-      overflow-hidden
-      break-words
-      flex
-      flex-col
-      justify-between
-      bg-opacity-20
-    ">
-
+        px-6
+        py-8
+        border
+        rounded-xl
+        transition-colors
+        duration-300
+        group
+        mx-auto
+        w-full
+        max-w-md
+        sm:max-w-lg
+        lg:max-w-2xl
+      ">
       <div className="flex flex-col sm:flex-row">
-        <img className="flex-shrink-0 object-cover w-32 h-32 sm:w-40 sm:h-40 rounded-full sm:mx-4 ring-4 ring-gray-300" src={props.image} alt={props.title} /> {/* Adjusted image size */}
+        <img className="flex-shrink-0 object-cover w-40 h-40 rounded-full sm:mx-4 ring-4 ring-gray-300" src={props.image} alt={props.title} /> {/* Adjusted image size */}
         <div className="mt-4 sm:mx-4 sm:mt-0">
           <h1 className="text-2xl font-semibold text-gray-700 capitalize md:text-2xl group-hover:text-white text-gradient">{props.title}</h1>
           <p className="font-poppins font-normal text-dimWhite mt-3">Tech Stack</p>
@@ -43,12 +42,7 @@ const Project = (props) => {
           </div>
         </div>
       </div>
-      <p className="mt-6
-        text-gray-300
-        text-sm
-        sm:text-base
-        leading-relaxed
-        break-words"></p>
+      <p className="mt-8 text-gray-500 dark:text-gray-300 group-hover:text-gray-300">{props.content}</p>
       <div className="flex mt-4 -mx-2">
         {props.github && (
           <a href={props.github} target="_blank" rel="noopener noreferrer">
@@ -94,13 +88,14 @@ const Projects = () => {
   speed: 500,
   slidesToShow: 2,
   slidesToScroll: 1,
+  centerMode: true,
   arrows: true,
+  centerPadding: "0px",
   responsive: [
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 2,
-        centerMode: false
       }
     },
     {
@@ -108,7 +103,14 @@ const Projects = () => {
       settings: {
         slidesToShow: 1,
         centerMode: false,
-        arrows: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false,
+        arrows: false,
       }
     }
   ]
