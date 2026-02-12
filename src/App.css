@@ -3,7 +3,7 @@ body {
   background-color: #00040f; /* Dark background */
   color: #FFFFFF; /* White text */
   font-family: 'Poppins', sans-serif;
-  cursor: none;
+  cursor: auto;
 }
 
 .text-gradient {
@@ -68,4 +68,14 @@ body::before {
   opacity: 0.06;
   pointer-events: none;
   z-index: 1;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to drop to the next line */
+  gap: 20px;      /* Better than manual margins */
+}
+
+.item {
+  flex: 1 1 300px; /* Grow, shrink, and try to stay at 300px base */
 }
