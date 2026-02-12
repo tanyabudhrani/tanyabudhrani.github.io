@@ -79,3 +79,9 @@ body::before {
     padding: 0;
   }
 }
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+  font-size: 24px;
+}
