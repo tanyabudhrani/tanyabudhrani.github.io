@@ -26,10 +26,6 @@ code {
 }
 
 /* Links and hover state */
-a {
-  color: #001249; /* Accent color for links */
-  text-decoration: none;
-}
 
 a:hover {
   color: #ffffff; /* Lighter shade for hover */
