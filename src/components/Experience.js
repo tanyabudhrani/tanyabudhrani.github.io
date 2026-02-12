@@ -134,11 +134,11 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-24 bg-primary text-white"> {/* Increased padding for top and bottom */}
-      <div className="container mx-auto flex flex-col md:flex-row">
+    <section id="experience" className="py-16 sm:py-24 bg-primary text-white"> {/* Increased padding for top and bottom */}
+      <div className="container mx-auto px-6 flex flex-col md:flex-row">
         {/* Left: Experience Section */}
         <div className="flex-1 md:mr-10"> {/* Increased right margin */}
-        <h1 ref={titleRef} className="text-6xl font-bold mb-12">
+        <h1 ref={titleRef} className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 sm:mb-12">
           {showTypewriter && (
             <Typewriter
               words={['Experience']}
@@ -174,7 +174,7 @@ const Experience = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="grid grid-cols-4 gap-8 mt-6"
+              className="grid grid-cols-3 sm:grid-cols-4 gap-6 sm:gap-8 mt-6"
             >
               {[ 
                 { icon: <FaPython />, label: "Python" },

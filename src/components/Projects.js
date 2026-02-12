@@ -315,18 +315,11 @@ const Projects = () => {
 
 
 return (
-    <section id="projects" className="py-20 bg-dark text-white">
+    <section id="projects" className="py-16 sm:py-20 bg-dark text-white">
       <div className="max-w-screen-xl mx-auto px-6">
         <h1
           ref={titleRef}
-          className="
-            text-3xl
-            sm:text-4xl
-            md:text-5xl
-            lg:text-6xl
-            font-bold
-            mb-12
-          "
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 sm:mb-12"
         >
           {showTypewriter && (
             <Typewriter
