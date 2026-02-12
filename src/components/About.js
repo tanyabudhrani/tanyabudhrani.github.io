@@ -45,7 +45,7 @@ const About = () => {
               Hello there, I'm <strong>Tans</strong>
             </p>
             <p className="text-lg md:text-xl mb-6 leading-relaxed text-gray-200">
-              I am a fourth-year Computer Science and Linguistics student at the
+              I am a fourth-year Computer Science student at the
               Hong Kong Polytechnic University with a keen interest in Data Analytics and Machine Learning.
             </p>
 
@@ -53,14 +53,14 @@ const About = () => {
 
             <div>
               <p className="text-lg md:text-xl mb-4 text-gradient text-center">
-                I am currently involved in:
+                Some fun tidbits about me:
               </p>
               <ul className="list-none ml-5 text-lg md:text-lg space-y-3 text-left">
                 {[
-                  "Working at Odoo as a Technical Consulting Intern.",
-                  "Working with Microsoft as a community builder for students.",
-                  "Working with the ACM-W to support and advocate for women in computing.",
-                  "Working with the HKCS to empower Hong Kong students wanting to learn Computer Science.",
+                  "I am current working at Odoo as a Technical Consulting Intern.",
+                  "I am fluent in American Sign Language.",
+                  "My name means 'Fairy Princess' in Russian.",
+                  "I jailbroke my first phone when I was 8!",
                 ].map((item, index) => (
                   <motion.li
                     key={index}
