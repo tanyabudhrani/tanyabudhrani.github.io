@@ -30,13 +30,13 @@ function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 text-white text-sm">
-          <a href="#home" className="hover:text-gray-300">Home</a>
-          <a href="#about" className="hover:text-gray-300">About</a>
-          <a href="#experience" className="hover:text-gray-300">Experience</a>
-          <a href="#projects" className="hover:text-gray-300">Projects</a>
-          <a href="#extracurriculars" className="hover:text-gray-300">Extracurriculars</a>
-          <a href="https://tanyasthoughts.netlify.app/" className="hover:text-gray-300">Writing</a>
-          <a href="#contact" className="hover:text-gray-300">Contact</a>
+          <a href="#home" className="text-white hover:text-blue-300">Home</a>
+          <a href="#about" className="text-white hover:text-blue-300">About</a>
+          <a href="#experience" className="text-white hover:text-blue-300">Experience</a>
+          <a href="#projects" className="text-white hover:text-blue-300">Projects</a>
+          <a href="#extracurriculars" className="text-white hover:text-blue-300">Extracurriculars</a>
+          <a href="https://tanyasthoughts.netlify.app/" className="text-white hover:text-blue-300">Writing</a>
+          <a href="#contact" className="text-white hover:text-blue-300">Contact</a>
         </div>
 
         {/* Minimal Hamburger */}
