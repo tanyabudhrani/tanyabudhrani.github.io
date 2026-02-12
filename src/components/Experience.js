@@ -48,9 +48,9 @@ const ExperienceCard = ({ organisation, logo, positions }) => (
       </h4>
     </div>
 
-    <ol className="relative border-l border-gray-200 dark:border-gray-700 pr-2">
+    <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-[22px] pr-2">
       {positions.map((position, i) => (
-        <li key={i} className={`relative ${i === positions.length - 1 ? "mb-5" : "mb-6"} pl-6`}>
+        <li key={i} className={`relative ${i === positions.length - 1 ? "mb-5" : "mb-6"} pl-4`}>
           <div className="relative flex items-left">
             <div>
               <h3 className="text-lg font-semibold text-white">{position.title}</h3>
