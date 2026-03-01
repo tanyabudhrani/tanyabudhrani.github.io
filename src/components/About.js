@@ -38,7 +38,7 @@ const About = () => {
           <img
             src="/assets/tanya.jpg"
             alt="Tanya Budhrani"
-            className="w-48 h-48 rounded-full mb-6 md:mb-0 md:mr-12 transform transition-transform duration-300 hover:scale-105 shadow-lg"
+            className="w-48 h-48 rounded-full object-cover mb-6 md:mb-0 md:mr-12 transform transition-transform duration-300 hover:scale-105 shadow-lg"
           />
           <div className="md:ml-20 text-right">
             <p className="text-xl md:text-2xl mb-4 hover:text-gradient transition-colors duration-200">
