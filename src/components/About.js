@@ -36,7 +36,7 @@ const About = () => {
 
         <div className="flex flex-col md:flex-row items-end md:items-start">
           <img
-            src="/assets/profile.jpeg"
+            src="/assets/tanya.jpeg"
             alt="Tanya Budhrani"
             className="w-48 h-48 rounded-full mb-6 md:mb-0 md:mr-12 transform transition-transform duration-300 hover:scale-105 shadow-lg"
           />
