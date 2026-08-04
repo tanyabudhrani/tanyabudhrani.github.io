@@ -45,8 +45,8 @@ const About = () => {
               Hello there, I'm <strong>Tans</strong>
             </p>
             <p className="text-lg md:text-xl mb-6 leading-relaxed text-gray-200">
-              I am a fourth-year Computer Science student at the
-              Hong Kong Polytechnic University with a keen interest in Data Analytics and Machine Learning.
+              I am a Financial Engineering analyst at BlackRock Asset Management
+              with a keen interest in data analytics and financial modeling. 
             </p>
 
             <hr className="border-gradient mb-6" />
@@ -57,7 +57,6 @@ const About = () => {
               </p>
               <ul className="list-none ml-5 text-lg md:text-lg space-y-3 text-left">
                 {[
-                  "I am current working at Odoo as a Technical Consulting Intern.",
                   "I am fluent in American Sign Language.",
                   "My name means 'Fairy Princess' in Russian.",
                   "I jailbroke my first phone when I was 8!",

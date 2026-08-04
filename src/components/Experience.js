@@ -81,12 +81,27 @@ const Experience = () => {
   }, [isInView]);
   const experiences = [
     {
+      organisation: "BlackRock",
+      logo: '/assets/blk.png',
+      positions: [
+        {
+          title: "Financial Engineer",
+          duration: "Aug 2026 - Present",
+          content: [
+            {
+              text: "Developing quantitative solutions and financial analytics using Python and statistical techniques to support risk management, portfolio analysis, and client-facing investment solutions through the Aladdin platform.",
+            },
+          ],
+        },
+      ],
+    },
+    {
       organisation: "Odoo",
       logo: '/assets/odoo.png',
       positions: [
         {
           title: "Technical Consulting Intern",
-          duration: "Jan 2026 - June 2026",
+          duration: "Jan 2026 - May 2026",
           content: [
             {
               text: "Implementing localization features for Odoo modules, pushing Git commits to enhance software adaptability, and collaborating with cross-functional teams to ensure seamless integration of new functionalities.",
