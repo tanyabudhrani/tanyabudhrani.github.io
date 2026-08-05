@@ -44,9 +44,8 @@ const About = () => {
             <p className="text-xl md:text-2xl mb-4 hover:text-gradient transition-colors duration-200">
               Hello there, I'm <strong>Tans</strong>
             </p>
-            <p className="text-lg md:text-xl mb-6 leading-relaxed text-gray-200">
+            <p className="text-lg md:text-xl mb-6 leading-relaxed text-gray-200 min-h-[3.5rem]">
               I am a Financial Engineering analyst at BlackRock Asset Management
-              with a keen interest in data analytics and financial modeling. 
             </p>
 
             <hr className="border-gradient mb-6" />
