@@ -45,8 +45,7 @@ const About = () => {
               Hello there, I'm <strong>Tans</strong>
             </p>
             <p className="text-lg md:text-xl mb-6 leading-relaxed text-gray-200">
-              I am a Financial Engineering analyst at BlackRock Asset Management
-              with a keen interest in data analytics and financial modeling. 
+              I am a Financial Engineering analyst at BlackRock Asset Management. 
             </p>
 
             <hr className="border-gradient mb-6" />
@@ -77,7 +76,7 @@ const About = () => {
 
               <div className="flex justify-center mt-6">
                 <a
-                  href="https://drive.google.com/file/d/1wQBLQMZyU5b92i1nYc3sr2EkAkgIl9l9/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1EURitObM_IPL7YCDZlP48j3wwdMdh419/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-8 py-4 text-white transition-colors duration-300 transform border rounded-xl hover: text-gradient border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card"
