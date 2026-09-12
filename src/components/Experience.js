@@ -89,7 +89,7 @@ const Experience = () => {
           duration: "Aug 2026 - Present",
           content: [
             {
-              text: "Developing quantitative solutions and financial analytics using Python and statistical techniques to support risk management, portfolio analysis, and client-facing investment solutions through the Aladdin platform.",
+              text: "Analyst in the Multi-Assets Analytics pillar of Portfolio Analytics, where we develop quantitative solutions to support portfolio management.",
             },
           ],
         },

@@ -45,7 +45,7 @@ const About = () => {
               Hello there, I'm <strong>Tans</strong>
             </p>
             <p className="text-lg md:text-xl mb-6 leading-relaxed text-gray-200">
-              I am a Financial Engineering analyst at BlackRock Asset Management with a keen interest in data analytics and financial modeling. 
+              I'm an analyst at BlackRock, and a recent graduate from Hong Kong Polytechnic University with a degree in BSc (Hons) in Computing.
             </p>
 
             <hr className="border-gradient mb-6" />
@@ -57,7 +57,7 @@ const About = () => {
               <ul className="list-none ml-5 text-lg md:text-lg space-y-3 text-left">
                 {[
                   "I am fluent in American Sign Language.",
-                  "My name means 'Fairy Princess' in Russian.",
+                  "I can do 7 pull-ups (vying for 10)...",
                   "I jailbroke my first phone when I was 8!",
                 ].map((item, index) => (
                   <motion.li
